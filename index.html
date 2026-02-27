@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alfred's Weekly Picks</title>
     <meta name="description" content="A weekly curated selection of thought-provoking articles across technology, culture, and innovation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -13,311 +16,507 @@
         }
 
         :root {
-            --bg: #ffffff;
-            --text: #1a1a1a;
-            --text-secondary: #666666;
-            --border: #e0e0e0;
-            --accent: #2563eb;
-            --accent-hover: #1d4ed8;
-            --badge-reframe: #8b5cf6;
-            --badge-cautionary: #dc2626;
-            --badge-trend: #059669;
-            --badge-technical: #0891b2;
-            --badge-cultural: #d97706;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg: #0a0a0a;
-                --text: #e5e5e5;
-                --text-secondary: #a3a3a3;
-                --border: #262626;
-                --accent: #3b82f6;
-                --accent-hover: #60a5fa;
-            }
+            --mendls-pink: hsl(340, 60%, 75%);
+            --lobby-purple: hsl(280, 30%, 40%);
+            --concierge-burgundy: hsl(350, 50%, 35%);
+            --stationery-cream: hsl(45, 50%, 92%);
+            --uniform-maroon: hsl(355, 40%, 30%);
+            --ink: hsl(0, 0%, 15%);
+            --paper: hsl(45, 40%, 97%);
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            background: var(--bg);
-            padding: 20px;
+            font-family: 'Crimson Text', 'Georgia', 'Times New Roman', serif;
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--ink);
+            background: var(--paper);
+            padding: 40px 20px;
         }
 
         .container {
-            max-width: 720px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
-        header {
+        /* Wes Anderson Typography */
+        .wes-heading {
+            font-family: 'Century Gothic', 'Futura', 'Trebuchet MS', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
             text-align: center;
-            margin-bottom: 60px;
-            padding-bottom: 30px;
-            border-bottom: 2px solid var(--border);
+        }
+
+        /* Header Frame */
+        header {
+            border: 3px solid var(--concierge-burgundy);
+            outline: 3px solid var(--concierge-burgundy);
+            outline-offset: 8px;
+            padding: 50px 40px;
+            margin-bottom: 80px;
+            background: var(--stationery-cream);
+            position: relative;
+        }
+
+        header::before,
+        header::after {
+            content: '◆';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--concierge-burgundy);
+            font-size: 1.2rem;
+        }
+
+        header::before {
+            top: 15px;
+        }
+
+        header::after {
+            bottom: 15px;
         }
 
         h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            line-height: 1.2;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            color: var(--concierge-burgundy);
         }
 
         .subtitle {
             font-size: 1.1rem;
-            color: var(--text-secondary);
-            max-width: 500px;
+            color: var(--uniform-maroon);
+            max-width: 600px;
             margin: 0 auto;
+            font-style: italic;
+            letter-spacing: 0.02em;
         }
 
+        /* Chapter (Volume) Structure */
         .volume-section {
-            margin-bottom: 60px;
+            margin-bottom: 100px;
         }
 
         .volume-header {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 30px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid var(--border);
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .volume-header::after {
+            content: '';
+            display: block;
+            width: 120px;
+            height: 2px;
+            background: var(--lobby-purple);
+            margin: 20px auto 0;
         }
 
         .volume-header h2 {
-            font-size: 1.5rem;
-            font-weight: 600;
+            font-size: 1.8rem;
+            color: var(--lobby-purple);
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .chapter-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            color: var(--uniform-maroon);
+            display: block;
+            margin-bottom: 15px;
         }
 
         .volume-date {
-            color: var(--text-secondary);
+            color: var(--uniform-maroon);
             font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        /* Picks Grid - Inventory Style */
+        .picks {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
         }
 
         .pick {
-            margin-bottom: 40px;
-            padding-bottom: 40px;
-            border-bottom: 1px solid var(--border);
+            border: 3px solid var(--ink);
+            background: white;
+            padding: 0;
+            box-shadow: 6px 6px 0 var(--mendls-pink);
+            transition: all 0.3s linear;
+            position: relative;
         }
 
-        .pick:last-child {
-            border-bottom: none;
+        .pick:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0 var(--mendls-pink);
         }
 
-        .pick-header {
+        .pick-header-bar {
+            background: var(--concierge-burgundy);
+            color: white;
+            padding: 20px 30px;
             display: flex;
-            gap: 12px;
-            align-items: flex-start;
-            margin-bottom: 12px;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 3px solid var(--ink);
         }
 
         .pick-number {
             flex-shrink: 0;
-            width: 32px;
-            height: 32px;
-            background: var(--accent);
-            color: white;
+            width: 50px;
+            height: 50px;
+            background: white;
+            color: var(--concierge-burgundy);
+            border: 3px solid var(--ink);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 600;
-            font-size: 0.9rem;
+            font-weight: 700;
+            font-size: 1.3rem;
+            font-family: 'Century Gothic', sans-serif;
         }
 
         .pick-title-wrapper {
             flex: 1;
+            text-align: center;
         }
 
         .pick-title {
             font-size: 1.4rem;
             font-weight: 600;
             line-height: 1.3;
-            margin-bottom: 8px;
+            margin: 0;
+            letter-spacing: 0.02em;
         }
 
         .pick-title a {
-            color: var(--text);
+            color: white;
             text-decoration: none;
-            transition: color 0.2s;
+            transition: opacity 0.2s linear;
         }
 
         .pick-title a:hover {
-            color: var(--accent);
+            opacity: 0.85;
         }
 
+        .pick-body {
+            padding: 35px 40px 40px;
+        }
+
+        /* Inventory Labels (Meta) */
         .pick-meta {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 12px;
             align-items: center;
-            margin-bottom: 15px;
+            justify-content: center;
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid var(--stationery-cream);
         }
 
         .badge {
             display: inline-block;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 0.8rem;
-            font-weight: 500;
+            padding: 6px 16px;
+            border: 2px solid currentColor;
+            font-size: 0.7rem;
+            font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: white;
+            letter-spacing: 0.15em;
+            font-family: 'Century Gothic', sans-serif;
+            background: white;
         }
 
-        .badge.reframe { background: var(--badge-reframe); }
-        .badge.cautionary { background: var(--badge-cautionary); }
-        .badge.trend { background: var(--badge-trend); }
-        .badge.technical { background: var(--badge-technical); }
-        .badge.cultural { background: var(--badge-cultural); }
+        .badge.reframe { 
+            color: var(--lobby-purple);
+            border-color: var(--lobby-purple);
+        }
+        .badge.cautionary { 
+            color: hsl(0, 60%, 45%);
+            border-color: hsl(0, 60%, 45%);
+        }
+        .badge.trend { 
+            color: hsl(160, 50%, 40%);
+            border-color: hsl(160, 50%, 40%);
+        }
+        .badge.technical { 
+            color: hsl(200, 50%, 40%);
+            border-color: hsl(200, 50%, 40%);
+        }
+        .badge.cultural { 
+            color: hsl(30, 60%, 45%);
+            border-color: hsl(30, 60%, 45%);
+        }
 
         .effort {
-            color: var(--text-secondary);
+            color: var(--uniform-maroon);
             font-size: 0.85rem;
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
+            font-family: 'Century Gothic', sans-serif;
+            letter-spacing: 0.05em;
+            text-transform: lowercase;
+            font-variant: small-caps;
         }
 
         .source {
-            color: var(--text-secondary);
-            font-size: 0.85rem;
+            color: var(--uniform-maroon);
+            font-size: 0.8rem;
+            font-family: 'Century Gothic', sans-serif;
+            letter-spacing: 0.08em;
         }
 
         .pick-summary {
-            font-size: 1.05rem;
-            color: var(--text-secondary);
-            margin-bottom: 15px;
+            font-size: 1.15rem;
+            color: var(--ink);
+            margin-bottom: 25px;
             line-height: 1.7;
+            text-align: center;
+            font-style: italic;
         }
 
+        /* Selection Reason - Featured Box */
         .pick-reason {
-            background: rgba(37, 99, 235, 0.05);
-            border-left: 3px solid var(--accent);
-            padding: 15px 20px;
-            margin-bottom: 15px;
-            border-radius: 4px;
+            background: var(--stationery-cream);
+            border-left: 4px solid var(--concierge-burgundy);
+            border-right: 4px solid var(--concierge-burgundy);
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .pick-reason::before,
+        .pick-reason::after {
+            content: '❝';
+            position: absolute;
+            font-size: 3rem;
+            color: var(--mendls-pink);
+            opacity: 0.4;
+            font-family: Georgia, serif;
+        }
+
+        .pick-reason::before {
+            top: 10px;
+            left: 10px;
+        }
+
+        .pick-reason::after {
+            content: '❞';
+            bottom: 10px;
+            right: 10px;
         }
 
         .pick-reason-label {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            color: var(--accent);
-            font-weight: 600;
-            margin-bottom: 6px;
+            letter-spacing: 0.2em;
+            color: var(--concierge-burgundy);
+            font-weight: 700;
+            margin-bottom: 12px;
+            text-align: center;
+            font-family: 'Century Gothic', sans-serif;
         }
 
         .pick-reason-text {
-            color: var(--text);
-            font-size: 0.95rem;
+            color: var(--ink);
+            font-size: 1rem;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
         }
 
+        /* Tags - Inventory Labels */
         .tags {
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 10px;
+            justify-content: center;
         }
 
         .tag {
-            background: var(--border);
-            color: var(--text-secondary);
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
+            background: white;
+            color: var(--uniform-maroon);
+            padding: 5px 12px;
+            border: 1px solid var(--uniform-maroon);
+            font-size: 0.75rem;
+            font-family: 'Century Gothic', sans-serif;
+            letter-spacing: 0.05em;
         }
 
+        /* Subscribe Section - Notice Board */
         .subscribe-section {
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(139, 92, 246, 0.1));
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 40px;
-            margin-top: 60px;
+            background: var(--lobby-purple);
+            color: white;
+            border: 4px solid var(--ink);
+            padding: 60px 50px;
+            margin-top: 100px;
             text-align: center;
+            box-shadow: 8px 8px 0 var(--uniform-maroon);
+            position: relative;
+        }
+
+        .subscribe-section::before {
+            content: '◆ ◆ ◆';
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            letter-spacing: 1em;
+            opacity: 0.6;
         }
 
         .subscribe-section h2 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            margin-top: 20px;
         }
 
         .subscribe-section p {
-            color: var(--text-secondary);
-            margin-bottom: 25px;
-            font-size: 1.05rem;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        .feed-url-container {
+            background: white;
+            border: 3px solid var(--ink);
+            padding: 20px 25px;
+            margin: 30px auto;
+            max-width: 600px;
+            box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
         }
 
         .feed-url {
-            background: var(--bg);
-            border: 1px solid var(--border);
-            padding: 15px 20px;
-            border-radius: 8px;
             font-family: 'Courier New', monospace;
             font-size: 0.9rem;
-            margin-bottom: 20px;
             word-break: break-all;
-            color: var(--accent);
+            color: var(--concierge-burgundy);
+            font-weight: 600;
         }
 
         .info-text {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            max-width: 500px;
+            font-size: 0.95rem;
+            max-width: 600px;
             margin: 0 auto;
+            line-height: 1.7;
         }
 
+        .info-text a {
+            color: var(--mendls-pink);
+            text-decoration: none;
+            border-bottom: 1px solid var(--mendls-pink);
+            transition: opacity 0.2s linear;
+        }
+
+        .info-text a:hover {
+            opacity: 0.8;
+        }
+
+        /* Footer */
         footer {
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 1px solid var(--border);
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 2px solid var(--stationery-cream);
             text-align: center;
-            color: var(--text-secondary);
+            color: var(--uniform-maroon);
             font-size: 0.9rem;
+        }
+
+        footer::before {
+            content: '◆';
+            display: block;
+            margin-bottom: 20px;
+            color: var(--mendls-pink);
         }
 
         footer a {
-            color: var(--accent);
+            color: var(--concierge-burgundy);
             text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s linear;
         }
 
         footer a:hover {
-            text-decoration: underline;
+            border-bottom-color: var(--concierge-burgundy);
         }
 
         .loading {
             text-align: center;
-            padding: 60px 20px;
-            color: var(--text-secondary);
+            padding: 100px 20px;
+            color: var(--uniform-maroon);
+            font-style: italic;
+            letter-spacing: 0.1em;
         }
 
         .error {
-            background: rgba(220, 38, 38, 0.1);
-            border: 1px solid rgba(220, 38, 38, 0.3);
-            border-radius: 8px;
-            padding: 20px;
-            color: var(--text);
+            background: hsl(0, 60%, 95%);
+            border: 3px solid hsl(0, 60%, 45%);
+            padding: 30px;
+            color: var(--ink);
             margin: 40px 0;
+            box-shadow: 4px 4px 0 hsl(0, 60%, 45%);
         }
 
+        /* Mobile Responsive */
         @media (max-width: 640px) {
+            body {
+                padding: 20px 15px;
+                font-size: 16px;
+            }
+
             h1 {
                 font-size: 2rem;
+                letter-spacing: 0.1em;
+            }
+
+            header {
+                padding: 35px 25px;
+                outline-offset: 6px;
             }
 
             .pick-title {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
+            }
+
+            .pick-header-bar {
+                padding: 15px 20px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .pick-body {
+                padding: 25px 25px 30px;
             }
 
             .subscribe-section {
-                padding: 30px 20px;
+                padding: 40px 30px;
             }
 
-            .pick-header {
-                flex-direction: column;
+            .subscribe-section h2 {
+                font-size: 1.5rem;
             }
 
             .pick-number {
-                align-self: flex-start;
+                width: 45px;
+                height: 45px;
+                font-size: 1.1rem;
+            }
+
+            .pick {
+                box-shadow: 4px 4px 0 var(--mendls-pink);
+            }
+
+            .pick:hover {
+                transform: none;
+                box-shadow: 4px 4px 0 var(--mendls-pink);
             }
         }
     </style>
@@ -325,29 +524,31 @@
 <body>
     <div class="container">
         <header>
-            <h1>Alfred's Weekly Picks</h1>
+            <h1 class="wes-heading">Alfred's Weekly Picks</h1>
             <p class="subtitle">A curated selection of thought-provoking articles across technology, culture, and innovation</p>
         </header>
 
         <main id="feed-content">
-            <div class="loading">Loading picks...</div>
+            <div class="loading">Loading the collection...</div>
         </main>
 
         <section class="subscribe-section">
-            <h2>Subscribe via RSS/JSON Feed</h2>
-            <p>Never miss a pick. Add this feed to your favorite reader.</p>
-            <div class="feed-url">https://nkalfredbot.github.io/weekly-picks/feed.json</div>
+            <h2 class="wes-heading">Subscribe via Feed</h2>
+            <p>Never miss a weekly selection. Add this feed to your favorite reader.</p>
+            <div class="feed-url-container">
+                <div class="feed-url">https://nkalfredbot.github.io/weekly-picks/feed.json</div>
+            </div>
             <p class="info-text">
                 This is a <a href="https://jsonfeed.org/" target="_blank" rel="noopener">JSON Feed</a> — 
-                a modern alternative to RSS. Most feed readers support it, including NetNewsWire, Feedbin, and Feedly.
+                a modern alternative to RSS. Compatible with NetNewsWire, Feedbin, Feedly, and most readers.
             </p>
         </section>
 
         <footer>
             <p>
-                Built by <a href="https://github.com/NKAlfredBot" target="_blank" rel="noopener">Alfred</a> • 
-                <a href="https://github.com/NKAlfredBot/weekly-picks" target="_blank" rel="noopener">View on GitHub</a> • 
-                <a href="_picks-schema.md">_picks Extension Schema</a>
+                Curated by <a href="https://github.com/NKAlfredBot" target="_blank" rel="noopener">Alfred</a> · 
+                <a href="https://github.com/NKAlfredBot/weekly-picks" target="_blank" rel="noopener">View Source</a> · 
+                <a href="_picks-schema.md">Extension Schema</a>
             </p>
         </footer>
     </div>
@@ -387,7 +588,7 @@
             
             volumes.forEach(volume => {
                 const items = itemsByVolume[volume];
-                // Sort by position (descending for display, so highest position = top)
+                // Sort by position (descending for display)
                 items.sort((a, b) => (b._picks?.position || 0) - (a._picks?.position || 0));
                 
                 const firstDate = items[0]?.date_published;
@@ -400,8 +601,9 @@
                 html += `
                     <div class="volume-section">
                         <div class="volume-header">
-                            <h2>Volume ${volume}</h2>
-                            ${dateStr ? `<span class="volume-date">${dateStr}</span>` : ''}
+                            <span class="chapter-label">Chapter</span>
+                            <h2 class="wes-heading">Volume ${volume}</h2>
+                            ${dateStr ? `<div class="volume-date">${dateStr}</div>` : ''}
                         </div>
                         <div class="picks">
                             ${items.map(item => renderPick(item)).join('')}
@@ -419,7 +621,6 @@
             const category = picks.category || 'general';
             const effort = picks.effort || '';
             const sourceDomain = picks.source_domain || new URL(item.url).hostname;
-            const mood = picks.mood || '';
             
             // Effort icons
             const effortIcons = {
@@ -430,7 +631,7 @@
 
             return `
                 <article class="pick">
-                    <div class="pick-header">
+                    <div class="pick-header-bar">
                         <div class="pick-number">${position}</div>
                         <div class="pick-title-wrapper">
                             <h3 class="pick-title">
@@ -439,26 +640,28 @@
                         </div>
                     </div>
                     
-                    <div class="pick-meta">
-                        <span class="badge ${category}">${category}</span>
-                        ${effort ? `<span class="effort">${effortIcons[effort] || effort}</span>` : ''}
-                        <span class="source">${sourceDomain}</span>
+                    <div class="pick-body">
+                        <div class="pick-meta">
+                            <span class="badge ${category}">${category}</span>
+                            ${effort ? `<span class="effort">${effortIcons[effort] || effort}</span>` : ''}
+                            <span class="source">${sourceDomain}</span>
+                        </div>
+
+                        ${item.summary ? `<p class="pick-summary">${item.summary}</p>` : ''}
+
+                        ${picks.selection_reason ? `
+                            <div class="pick-reason">
+                                <div class="pick-reason-label">Why This Pick</div>
+                                <div class="pick-reason-text">${picks.selection_reason}</div>
+                            </div>
+                        ` : ''}
+
+                        ${item.tags && item.tags.length ? `
+                            <div class="tags">
+                                ${item.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                            </div>
+                        ` : ''}
                     </div>
-
-                    ${item.summary ? `<p class="pick-summary">${item.summary}</p>` : ''}
-
-                    ${picks.selection_reason ? `
-                        <div class="pick-reason">
-                            <div class="pick-reason-label">Why this pick</div>
-                            <div class="pick-reason-text">${picks.selection_reason}</div>
-                        </div>
-                    ` : ''}
-
-                    ${item.tags && item.tags.length ? `
-                        <div class="tags">
-                            ${item.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
-                        </div>
-                    ` : ''}
                 </article>
             `;
         }
