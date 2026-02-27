@@ -588,8 +588,8 @@
             
             volumes.forEach(volume => {
                 const items = itemsByVolume[volume];
-                // Sort by position (descending for display)
-                items.sort((a, b) => (b._picks?.position || 0) - (a._picks?.position || 0));
+                // Sort by position (ascending: 1 to 5)
+                items.sort((a, b) => (a._picks?.position || 0) - (b._picks?.position || 0));
                 
                 const firstDate = items[0]?.date_published;
                 const dateStr = firstDate ? new Date(firstDate).toLocaleDateString('en-US', {
