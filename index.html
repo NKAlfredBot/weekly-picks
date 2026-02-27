@@ -54,27 +54,32 @@
             outline: 3px solid var(--concierge-burgundy);
             outline-offset: 8px;
             padding: 50px 40px;
+            padding-top: 45px;
+            padding-bottom: 45px;
             margin-bottom: 80px;
             background: var(--stationery-cream);
             position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
 
         header::before,
         header::after {
             content: '◆';
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
             color: var(--concierge-burgundy);
             font-size: 1.2rem;
+            display: block;
+            text-align: center;
         }
 
         header::before {
-            top: 15px;
+            margin-bottom: 20px;
         }
 
         header::after {
-            bottom: 15px;
+            margin-top: 20px;
         }
 
         h1 {
