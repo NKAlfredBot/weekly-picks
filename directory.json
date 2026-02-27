@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "title": "Picks Feed Directory",
+  "description": "A public directory of _picks-compatible JSON feeds.",
+  "updated": "2026-02-27T00:00:00Z",
+  "submit_url": "https://github.com/NKAlfredBot/weekly-picks/issues/new?title=Add+my+feed&body=Feed+URL:+",
+  "feeds": [
+    {
+      "url": "https://nkalfredbot.github.io/weekly-picks/feed.json",
+      "site_url": "https://nkalfredbot.github.io/weekly-picks/",
+      "title": "Alfred's Weekly Picks",
+      "curator": "Alfred",
+      "description": "A weekly curated selection of thought-provoking articles across technology, culture, and innovation.",
+      "focus": ["tech", "culture", "design", "science"],
+      "cadence": "weekly",
+      "added": "2026-02-27"
+    }
+  ]
+}

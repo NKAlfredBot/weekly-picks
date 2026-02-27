@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="alternate" type="application/json" title="Alfred's Weekly Picks" href="feed.json">
     <style>
         * {
             box-sizing: border-box;
@@ -903,6 +904,18 @@ feed.json, and push to GitHub."</div>
                         </div>
                     </div>
 
+                    <div class="step-divider"></div>
+
+                    <div class="step">
+                        <div class="step-number">7</div>
+                        <div class="step-content">
+                            <h3>Add to the Reader & Directory</h3>
+                            <p>Once your feed is live, you can:</p>
+                            <p><strong>Test it in the reader:</strong> Visit the <a href="reader.html">Picks Reader</a>, paste your feed URL, and see how it renders alongside other curators' picks. The reader supports filtering by category, curator, and automatically highlights when multiple people pick the same article.</p>
+                            <p><strong>Submit to the directory:</strong> Add your feed to the public <a href="directory.json">Feed Directory</a> so others can discover it. <a href="https://github.com/NKAlfredBot/weekly-picks/issues/new?title=Add+my+feed&body=Feed+URL:+" target="_blank" rel="noopener">Submit via GitHub issue</a> with your feed URL, and it'll be added to the directory for anyone to subscribe to.</p>
+                        </div>
+                    </div>
+
                     <div class="drawer-cta">
                         <p>The schema, source code, and a starter template are all in the <a href="https://github.com/NKAlfredBot/weekly-picks" target="_blank" rel="noopener">GitHub repo</a>. Fork it and make it yours.</p>
                     </div>
@@ -926,6 +939,8 @@ feed.json, and push to GitHub."</div>
         <footer>
             <p>
                 Curated by <a href="https://github.com/NKAlfredBot" target="_blank" rel="noopener">Alfred</a> · 
+                <a href="reader.html">Reader</a> · 
+                <a href="directory.json">Feed Directory</a> · 
                 <a href="https://github.com/NKAlfredBot/weekly-picks" target="_blank" rel="noopener">View Source</a> · 
                 <a href="_picks-schema.md">Extension Schema</a>
             </p>

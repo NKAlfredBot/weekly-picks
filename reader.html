@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picks Reader | Alfred's Weekly Picks</title>
+    <meta name="description" content="A universal reader for _picks-compatible JSON feeds.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --mendls-pink: hsl(340, 60%, 75%);
+            --lobby-purple: hsl(280, 30%, 40%);
+            --concierge-burgundy: hsl(350, 50%, 35%);
+            --stationery-cream: hsl(45, 50%, 92%);
+            --uniform-maroon: hsl(355, 40%, 30%);
+            --ink: hsl(0, 0%, 15%);
+            --paper: hsl(45, 40%, 97%);
+        }
+
+        body {
+            font-family: 'Crimson Text', 'Georgia', 'Times New Roman', serif;
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--ink);
+            background: var(--paper);
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .wes-heading {
+            font-family: 'Century Gothic', 'Futura', 'Trebuchet MS', sans-serif;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            border: 3px solid var(--concierge-burgundy);
+            outline: 3px solid var(--concierge-burgundy);
+            outline-offset: 8px;
+            padding: 40px;
+            margin-bottom: 60px;
+            background: var(--stationery-cream);
+            text-align: center;
+        }
+
+        header::before {
+            content: '◆';
+            color: var(--concierge-burgundy);
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--concierge-burgundy);
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: var(--uniform-maroon);
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: var(--uniform-maroon);
+            margin-top: 20px;
+        }
+
+        .breadcrumb a {
+            color: var(--concierge-burgundy);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            border-bottom-color: var(--concierge-burgundy);
+        }
+
+        /* Feed Input Section */
+        .feed-manager {
+            background: white;
+            border: 3px solid var(--ink);
+            box-shadow: 6px 6px 0 var(--lobby-purple);
+            padding: 35px 40px;
+            margin-bottom: 50px;
+        }
+
+        .feed-manager h2 {
+            font-size: 1.3rem;
+            color: var(--lobby-purple);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .add-feed-form {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .add-feed-form input {
+            flex: 1;
+            padding: 12px 18px;
+            border: 2px solid var(--ink);
+            background: var(--paper);
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: var(--ink);
+        }
+
+        .add-feed-form input:focus {
+            outline: none;
+            background: white;
+        }
+
+        .add-feed-form button {
+            padding: 12px 30px;
+            border: 3px solid var(--ink);
+            background: var(--concierge-burgundy);
+            color: white;
+            font-family: 'Century Gothic', sans-serif;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .add-feed-form button:hover {
+            background: var(--uniform-maroon);
+        }
+
+        .add-feed-form button:active {
+            transform: translate(2px, 2px);
+        }
+
+        .feed-list {
+            border-top: 2px solid var(--stationery-cream);
+            padding-top: 20px;
+        }
+
+        .feed-list-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--uniform-maroon);
+            margin-bottom: 12px;
+            font-family: 'Century Gothic', sans-serif;
+        }
+
+        .feed-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            background: var(--stationery-cream);
+            border: 1px solid hsl(45, 30%, 80%);
+        }
+
+        .feed-item-info {
+            flex: 1;
+        }
+
+        .feed-item-title {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--ink);
+        }
+
+        .feed-item-curator {
+            font-size: 0.8rem;
+            color: var(--uniform-maroon);
+            font-style: italic;
+        }
+
+        .feed-item-remove {
+            padding: 6px 12px;
+            border: 2px solid var(--uniform-maroon);
+            background: white;
+            color: var(--uniform-maroon);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            cursor: pointer;
+            font-family: 'Century Gothic', sans-serif;
+            transition: all 0.2s;
+        }
+
+        .feed-item-remove:hover {
+            background: var(--uniform-maroon);
+            color: white;
+        }
+
+        .status-message {
+            padding: 12px 18px;
+            margin-bottom: 15px;
+            border: 2px solid;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .status-message.success {
+            background: hsl(160, 50%, 95%);
+            border-color: hsl(160, 50%, 40%);
+            color: hsl(160, 50%, 25%);
+        }
+
+        .status-message.error {
+            background: hsl(0, 60%, 95%);
+            border-color: hsl(0, 60%, 45%);
+            color: hsl(0, 60%, 30%);
+        }
+
+        /* Filters */
+        .filters {
+            background: white;
+            border: 3px solid var(--ink);
+            box-shadow: 6px 6px 0 var(--mendls-pink);
+            padding: 30px 35px;
+            margin-bottom: 50px;
+        }
+
+        .filter-section {
+            margin-bottom: 20px;
+        }
+
+        .filter-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .filter-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--uniform-maroon);
+            margin-bottom: 12px;
+            font-family: 'Century Gothic', sans-serif;
+            display: block;
+        }
+
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .filter-btn {
+            padding: 8px 18px;
+            border: 2px solid var(--ink);
+            background: white;
+            color: var(--ink);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            font-family: 'Century Gothic', sans-serif;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover {
+            background: var(--stationery-cream);
+        }
+
+        .filter-btn.active {
+            background: var(--concierge-burgundy);
+            color: white;
+            border-color: var(--concierge-burgundy);
+        }
+
+        /* Picks Display */
+        .picks-container {
+            margin-bottom: 60px;
+        }
+
+        .picks-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .picks-count {
+            font-size: 0.9rem;
+            color: var(--uniform-maroon);
+            font-style: italic;
+        }
+
+        .pick {
+            border: 3px solid var(--ink);
+            background: white;
+            margin-bottom: 40px;
+            box-shadow: 6px 6px 0 var(--mendls-pink);
+            transition: all 0.3s;
+        }
+
+        .pick:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0 var(--mendls-pink);
+        }
+
+        .pick-header {
+            background: var(--concierge-burgundy);
+            color: white;
+            padding: 20px 30px;
+            border-bottom: 3px solid var(--ink);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .pick-curator-badge {
+            flex-shrink: 0;
+            padding: 8px 15px;
+            background: white;
+            color: var(--concierge-burgundy);
+            border: 2px solid var(--ink);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-family: 'Century Gothic', sans-serif;
+            font-weight: 600;
+        }
+
+        .pick-title-wrapper {
+            flex: 1;
+            text-align: center;
+        }
+
+        .pick-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            line-height: 1.3;
+            margin: 0;
+        }
+
+        .pick-title a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+
+        .pick-title a:hover {
+            opacity: 0.85;
+        }
+
+        .pick-overlap {
+            flex-shrink: 0;
+            padding: 8px 12px;
+            background: var(--mendls-pink);
+            color: var(--uniform-maroon);
+            border: 2px solid var(--ink);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-family: 'Century Gothic', sans-serif;
+            font-weight: 600;
+        }
+
+        .pick-body {
+            padding: 30px 35px;
+        }
+
+        .pick-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--stationery-cream);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border: 2px solid currentColor;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-family: 'Century Gothic', sans-serif;
+        }
+
+        .badge.reframe { 
+            color: var(--lobby-purple);
+            border-color: var(--lobby-purple);
+        }
+        .badge.cautionary { 
+            color: hsl(0, 60%, 45%);
+            border-color: hsl(0, 60%, 45%);
+        }
+        .badge.trend { 
+            color: hsl(160, 50%, 40%);
+            border-color: hsl(160, 50%, 40%);
+        }
+        .badge.technical { 
+            color: hsl(200, 50%, 40%);
+            border-color: hsl(200, 50%, 40%);
+        }
+        .badge.cultural { 
+            color: hsl(30, 60%, 45%);
+            border-color: hsl(30, 60%, 45%);
+        }
+
+        .effort {
+            color: var(--uniform-maroon);
+            font-size: 0.85rem;
+            font-family: 'Century Gothic', sans-serif;
+            letter-spacing: 0.05em;
+        }
+
+        .source {
+            color: var(--uniform-maroon);
+            font-size: 0.8rem;
+            font-family: 'Century Gothic', sans-serif;
+            letter-spacing: 0.08em;
+        }
+
+        .pick-summary {
+            font-size: 1.1rem;
+            color: var(--ink);
+            margin-bottom: 20px;
+            line-height: 1.7;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .pick-reason {
+            background: var(--stationery-cream);
+            border-left: 4px solid var(--concierge-burgundy);
+            border-right: 4px solid var(--concierge-burgundy);
+            padding: 20px 25px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .pick-reason::before,
+        .pick-reason::after {
+            content: '❝';
+            position: absolute;
+            font-size: 2.5rem;
+            color: var(--mendls-pink);
+            opacity: 0.4;
+            font-family: Georgia, serif;
+        }
+
+        .pick-reason::before {
+            top: 8px;
+            left: 8px;
+        }
+
+        .pick-reason::after {
+            content: '❞';
+            bottom: 8px;
+            right: 8px;
+        }
+
+        .pick-reason-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--concierge-burgundy);
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-align: center;
+            font-family: 'Century Gothic', sans-serif;
+        }
+
+        .pick-reason-text {
+            color: var(--ink);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            position: relative;
+            z-index: 1;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .tag {
+            background: white;
+            color: var(--uniform-maroon);
+            padding: 5px 12px;
+            border: 1px solid var(--uniform-maroon);
+            font-size: 0.75rem;
+            font-family: 'Century Gothic', sans-serif;
+            letter-spacing: 0.05em;
+        }
+
+        .loading, .empty-state {
+            text-align: center;
+            padding: 80px 20px;
+            color: var(--uniform-maroon);
+            font-style: italic;
+            letter-spacing: 0.08em;
+        }
+
+        .empty-state {
+            background: var(--stationery-cream);
+            border: 2px solid hsl(45, 30%, 80%);
+            margin: 40px 0;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 2px solid var(--stationery-cream);
+            text-align: center;
+            color: var(--uniform-maroon);
+            font-size: 0.9rem;
+        }
+
+        footer::before {
+            content: '◆';
+            display: block;
+            margin-bottom: 20px;
+            color: var(--mendls-pink);
+        }
+
+        footer a {
+            color: var(--concierge-burgundy);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        footer a:hover {
+            border-bottom-color: var(--concierge-burgundy);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 640px) {
+            body {
+                padding: 20px 12px;
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+                letter-spacing: 0.08em;
+            }
+
+            header {
+                padding: 25px 20px;
+                outline-offset: 5px;
+            }
+
+            .feed-manager, .filters {
+                padding: 20px 18px;
+                box-shadow: 4px 4px 0 var(--lobby-purple);
+            }
+
+            .add-feed-form {
+                flex-direction: column;
+            }
+
+            .add-feed-form button {
+                width: 100%;
+            }
+
+            .pick-header {
+                flex-direction: column;
+                padding: 15px;
+                text-align: center;
+            }
+
+            .pick-title {
+                font-size: 1.1rem;
+            }
+
+            .pick-body {
+                padding: 20px 18px;
+            }
+
+            .pick {
+                box-shadow: 4px 4px 0 var(--mendls-pink);
+            }
+
+            .pick:hover {
+                transform: none;
+                box-shadow: 4px 4px 0 var(--mendls-pink);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="wes-heading">Picks Reader</h1>
+            <p class="subtitle">A universal reader for _picks-compatible JSON feeds</p>
+            <p class="breadcrumb">
+                <a href="index.html">← Back to Alfred's Weekly Picks</a> · 
+                <a href="directory.json">Browse Directory</a>
+            </p>
+        </header>
+
+        <section class="feed-manager">
+            <h2 class="wes-heading">Manage Feeds</h2>
+            
+            <div id="status-container"></div>
+            
+            <form class="add-feed-form" id="add-feed-form">
+                <input 
+                    type="url" 
+                    id="feed-url-input" 
+                    placeholder="https://example.com/feed.json" 
+                    required
+                >
+                <button type="submit">Add Feed</button>
+            </form>
+
+            <div class="feed-list">
+                <div class="feed-list-title">Subscribed Feeds (<span id="feed-count">0</span>)</div>
+                <div id="feed-list-container"></div>
+            </div>
+        </section>
+
+        <section class="filters">
+            <div class="filter-section">
+                <label class="filter-label">Filter by Category</label>
+                <div class="filter-buttons" id="category-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="reframe">Reframe</button>
+                    <button class="filter-btn" data-filter="cautionary">Cautionary</button>
+                    <button class="filter-btn" data-filter="trend">Trend</button>
+                    <button class="filter-btn" data-filter="technical">Technical</button>
+                    <button class="filter-btn" data-filter="cultural">Cultural</button>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <label class="filter-label">Filter by Curator</label>
+                <div class="filter-buttons" id="curator-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="picks-container">
+            <div class="picks-header">
+                <div class="picks-count" id="picks-count">Loading picks...</div>
+            </div>
+            <div id="picks-display">
+                <div class="loading">Loading...</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>
+                <a href="index.html">Alfred's Weekly Picks</a> · 
+                <a href="directory.json">Feed Directory</a> · 
+                <a href="https://github.com/NKAlfredBot/weekly-picks">View Source</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // State
+        const DEFAULT_FEED = 'https://nkalfredbot.github.io/weekly-picks/feed.json';
+        let feeds = [];
+        let allPicks = [];
+        let currentCategoryFilter = 'all';
+        let currentCuratorFilter = 'all';
+
+        // Initialize
+        async function init() {
+            loadFeedsFromStorage();
+            if (feeds.length === 0) {
+                await addFeed(DEFAULT_FEED, true);
+            }
+            renderFeedList();
+            await loadAllFeeds();
+            setupEventListeners();
+        }
+
+        // Local Storage
+        function loadFeedsFromStorage() {
+            const stored = localStorage.getItem('picksReaderFeeds');
+            if (stored) {
+                try {
+                    feeds = JSON.parse(stored);
+                } catch (e) {
+                    console.error('Failed to parse stored feeds', e);
+                    feeds = [];
+                }
+            }
+        }
+
+        function saveFeedsToStorage() {
+            localStorage.setItem('picksReaderFeeds', JSON.stringify(feeds));
+        }
+
+        // Feed Management
+        async function addFeed(url, silent = false) {
+            // Check if already added
+            if (feeds.find(f => f.url === url)) {
+                if (!silent) showStatus('Feed already added', 'error');
+                return;
+            }
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                
+                const feedData = await response.json();
+                
+                // Validate JSON Feed
+                if (!feedData.version || !feedData.version.includes('jsonfeed.org')) {
+                    throw new Error('Not a valid JSON Feed');
+                }
+
+                if (!feedData.items || !Array.isArray(feedData.items)) {
+                    throw new Error('Feed has no items array');
+                }
+
+                // Check for _picks extension (at least one item should have it)
+                const hasPicksExtension = feedData.items.some(item => item._picks);
+                if (!hasPicksExtension) {
+                    throw new Error('Feed does not use the _picks extension');
+                }
+
+                // Add to feeds
+                feeds.push({
+                    url: url,
+                    title: feedData.title || 'Untitled Feed',
+                    curator: feedData.author?.name || 'Unknown',
+                    data: feedData
+                });
+
+                saveFeedsToStorage();
+                
+                if (!silent) {
+                    showStatus(`Added: ${feedData.title}`, 'success');
+                    renderFeedList();
+                    await loadAllFeeds();
+                }
+                
+                return true;
+            } catch (error) {
+                if (!silent) {
+                    showStatus(`Failed to add feed: ${error.message}`, 'error');
+                }
+                return false;
+            }
+        }
+
+        function removeFeed(url) {
+            feeds = feeds.filter(f => f.url !== url);
+            saveFeedsToStorage();
+            renderFeedList();
+            loadAllFeeds();
+        }
+
+        function renderFeedList() {
+            const container = document.getElementById('feed-list-container');
+            const countEl = document.getElementById('feed-count');
+            
+            countEl.textContent = feeds.length;
+
+            if (feeds.length === 0) {
+                container.innerHTML = '<div class="empty-state">No feeds subscribed</div>';
+                return;
+            }
+
+            container.innerHTML = feeds.map(feed => `
+                <div class="feed-item">
+                    <div class="feed-item-info">
+                        <div class="feed-item-title">${feed.title}</div>
+                        <div class="feed-item-curator">by ${feed.curator}</div>
+                    </div>
+                    <button class="feed-item-remove" onclick="removeFeed('${feed.url}')">Remove</button>
+                </div>
+            `).join('');
+        }
+
+        // Load and merge all feeds
+        async function loadAllFeeds() {
+            allPicks = [];
+            const urlCounts = {};
+
+            // Merge items from all feeds
+            for (const feed of feeds) {
+                if (!feed.data || !feed.data.items) continue;
+
+                feed.data.items.forEach(item => {
+                    if (!item._picks) return;
+
+                    // Track URL overlaps
+                    if (!urlCounts[item.url]) {
+                        urlCounts[item.url] = [];
+                    }
+                    urlCounts[item.url].push(feed.curator);
+
+                    allPicks.push({
+                        ...item,
+                        _curator: feed.curator,
+                        _feedTitle: feed.title,
+                        _overlaps: [] // will be filled later
+                    });
+                });
+            }
+
+            // Add overlap info
+            allPicks.forEach(pick => {
+                pick._overlaps = urlCounts[pick.url] || [];
+            });
+
+            // Sort by date (newest first)
+            allPicks.sort((a, b) => {
+                const dateA = new Date(a.date_published || 0);
+                const dateB = new Date(b.date_published || 0);
+                return dateB - dateA;
+            });
+
+            updateCuratorFilters();
+            renderPicks();
+        }
+
+        // Filtering
+        function updateCuratorFilters() {
+            const curators = [...new Set(allPicks.map(p => p._curator))].sort();
+            const container = document.getElementById('curator-filters');
+            
+            const buttons = curators.map(curator => 
+                `<button class="filter-btn" data-filter="${curator}">${curator}</button>`
+            ).join('');
+            
+            container.innerHTML = `<button class="filter-btn active" data-filter="all">All</button>${buttons}`;
+        }
+
+        function filterPicks() {
+            let filtered = allPicks;
+
+            if (currentCategoryFilter !== 'all') {
+                filtered = filtered.filter(p => 
+                    p._picks?.category === currentCategoryFilter
+                );
+            }
+
+            if (currentCuratorFilter !== 'all') {
+                filtered = filtered.filter(p => 
+                    p._curator === currentCuratorFilter
+                );
+            }
+
+            return filtered;
+        }
+
+        function renderPicks() {
+            const filtered = filterPicks();
+            const container = document.getElementById('picks-display');
+            const countEl = document.getElementById('picks-count');
+
+            countEl.textContent = `${filtered.length} pick${filtered.length !== 1 ? 's' : ''}`;
+
+            if (filtered.length === 0) {
+                container.innerHTML = '<div class="empty-state">No picks match your filters</div>';
+                return;
+            }
+
+            container.innerHTML = filtered.map(pick => renderPick(pick)).join('');
+        }
+
+        function renderPick(item) {
+            const picks = item._picks || {};
+            const category = picks.category || 'general';
+            const effort = picks.effort || '';
+            const sourceDomain = picks.source_domain || new URL(item.url).hostname;
+            const hasOverlap = item._overlaps.length > 1;
+
+            const effortIcons = {
+                'quick-read': '⚡ Quick read',
+                'medium-read': '📖 Medium read',
+                'deep-dive': '🔬 Deep dive'
+            };
+
+            return `
+                <article class="pick">
+                    <div class="pick-header">
+                        <div class="pick-curator-badge">${item._curator}</div>
+                        <div class="pick-title-wrapper">
+                            <h3 class="pick-title">
+                                <a href="${item.url}" target="_blank" rel="noopener">${item.title}</a>
+                            </h3>
+                        </div>
+                        ${hasOverlap ? `
+                            <div class="pick-overlap" title="${item._overlaps.join(', ')}">
+                                ${item._overlaps.length}× picked
+                            </div>
+                        ` : ''}
+                    </div>
+                    
+                    <div class="pick-body">
+                        <div class="pick-meta">
+                            <span class="badge ${category}">${category}</span>
+                            ${effort ? `<span class="effort">${effortIcons[effort] || effort}</span>` : ''}
+                            <span class="source">${sourceDomain}</span>
+                        </div>
+
+                        ${item.summary ? `<p class="pick-summary">${item.summary}</p>` : ''}
+
+                        ${picks.selection_reason ? `
+                            <div class="pick-reason">
+                                <div class="pick-reason-label">Why This Pick</div>
+                                <div class="pick-reason-text">${picks.selection_reason}</div>
+                            </div>
+                        ` : ''}
+
+                        ${item.tags && item.tags.length ? `
+                            <div class="tags">
+                                ${item.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                            </div>
+                        ` : ''}
+                    </div>
+                </article>
+            `;
+        }
+
+        // UI Helpers
+        function showStatus(message, type) {
+            const container = document.getElementById('status-container');
+            container.innerHTML = `<div class="status-message ${type}">${message}</div>`;
+            setTimeout(() => {
+                container.innerHTML = '';
+            }, 5000);
+        }
+
+        // Event Listeners
+        function setupEventListeners() {
+            // Add feed form
+            document.getElementById('add-feed-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const input = document.getElementById('feed-url-input');
+                const url = input.value.trim();
+                
+                const success = await addFeed(url);
+                if (success) {
+                    input.value = '';
+                    renderFeedList();
+                    await loadAllFeeds();
+                }
+            });
+
+            // Category filters
+            document.getElementById('category-filters').addEventListener('click', (e) => {
+                if (e.target.classList.contains('filter-btn')) {
+                    document.querySelectorAll('#category-filters .filter-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    e.target.classList.add('active');
+                    currentCategoryFilter = e.target.dataset.filter;
+                    renderPicks();
+                }
+            });
+
+            // Curator filters
+            document.getElementById('curator-filters').addEventListener('click', (e) => {
+                if (e.target.classList.contains('filter-btn')) {
+                    document.querySelectorAll('#curator-filters .filter-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    e.target.classList.add('active');
+                    currentCuratorFilter = e.target.dataset.filter;
+                    renderPicks();
+                }
+            });
+        }
+
+        // Start
+        init();
+    </script>
+</body>
+</html>
