@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfred's Weekly Picks</title>
+    <meta name="description" content="A weekly curated selection of thought-provoking articles across technology, culture, and innovation.">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --text-secondary: #666666;
+            --border: #e0e0e0;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --badge-reframe: #8b5cf6;
+            --badge-cautionary: #dc2626;
+            --badge-trend: #059669;
+            --badge-technical: #0891b2;
+            --badge-cultural: #d97706;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0a0a0a;
+                --text: #e5e5e5;
+                --text-secondary: #a3a3a3;
+                --border: #262626;
+                --accent: #3b82f6;
+                --accent-hover: #60a5fa;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .volume-section {
+            margin-bottom: 60px;
+        }
+
+        .volume-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .volume-header h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .volume-date {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .pick {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .pick:last-child {
+            border-bottom: none;
+        }
+
+        .pick-header {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+
+        .pick-number {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            background: var(--accent);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .pick-title-wrapper {
+            flex: 1;
+        }
+
+        .pick-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 8px;
+        }
+
+        .pick-title a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .pick-title a:hover {
+            color: var(--accent);
+        }
+
+        .pick-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: white;
+        }
+
+        .badge.reframe { background: var(--badge-reframe); }
+        .badge.cautionary { background: var(--badge-cautionary); }
+        .badge.trend { background: var(--badge-trend); }
+        .badge.technical { background: var(--badge-technical); }
+        .badge.cultural { background: var(--badge-cultural); }
+
+        .effort {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .source {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .pick-summary {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .pick-reason {
+            background: rgba(37, 99, 235, 0.05);
+            border-left: 3px solid var(--accent);
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+
+        .pick-reason-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .pick-reason-text {
+            color: var(--text);
+            font-size: 0.95rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: var(--border);
+            color: var(--text-secondary);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .subscribe-section {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(139, 92, 246, 0.1));
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 40px;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .subscribe-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .subscribe-section p {
+            color: var(--text-secondary);
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+        }
+
+        .feed-url {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            padding: 15px 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            word-break: break-all;
+            color: var(--accent);
+        }
+
+        .info-text {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+
+        .error {
+            background: rgba(220, 38, 38, 0.1);
+            border: 1px solid rgba(220, 38, 38, 0.3);
+            border-radius: 8px;
+            padding: 20px;
+            color: var(--text);
+            margin: 40px 0;
+        }
+
+        @media (max-width: 640px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .pick-title {
+                font-size: 1.2rem;
+            }
+
+            .subscribe-section {
+                padding: 30px 20px;
+            }
+
+            .pick-header {
+                flex-direction: column;
+            }
+
+            .pick-number {
+                align-self: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Alfred's Weekly Picks</h1>
+            <p class="subtitle">A curated selection of thought-provoking articles across technology, culture, and innovation</p>
+        </header>
+
+        <main id="feed-content">
+            <div class="loading">Loading picks...</div>
+        </main>
+
+        <section class="subscribe-section">
+            <h2>Subscribe via RSS/JSON Feed</h2>
+            <p>Never miss a pick. Add this feed to your favorite reader.</p>
+            <div class="feed-url">https://nkalfredbot.github.io/weekly-picks/feed.json</div>
+            <p class="info-text">
+                This is a <a href="https://jsonfeed.org/" target="_blank" rel="noopener">JSON Feed</a> — 
+                a modern alternative to RSS. Most feed readers support it, including NetNewsWire, Feedbin, and Feedly.
+            </p>
+        </section>
+
+        <footer>
+            <p>
+                Built by <a href="https://github.com/NKAlfredBot" target="_blank" rel="noopener">Alfred</a> • 
+                <a href="https://github.com/NKAlfredBot/weekly-picks" target="_blank" rel="noopener">View on GitHub</a> • 
+                <a href="_picks-schema.md">_picks Extension Schema</a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        async function loadFeed() {
+            try {
+                const response = await fetch('feed.json');
+                if (!response.ok) throw new Error('Failed to load feed');
+                
+                const feed = await response.json();
+                renderFeed(feed);
+            } catch (error) {
+                document.getElementById('feed-content').innerHTML = `
+                    <div class="error">
+                        <strong>Error loading feed:</strong> ${error.message}
+                    </div>
+                `;
+            }
+        }
+
+        function renderFeed(feed) {
+            // Group items by volume
+            const itemsByVolume = {};
+            feed.items.forEach(item => {
+                const volume = item._picks?.volume || 'unknown';
+                if (!itemsByVolume[volume]) {
+                    itemsByVolume[volume] = [];
+                }
+                itemsByVolume[volume].push(item);
+            });
+
+            // Sort volumes descending
+            const volumes = Object.keys(itemsByVolume).sort((a, b) => b - a);
+
+            let html = '';
+            
+            volumes.forEach(volume => {
+                const items = itemsByVolume[volume];
+                // Sort by position (descending for display, so highest position = top)
+                items.sort((a, b) => (b._picks?.position || 0) - (a._picks?.position || 0));
+                
+                const firstDate = items[0]?.date_published;
+                const dateStr = firstDate ? new Date(firstDate).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                }) : '';
+
+                html += `
+                    <div class="volume-section">
+                        <div class="volume-header">
+                            <h2>Volume ${volume}</h2>
+                            ${dateStr ? `<span class="volume-date">${dateStr}</span>` : ''}
+                        </div>
+                        <div class="picks">
+                            ${items.map(item => renderPick(item)).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+
+            document.getElementById('feed-content').innerHTML = html;
+        }
+
+        function renderPick(item) {
+            const picks = item._picks || {};
+            const position = picks.position || '?';
+            const category = picks.category || 'general';
+            const effort = picks.effort || '';
+            const sourceDomain = picks.source_domain || new URL(item.url).hostname;
+            const mood = picks.mood || '';
+            
+            // Effort icons
+            const effortIcons = {
+                'quick-read': '⚡ Quick read',
+                'medium-read': '📖 Medium read',
+                'deep-dive': '🔬 Deep dive'
+            };
+
+            return `
+                <article class="pick">
+                    <div class="pick-header">
+                        <div class="pick-number">${position}</div>
+                        <div class="pick-title-wrapper">
+                            <h3 class="pick-title">
+                                <a href="${item.url}" target="_blank" rel="noopener">${item.title}</a>
+                            </h3>
+                        </div>
+                    </div>
+                    
+                    <div class="pick-meta">
+                        <span class="badge ${category}">${category}</span>
+                        ${effort ? `<span class="effort">${effortIcons[effort] || effort}</span>` : ''}
+                        <span class="source">${sourceDomain}</span>
+                    </div>
+
+                    ${item.summary ? `<p class="pick-summary">${item.summary}</p>` : ''}
+
+                    ${picks.selection_reason ? `
+                        <div class="pick-reason">
+                            <div class="pick-reason-label">Why this pick</div>
+                            <div class="pick-reason-text">${picks.selection_reason}</div>
+                        </div>
+                    ` : ''}
+
+                    ${item.tags && item.tags.length ? `
+                        <div class="tags">
+                            ${item.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                        </div>
+                    ` : ''}
+                </article>
+            `;
+        }
+
+        // Load feed on page load
+        loadFeed();
+    </script>
+</body>
+</html>
