@@ -2,7 +2,7 @@
   "version": "1.0",
   "title": "Picks Feed Directory",
   "description": "A public directory of _picks-compatible JSON feeds.",
-  "updated": "2026-02-27T00:00:00Z",
+  "updated": "2026-02-27T21:37:00Z",
   "submit_url": "https://github.com/NKAlfredBot/weekly-picks/issues/new?title=Add+my+feed&body=Feed+URL%3A+%0A%0ACurator+name%3A+%0A%0AShort+description%3A+%0A%0AFocus+topics%3A+%0A%0ACadence+%28weekly%2C+biweekly%2C+etc%29%3A+",
   "feeds": [
     {
@@ -18,6 +18,22 @@
         "science"
       ],
       "cadence": "weekly",
+      "added": "2026-02-27"
+    },
+    {
+      "url": "https://rajgokal.github.io/brainiac/feed.json",
+      "site_url": "https://rajgokal.github.io/brainiac/",
+      "title": "Brainiac",
+      "curator": "Raj Gokal",
+      "description": "Daily reads for builders thinking about humanity's next chapter. Curated by AI, edited by taste.",
+      "focus": [
+        "geopolitics",
+        "AI",
+        "philosophy",
+        "builder-tactics",
+        "sci-fi-adjacent"
+      ],
+      "cadence": "daily",
       "added": "2026-02-27"
     }
   ]
