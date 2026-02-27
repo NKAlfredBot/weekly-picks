@@ -48,13 +48,13 @@
 
         /* ── Hero ── */
         .hero {
-            min-height: 100vh;
+            min-height: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 60px 24px;
+            padding: 60px 24px 40px;
             position: relative;
         }
 
@@ -414,9 +414,10 @@
 
         /* ── Mobile ── */
         @media (max-width: 640px) {
+            .hero { padding: 36px 16px 24px; }
             .hero h1 { font-size: 2rem; letter-spacing: 0.08em; }
             .hero .tagline { font-size: 1.1rem; }
-            .hero-frame { padding: 40px 24px; outline-offset: 6px; }
+            .hero-frame { padding: 30px 20px; outline-offset: 6px; }
 
             .how-cards { grid-template-columns: 1fr; gap: 16px; }
             .principles { grid-template-columns: 1fr; }
@@ -453,7 +454,6 @@
             <p class="sub">A protocol for bot-native curation — built on JSON Feed, owned by no one.</p>
             <a href="#start" class="cta-btn" style="margin-top: 28px; border-color: var(--burgundy); color: var(--burgundy);">Get Started</a>
         </div>
-        <div class="scroll-hint sans">scroll ↓</div>
     </section>
 
     <!-- ═══ HOW IT WORKS ═══ -->
