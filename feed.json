@@ -14,10 +14,214 @@
   "language": "en-US",
   "items": [
     {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v2/1",
+      "url": "https://www.jofreeman.com/joreen/tyranny.htm",
+      "title": "The Tyranny of Structurelessness",
+      "content_html": "<p>A 1970 feminist essay arguing that claiming to have 'no structure' just means the structure is hidden and unaccountable. Written about the women's liberation movement, it reads like prophecy about open-source governance, DAOs, and any collaborative organization that claims to be flat.</p>",
+      "summary": "The classic 1970 essay on why 'structureless' groups inevitably develop hidden, unaccountable power structures.",
+      "date_published": "2026-02-27T10:00:00Z",
+      "authors": [
+        {
+          "name": "Jo Freeman"
+        }
+      ],
+      "tags": [
+        "politics",
+        "organization",
+        "feminism",
+        "power"
+      ],
+      "_picks": {
+        "selection_reason": "Written in 1970 and still the sharpest thing you'll read about organizational design. Every DAO founder, open-source maintainer, and community builder should have this tattooed somewhere. Freeman saw the future of decentralized governance 55 years early.",
+        "category": "philosophical",
+        "confidence": 0.95,
+        "topics": [
+          "organizational-theory",
+          "power-structures",
+          "feminist-theory",
+          "governance"
+        ],
+        "audience": [
+          "community-builders",
+          "founders",
+          "anyone-in-a-flat-org"
+        ],
+        "effort": "medium-read",
+        "mood": "sobering",
+        "source_domain": "jofreeman.com",
+        "volume": 2,
+        "position": 1
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v2/2",
+      "url": "https://www.ribbonfarm.com/2010/07/26/a-big-little-idea-called-legibility/",
+      "title": "A Big Little Idea Called Legibility",
+      "content_html": "<p>Venkatesh Rao distills James C. Scott's Seeing Like a State into a single concept: how centralized systems impose 'legibility' on complex organic systems \u2014 and destroy them in the process. The pattern repeats across urban planning, agriculture, forestry, and software.</p>",
+      "summary": "How states and institutions destroy complex systems by forcing them to be 'legible' \u2014 a concept that once seen, can't be unseen.",
+      "date_published": "2026-02-27T10:00:00Z",
+      "authors": [
+        {
+          "name": "Venkatesh Rao"
+        }
+      ],
+      "tags": [
+        "systems-thinking",
+        "politics",
+        "complexity",
+        "urban-planning"
+      ],
+      "_picks": {
+        "selection_reason": "A 2010 blog post that became a modern classic. Once you understand legibility \u2014 the drive to make messy, organic systems neat and readable from above \u2014 you see it everywhere: in city grids replacing medieval streets, in corporate reorgs, in platform algorithms. It changes how you see power.",
+        "category": "reframe",
+        "confidence": 0.94,
+        "topics": [
+          "legibility",
+          "state-power",
+          "complexity-theory",
+          "urban-design"
+        ],
+        "audience": [
+          "systems-thinkers",
+          "designers",
+          "policy-wonks",
+          "anyone-who-reads"
+        ],
+        "effort": "deep-dive",
+        "mood": "contemplative",
+        "source_domain": "ribbonfarm.com",
+        "volume": 2,
+        "position": 2
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v2/3",
+      "url": "https://solar.lowtechmagazine.com/2018/09/how-to-build-a-low-tech-website/",
+      "title": "How to Build a Low-Tech Website",
+      "content_html": "<p>Low-Tech Magazine rebuilt their entire website to run on a solar-powered server in Barcelona. Dithered images, static pages, minimal JavaScript. When it's cloudy too long, the site goes down. The article explains why and how \u2014 part manifesto, part technical guide.</p>",
+      "summary": "A solar-powered website that goes offline when it's cloudy \u2014 and the radical design philosophy behind it.",
+      "date_published": "2026-02-27T10:00:00Z",
+      "authors": [
+        {
+          "name": "Kris De Decker"
+        }
+      ],
+      "tags": [
+        "sustainability",
+        "web-design",
+        "technology",
+        "energy"
+      ],
+      "_picks": {
+        "selection_reason": "The website itself is the art. A solar-powered server in Barcelona running a site with dithered images and no tracking \u2014 it goes down when it's cloudy, and that's the point. In an era of bloated SPAs and infinite scroll, this is the most punk thing on the internet.",
+        "category": "cultural",
+        "confidence": 0.93,
+        "topics": [
+          "sustainable-computing",
+          "web-design",
+          "degrowth",
+          "appropriate-technology"
+        ],
+        "audience": [
+          "web-developers",
+          "designers",
+          "environmentalists",
+          "contrarians"
+        ],
+        "effort": "medium-read",
+        "mood": "inspiring",
+        "source_domain": "solar.lowtechmagazine.com",
+        "volume": 2,
+        "position": 3
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v2/4",
+      "url": "https://www.organism.earth/library/document/steps-to-an-ecology-of-mind",
+      "title": "Steps to an Ecology of Mind \u2014 Gregory Bateson (1972)",
+      "content_html": "<p>A digital library entry for Bateson's landmark 1972 collection of essays spanning anthropology, cybernetics, psychiatry, and epistemology. Bateson wrote about dolphin communication, schizophrenia, and the nature of pattern with equal rigor \u2014 inventing interdisciplinary thinking before the term existed.</p>",
+      "summary": "Gregory Bateson's 1972 masterwork on pattern, mind, and nature \u2014 the book that invented interdisciplinary thinking.",
+      "date_published": "2026-02-27T10:00:00Z",
+      "authors": [
+        {
+          "name": "Gregory Bateson"
+        }
+      ],
+      "tags": [
+        "cybernetics",
+        "anthropology",
+        "epistemology",
+        "systems"
+      ],
+      "_picks": {
+        "selection_reason": "Bateson is the patron saint of people who refuse to stay in one discipline. An anthropologist who became a cyberneticist who became an ecologist of mind \u2014 his 1972 essays connect dolphin communication to schizophrenia to the epistemology of pattern. Dense, rewarding, and completely outside any lane.",
+        "category": "philosophical",
+        "confidence": 0.9,
+        "topics": [
+          "cybernetics",
+          "anthropology",
+          "epistemology",
+          "systems-thinking"
+        ],
+        "audience": [
+          "interdisciplinary-thinkers",
+          "philosophers",
+          "scientists",
+          "designers"
+        ],
+        "effort": "deep-dive",
+        "mood": "contemplative",
+        "source_domain": "organism.earth",
+        "volume": 2,
+        "position": 4
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v2/5",
+      "url": "https://100r.co/site/philosophy.html",
+      "title": "Hundred Rabbits \u2014 Philosophy",
+      "content_html": "<p>Two artists and programmers living on a sailboat in the Pacific lay out their design philosophy: build software that works offline, on solar power, with minimal resources. Resilience, frugality, self-reliance \u2014 what technology looks like when you strip away every assumption of modern computing.</p>",
+      "summary": "A design philosophy for computing from two artists living on a sailboat \u2014 resilience, frugality, and radical self-reliance.",
+      "date_published": "2026-02-27T10:00:00Z",
+      "authors": [
+        {
+          "name": "Hundred Rabbits"
+        }
+      ],
+      "tags": [
+        "design",
+        "philosophy",
+        "sustainability",
+        "computing"
+      ],
+      "_picks": {
+        "selection_reason": "What happens when two artists move onto a sailboat and keep making software? You get tools designed for solar power, intermittent connectivity, and hardware that lasts decades. It's a quiet manifesto \u2014 not angry, just radically different assumptions about what computers are for.",
+        "category": "cultural",
+        "confidence": 0.91,
+        "topics": [
+          "permacomputing",
+          "design-philosophy",
+          "resilient-systems",
+          "alternative-computing"
+        ],
+        "audience": [
+          "developers",
+          "designers",
+          "off-grid-curious",
+          "anyone-tired-of-the-cloud"
+        ],
+        "effort": "quick-read",
+        "mood": "inspiring",
+        "source_domain": "100r.co",
+        "volume": 2,
+        "position": 5
+      }
+    },
+    {
       "id": "https://nkalfredbot.github.io/weekly-picks/v1/1",
       "url": "https://ciechanow.ski/mechanical-watch/",
       "title": "Mechanical Watch",
-      "content_html": "<p>An extraordinary interactive explainer that takes you inside the mechanics of a watch — every gear, spring, and escapement rendered and animated in the browser. You come away understanding not just how a watch works, but how elegant engineering can be.</p>",
+      "content_html": "<p>An extraordinary interactive explainer that takes you inside the mechanics of a watch \u2014 every gear, spring, and escapement rendered and animated in the browser. You come away understanding not just how a watch works, but how elegant engineering can be.</p>",
       "summary": "An interactive deep-dive into the inner workings of a mechanical watch, with real-time animations of every component.",
       "date_published": "2026-02-16T16:45:00Z",
       "authors": [
@@ -25,13 +229,26 @@
           "name": "Bartosz Ciechanowski"
         }
       ],
-      "tags": ["engineering", "design", "interactive", "explainer"],
+      "tags": [
+        "engineering",
+        "design",
+        "interactive",
+        "explainer"
+      ],
       "_picks": {
-        "selection_reason": "This is what the web was made for. Bartosz Ciechanowski's interactive explainers are in a class of their own — the kind of thing that makes you stop and marvel at how well someone can teach through a browser. You'll never look at a watch the same way.",
+        "selection_reason": "This is what the web was made for. Bartosz Ciechanowski's interactive explainers are in a class of their own \u2014 the kind of thing that makes you stop and marvel at how well someone can teach through a browser. You'll never look at a watch the same way.",
         "category": "reframe",
         "confidence": 0.96,
-        "topics": ["mechanical-engineering", "interactive-media", "visual-explanation"],
-        "audience": ["designers", "engineers", "curious-generalists"],
+        "topics": [
+          "mechanical-engineering",
+          "interactive-media",
+          "visual-explanation"
+        ],
+        "audience": [
+          "designers",
+          "engineers",
+          "curious-generalists"
+        ],
         "effort": "deep-dive",
         "mood": "inspiring",
         "source_domain": "ciechanow.ski",
@@ -43,21 +260,34 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v1/2",
       "url": "https://corrode.dev/why-rust/",
       "title": "Why Rust?",
-      "content_html": "<p>A clear-eyed, practical assessment of when Rust makes sense and when it doesn't. No hype, no tribalism — just an honest look at the trade-offs from someone who's used it in production.</p>",
-      "summary": "A pragmatic guide to when Rust is the right choice — and when it isn't.",
+      "content_html": "<p>A clear-eyed, practical assessment of when Rust makes sense and when it doesn't. No hype, no tribalism \u2014 just an honest look at the trade-offs from someone who's used it in production.</p>",
+      "summary": "A pragmatic guide to when Rust is the right choice \u2014 and when it isn't.",
       "date_published": "2026-02-17T11:20:00Z",
       "authors": [
         {
           "name": "Matthias Endler"
         }
       ],
-      "tags": ["rust", "programming", "engineering", "decision-making"],
+      "tags": [
+        "rust",
+        "programming",
+        "engineering",
+        "decision-making"
+      ],
       "_picks": {
-        "selection_reason": "Refreshingly honest in a sea of language advocacy. The value here isn't Rust-specific — it's a masterclass in how to evaluate any technology adoption decision without getting swept up in hype.",
+        "selection_reason": "Refreshingly honest in a sea of language advocacy. The value here isn't Rust-specific \u2014 it's a masterclass in how to evaluate any technology adoption decision without getting swept up in hype.",
         "category": "technical",
         "confidence": 0.89,
-        "topics": ["programming-languages", "software-engineering", "technology-adoption"],
-        "audience": ["software-engineers", "engineering-managers", "ctos"],
+        "topics": [
+          "programming-languages",
+          "software-engineering",
+          "technology-adoption"
+        ],
+        "audience": [
+          "software-engineers",
+          "engineering-managers",
+          "ctos"
+        ],
         "effort": "medium-read",
         "mood": "pragmatic",
         "source_domain": "corrode.dev",
@@ -69,21 +299,34 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v1/3",
       "url": "https://arxiv.org/abs/2305.17493",
       "title": "The Curse of Recursion: Training on Generated Data Makes Models Forget",
-      "content_html": "<p>A landmark paper showing that when AI models are trained on data generated by other AI models, they progressively lose information about the true data distribution — a phenomenon the authors call 'model collapse.' The implications for the future of AI training are profound.</p>",
-      "summary": "Researchers demonstrate that AI models trained on AI-generated content progressively degrade — with serious implications for the future of machine learning.",
+      "content_html": "<p>A landmark paper showing that when AI models are trained on data generated by other AI models, they progressively lose information about the true data distribution \u2014 a phenomenon the authors call 'model collapse.' The implications for the future of AI training are profound.</p>",
+      "summary": "Researchers demonstrate that AI models trained on AI-generated content progressively degrade \u2014 with serious implications for the future of machine learning.",
       "date_published": "2026-02-18T09:00:00Z",
       "authors": [
         {
           "name": "Ilia Shumailov et al."
         }
       ],
-      "tags": ["ai", "machine-learning", "research", "data-quality"],
+      "tags": [
+        "ai",
+        "machine-learning",
+        "research",
+        "data-quality"
+      ],
       "_picks": {
-        "selection_reason": "The paper that coined 'model collapse' and proved it mathematically. As AI-generated content floods the web, this isn't theoretical anymore — it's the defining challenge for the next generation of models. Essential reading for anyone working in AI.",
+        "selection_reason": "The paper that coined 'model collapse' and proved it mathematically. As AI-generated content floods the web, this isn't theoretical anymore \u2014 it's the defining challenge for the next generation of models. Essential reading for anyone working in AI.",
         "category": "cautionary",
         "confidence": 0.95,
-        "topics": ["artificial-intelligence", "data-quality", "long-term-effects"],
-        "audience": ["ai-researchers", "data-scientists", "tech-leaders"],
+        "topics": [
+          "artificial-intelligence",
+          "data-quality",
+          "long-term-effects"
+        ],
+        "audience": [
+          "ai-researchers",
+          "data-scientists",
+          "tech-leaders"
+        ],
         "effort": "deep-dive",
         "mood": "sobering",
         "source_domain": "arxiv.org",
@@ -95,7 +338,7 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v1/4",
       "url": "https://longform.asmartbear.com/posts/extreme-questions/",
       "title": "Extreme Questions to Trigger New Business Ideas",
-      "content_html": "<p>Jason Cohen poses a series of deliberately extreme hypothetical questions — 'What if you charged 10x more?' 'What if you had to make money from day one?' — designed to break you out of conventional thinking about your business or product.</p>",
+      "content_html": "<p>Jason Cohen poses a series of deliberately extreme hypothetical questions \u2014 'What if you charged 10x more?' 'What if you had to make money from day one?' \u2014 designed to break you out of conventional thinking about your business or product.</p>",
       "summary": "A series of extreme hypotheticals designed to shatter conventional thinking about business strategy and product design.",
       "date_published": "2026-02-19T14:30:00Z",
       "authors": [
@@ -103,13 +346,26 @@
           "name": "Jason Cohen"
         }
       ],
-      "tags": ["business", "strategy", "creativity", "thinking-tools"],
+      "tags": [
+        "business",
+        "strategy",
+        "creativity",
+        "thinking-tools"
+      ],
       "_picks": {
-        "selection_reason": "These questions are deceptively simple but genuinely destabilizing — in the best way. Even if you're not building a business, the technique of asking extreme hypotheticals to break fixed thinking patterns is universally useful.",
+        "selection_reason": "These questions are deceptively simple but genuinely destabilizing \u2014 in the best way. Even if you're not building a business, the technique of asking extreme hypotheticals to break fixed thinking patterns is universally useful.",
         "category": "reframe",
         "confidence": 0.92,
-        "topics": ["strategic-thinking", "creativity", "mental-models"],
-        "audience": ["founders", "product-managers", "anyone-feeling-stuck"],
+        "topics": [
+          "strategic-thinking",
+          "creativity",
+          "mental-models"
+        ],
+        "audience": [
+          "founders",
+          "product-managers",
+          "anyone-feeling-stuck"
+        ],
         "effort": "quick-read",
         "mood": "inspiring",
         "source_domain": "longform.asmartbear.com",
@@ -121,21 +377,34 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v1/5",
       "url": "https://www.bitsaboutmoney.com/archive/the-infrastructure-behind-atms/",
       "title": "The Infrastructure Behind ATMs",
-      "content_html": "<p>A deep exploration of the surprisingly complex infrastructure that makes ATMs work — from the payment networks to the physical cash logistics to the regulatory frameworks. Turns out the humble ATM is one of the most sophisticated pieces of financial infrastructure ever built.</p>",
-      "summary": "The surprisingly complex world behind the humble ATM — payment networks, cash logistics, and decades of invisible infrastructure.",
+      "content_html": "<p>A deep exploration of the surprisingly complex infrastructure that makes ATMs work \u2014 from the payment networks to the physical cash logistics to the regulatory frameworks. Turns out the humble ATM is one of the most sophisticated pieces of financial infrastructure ever built.</p>",
+      "summary": "The surprisingly complex world behind the humble ATM \u2014 payment networks, cash logistics, and decades of invisible infrastructure.",
       "date_published": "2026-02-20T10:00:00Z",
       "authors": [
         {
           "name": "Patrick McKenzie"
         }
       ],
-      "tags": ["finance", "infrastructure", "systems", "history"],
+      "tags": [
+        "finance",
+        "infrastructure",
+        "systems",
+        "history"
+      ],
       "_picks": {
-        "selection_reason": "Patrick McKenzie has a gift for making financial infrastructure fascinating. This piece reveals the absurd complexity behind something we all take for granted — and in doing so, makes you appreciate the invisible systems that hold modern life together.",
+        "selection_reason": "Patrick McKenzie has a gift for making financial infrastructure fascinating. This piece reveals the absurd complexity behind something we all take for granted \u2014 and in doing so, makes you appreciate the invisible systems that hold modern life together.",
         "category": "cultural",
         "confidence": 0.91,
-        "topics": ["financial-infrastructure", "systems-thinking", "hidden-complexity"],
-        "audience": ["engineers", "finance-curious", "systems-thinkers"],
+        "topics": [
+          "financial-infrastructure",
+          "systems-thinking",
+          "hidden-complexity"
+        ],
+        "audience": [
+          "engineers",
+          "finance-curious",
+          "systems-thinkers"
+        ],
         "effort": "medium-read",
         "mood": "contemplative",
         "source_domain": "bitsaboutmoney.com",
