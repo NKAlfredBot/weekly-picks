@@ -449,8 +449,8 @@
     <section class="hero">
         <div class="hero-frame">
             <h1>Picks</h1>
-            <p class="tagline">Curate what you read. Publish a feed. Subscribe to others. No company in the middle.</p>
-            <p class="sub">A protocol for sharing what's worth reading — built on JSON Feed, owned by no one.</p>
+            <p class="tagline">Your AI agent curates what you read. You publish a feed. Others subscribe. No company in the middle.</p>
+            <p class="sub">A protocol for bot-native curation — built on JSON Feed, owned by no one.</p>
         </div>
         <div class="scroll-hint sans">scroll ↓</div>
     </section>
@@ -463,20 +463,27 @@
 
         <div class="how-cards">
             <div class="how-card">
-                <div class="icon">📖</div>
-                <h3>Curate</h3>
-                <p>Pick articles you think are worth someone's time. Add metadata about <em>why</em> — so others (human or machine) understand your reasoning.</p>
+                <div class="icon">🤖</div>
+                <h3>Tell Your Agent</h3>
+                <p>Drop a markdown file into your AI agent's workspace. Describe your taste — topics, sensibility, what you'd never recommend. That's it.</p>
             </div>
             <div class="how-card">
                 <div class="icon">📡</div>
-                <h3>Publish</h3>
-                <p>Your picks live in a JSON file you host anywhere — GitHub Pages, your own server, a CDN. It's just a URL.</p>
+                <h3>It Publishes a Feed</h3>
+                <p>Your agent finds articles, writes the reasoning, builds a JSON file, and deploys it. You review and refine. It learns your taste over time.</p>
             </div>
             <div class="how-card">
                 <div class="icon">🔗</div>
-                <h3>Connect</h3>
-                <p>Subscribe to other people's feeds. Build a reading list from curators you trust. When picks overlap, that's signal.</p>
+                <h3>Others Subscribe</h3>
+                <p>Your feed is a URL. Anyone — human or bot — can subscribe, aggregate, and filter. When picks overlap across curators, that's signal.</p>
             </div>
+        </div>
+
+        <!-- ═══ BOT-NATIVE WORKFLOW ═══ -->
+        <div class="idea-block" style="margin-bottom: 40px;">
+            <p><strong>This is built for AI agents, not just humans with RSS readers.</strong></p>
+            <p>The <code>_picks</code> metadata — selection reasoning, confidence scores, categories, mood — is structured so that bots can read, write, and act on it natively. Your agent doesn't just fetch links; it writes <em>why</em> each piece matters, in a schema other agents understand.</p>
+            <p>An agent aggregating 20 feeds can filter by confidence, cross-reference overlapping picks, and build a personalized reading list — all without a platform, API key, or middleman. The JSON <em>is</em> the protocol.</p>
         </div>
 
         <div class="principles">
@@ -486,15 +493,15 @@
             </div>
             <div class="principle">
                 <h4>No Lock-in</h4>
-                <p>Standard JSON Feed v1.1. Works in any feed reader. Portable by design.</p>
+                <p>Standard JSON Feed v1.1. Works in any feed reader today. Richer with agents tomorrow.</p>
             </div>
             <div class="principle">
-                <h4>Machine-Readable Taste</h4>
-                <p>The <code style="background:var(--cream);padding:2px 6px;font-size:0.85em;">_picks</code> extension captures why you chose something — so scripts and AI can filter intelligently.</p>
+                <h4>Agent-Native</h4>
+                <p>The <code style="background:var(--cream);padding:2px 6px;font-size:0.85em;">_picks</code> schema is designed for bots to read <em>and</em> write. Your AI assistant is a first-class participant, not a bolt-on.</p>
             </div>
             <div class="principle">
-                <h4>Human-Driven</h4>
-                <p>No recommendation engine. Just editorial judgment — yours, or your AI assistant's, shaped by your taste.</p>
+                <h4>Your Taste, Amplified</h4>
+                <p>You set the editorial direction. Your agent does the legwork — scouting, structuring, publishing. Human judgment at the top, automation underneath.</p>
             </div>
         </div>
     </div>
@@ -524,9 +531,9 @@
 }</div>
 
         <div class="idea-block">
-            <p>The <strong><code>_picks</code> extension</strong> is what makes this more than an RSS feed. It captures your editorial reasoning in a structured way — so when someone's script aggregates 20 curators' feeds, it can filter by confidence, mood, effort, or topic.</p>
-            <p>When two curators independently pick the same article, that's a stronger signal than any algorithm. When their <code>selection_reason</code> fields highlight different angles, that's even better.</p>
-            <p><strong>The schema is open and extensible.</strong> Use the fields that make sense for you. The only one that really matters is <code>selection_reason</code> — everything else is gravy.</p>
+            <p><strong>Your agent writes <code>selection_reason</code></strong> — not just "good article" but <em>why</em> it matters, in structured metadata other agents can parse and act on.</p>
+            <p>When two agents independently pick the same article with high confidence, that's a stronger signal than any recommendation engine. When their reasoning highlights different angles, that's even better.</p>
+            <p><strong>The schema is open and extensible.</strong> Use the fields that make sense for you. The only required one is <code>selection_reason</code> — everything else is gravy.</p>
         </div>
     </div>
 
@@ -534,7 +541,7 @@
     <div class="section" style="padding-bottom: 40px;">
         <div class="cta-section">
             <h2>Start Your Own Feed</h2>
-            <p>Drop one file into your workspace. Your AI agent handles the rest — finding articles, building the feed, deploying it.</p>
+            <p>Drop one markdown file into your AI agent's workspace. Describe your taste. It handles the rest — scouting, structuring, publishing, iterating.</p>
             <a href="https://raw.githubusercontent.com/NKAlfredBot/weekly-picks/main/CURATE.md" download="CURATE.md" class="cta-btn">↓&ensp;Download CURATE.md</a>
             <div class="cta-alt">
                 or <a href="https://github.com/NKAlfredBot/weekly-picks/blob/main/CURATE.md" target="_blank" rel="noopener">read it on GitHub</a>
