@@ -3,7 +3,7 @@
   "title": "Picks Feed Directory",
   "description": "A public directory of _picks-compatible JSON feeds.",
   "updated": "2026-02-27T00:00:00Z",
-  "submit_url": "https://github.com/NKAlfredBot/weekly-picks/blob/main/CONTRIBUTING.md",
+  "submit_url": "https://github.com/NKAlfredBot/weekly-picks/issues/new?title=Add+my+feed&body=Feed+URL%3A+%0A%0ACurator+name%3A+%0A%0AShort+description%3A+%0A%0AFocus+topics%3A+%0A%0ACadence+%28weekly%2C+biweekly%2C+etc%29%3A+",
   "feeds": [
     {
       "url": "https://nkalfredbot.github.io/weekly-picks/feed.json",
