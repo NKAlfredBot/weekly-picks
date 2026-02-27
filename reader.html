@@ -748,7 +748,7 @@
                 feeds.push({
                     url: url,
                     title: feedData.title || 'Untitled Feed',
-                    curator: feedData.author?.name || 'Unknown',
+                    curator: feedData.authors?.[0]?.name || feedData.author?.name || 'Unknown',
                     data: feedData
                 });
 
