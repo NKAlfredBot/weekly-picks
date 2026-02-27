@@ -278,6 +278,14 @@
             color: hsl(30, 60%, 45%);
             border-color: hsl(30, 60%, 45%);
         }
+        .badge.philosophical { 
+            color: hsl(270, 50%, 45%);
+            border-color: hsl(270, 50%, 45%);
+        }
+        .badge.practical { 
+            color: hsl(90, 40%, 40%);
+            border-color: hsl(90, 40%, 40%);
+        }
 
         .effort {
             color: var(--uniform-maroon);
@@ -711,6 +719,214 @@
         }
 
         /* Mobile Responsive */
+        /* Category Filter Bar */
+        .category-filter-bar {
+            background: white;
+            border: 3px solid var(--ink);
+            box-shadow: 6px 6px 0 var(--lobby-purple);
+            padding: 30px 35px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .category-filter-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--uniform-maroon);
+            margin-bottom: 20px;
+            font-family: 'Century Gothic', sans-serif;
+            display: block;
+        }
+
+        .category-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .category-filter-btn {
+            padding: 8px 18px;
+            border: 2px solid var(--ink);
+            background: white;
+            color: var(--ink);
+            font-size: 0.75rem;
+            text-transform: lowercase;
+            font-variant: small-caps;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            font-family: 'Century Gothic', sans-serif;
+            transition: all 0.25s ease;
+        }
+
+        .category-filter-btn:hover {
+            background: var(--stationery-cream);
+        }
+
+        .category-filter-btn.active {
+            background: var(--concierge-burgundy);
+            color: white;
+            border-color: var(--concierge-burgundy);
+        }
+
+        .filter-count {
+            font-size: 0.85rem;
+            color: var(--uniform-maroon);
+            font-style: italic;
+            margin-top: 15px;
+        }
+
+        /* Collapsible Volumes */
+        .volume-section {
+            margin-bottom: 80px;
+            transition: opacity 0.3s ease;
+        }
+
+        .volume-section.hidden {
+            display: none;
+        }
+
+        .volume-header {
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        /* Collapsed (Book Cover) State */
+        .volume-section.collapsed .volume-header {
+            border: 3px solid var(--concierge-burgundy);
+            outline: 3px solid var(--concierge-burgundy);
+            outline-offset: 8px;
+            background: var(--stationery-cream);
+            padding: 50px 40px;
+            text-align: center;
+            box-shadow: 6px 6px 0 var(--uniform-maroon);
+            position: relative;
+        }
+
+        .volume-section.collapsed .volume-header:hover {
+            background: hsl(45, 50%, 88%);
+        }
+
+        .volume-section.collapsed .volume-header::before {
+            content: '◆ ◆ ◆';
+            display: block;
+            font-size: 0.7rem;
+            letter-spacing: 1em;
+            color: var(--concierge-burgundy);
+            opacity: 0.5;
+            margin-bottom: 15px;
+        }
+
+        .volume-section.collapsed .volume-header::after {
+            content: none;
+        }
+
+        .volume-section.collapsed .chapter-label {
+            font-size: 0.65rem;
+            letter-spacing: 0.25em;
+            margin-bottom: 10px;
+        }
+
+        .volume-section.collapsed .volume-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .volume-section.collapsed .volume-date {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .volume-pick-count {
+            display: none;
+            font-size: 0.8rem;
+            color: var(--uniform-maroon);
+            font-family: 'Century Gothic', sans-serif;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+        .volume-section.collapsed .volume-pick-count {
+            display: block;
+        }
+
+        .volume-toggle-indicator {
+            display: none;
+            font-size: 1.2rem;
+            color: var(--concierge-burgundy);
+            margin-top: 15px;
+            transition: transform 0.4s ease;
+        }
+
+        .volume-section.collapsed .volume-toggle-indicator {
+            display: block;
+        }
+
+        .volume-section.collapsed .volume-toggle-indicator::before {
+            content: '▶';
+        }
+
+        .volume-section.expanded .volume-toggle-indicator::before {
+            content: '▼';
+        }
+
+        /* Expanded State */
+        .volume-section.expanded .volume-header {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .volume-section.expanded .volume-header::after {
+            content: '';
+            display: block;
+            width: 120px;
+            height: 2px;
+            background: var(--lobby-purple);
+            margin: 20px auto 0;
+        }
+
+        .volume-section.expanded .volume-header h2 {
+            font-size: 1.8rem;
+            color: var(--lobby-purple);
+            margin-bottom: 10px;
+        }
+
+        .volume-section.expanded .chapter-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            color: var(--uniform-maroon);
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .volume-section.expanded .volume-date {
+            color: var(--uniform-maroon);
+            font-size: 0.95rem;
+            font-style: italic;
+        }
+
+        .volume-section.expanded .volume-toggle-indicator {
+            display: inline-block;
+            font-size: 0.9rem;
+            margin-left: 10px;
+            opacity: 0.6;
+        }
+
+        /* Picks Container with Drawer Animation */
+        .volume-picks-container {
+            max-height: 10000px;
+            overflow: hidden;
+            transition: max-height 0.6s ease;
+        }
+
+        .volume-section.collapsed .volume-picks-container {
+            max-height: 0;
+        }
+
         @media (max-width: 640px) {
             body {
                 padding: 20px 12px;
@@ -734,6 +950,30 @@
 
             .subtitle {
                 font-size: 0.95rem;
+            }
+
+            .category-filter-bar {
+                padding: 20px 15px;
+                box-shadow: 4px 4px 0 var(--lobby-purple);
+            }
+
+            .category-filters {
+                gap: 8px;
+            }
+
+            .category-filter-btn {
+                padding: 6px 14px;
+                font-size: 0.7rem;
+            }
+
+            .volume-section.collapsed .volume-header {
+                padding: 30px 20px;
+                outline-offset: 5px;
+                box-shadow: 4px 4px 0 var(--uniform-maroon);
+            }
+
+            .volume-section.collapsed .volume-header h2 {
+                font-size: 1.8rem;
             }
 
             .pick-title {
@@ -806,6 +1046,21 @@
             <h1 class="wes-heading">Alfred's Weekly Picks</h1>
             <p class="subtitle">A curated selection of thought-provoking articles across technology, culture, and innovation</p>
         </header>
+
+        <section class="category-filter-bar">
+            <label class="category-filter-label">Filter by Category</label>
+            <div class="category-filters">
+                <button class="category-filter-btn active" data-category="all">All</button>
+                <button class="category-filter-btn" data-category="reframe">🔄 Reframe</button>
+                <button class="category-filter-btn" data-category="cautionary">⚠️ Cautionary</button>
+                <button class="category-filter-btn" data-category="trend">📈 Trend</button>
+                <button class="category-filter-btn" data-category="technical">⚙️ Technical</button>
+                <button class="category-filter-btn" data-category="cultural">🎭 Cultural</button>
+                <button class="category-filter-btn" data-category="philosophical">💭 Philosophical</button>
+                <button class="category-filter-btn" data-category="practical">🔧 Practical</button>
+            </div>
+            <div class="filter-count" id="filter-count"></div>
+        </section>
 
         <main id="feed-content">
             <div class="loading">Loading the collection...</div>
@@ -981,13 +1236,17 @@ feed.json, and push to GitHub."</div>
     </div>
 
     <script>
+        let feedData = null;
+        let currentFilter = 'all';
+
         async function loadFeed() {
             try {
                 const response = await fetch('feed.json');
                 if (!response.ok) throw new Error('Failed to load feed');
                 
-                const feed = await response.json();
-                renderFeed(feed);
+                feedData = await response.json();
+                renderFeed();
+                setupFilterListeners();
             } catch (error) {
                 document.getElementById('feed-content').innerHTML = `
                     <div class="error">
@@ -997,10 +1256,12 @@ feed.json, and push to GitHub."</div>
             }
         }
 
-        function renderFeed(feed) {
+        function renderFeed() {
+            if (!feedData) return;
+
             // Group items by volume
             const itemsByVolume = {};
-            feed.items.forEach(item => {
+            feedData.items.forEach(item => {
                 const volume = item._picks?.volume || 'unknown';
                 if (!itemsByVolume[volume]) {
                     itemsByVolume[volume] = [];
@@ -1010,14 +1271,30 @@ feed.json, and push to GitHub."</div>
 
             // Sort volumes descending
             const volumes = Object.keys(itemsByVolume).sort((a, b) => b - a);
+            const latestVolume = volumes[0];
 
             let html = '';
+            let totalVisiblePicks = 0;
+            let visibleVolumes = 0;
             
-            volumes.forEach(volume => {
+            volumes.forEach((volume, index) => {
                 const items = itemsByVolume[volume];
                 // Sort by position (ascending: 1 to 5)
                 items.sort((a, b) => (a._picks?.position || 0) - (b._picks?.position || 0));
                 
+                // Filter items
+                const visibleItems = currentFilter === 'all' 
+                    ? items 
+                    : items.filter(item => item._picks?.category === currentFilter);
+
+                // If no visible items after filtering, hide the volume
+                if (visibleItems.length === 0) {
+                    return;
+                }
+
+                totalVisiblePicks += visibleItems.length;
+                visibleVolumes++;
+
                 const firstDate = items[0]?.date_published;
                 const dateStr = firstDate ? new Date(firstDate).toLocaleDateString('en-US', {
                     year: 'numeric',
@@ -1025,21 +1302,34 @@ feed.json, and push to GitHub."</div>
                     day: 'numeric'
                 }) : '';
 
+                // Latest volume is expanded by default, others collapsed
+                const isExpanded = (volume === latestVolume);
+                const volumeClass = isExpanded ? 'expanded' : 'collapsed';
+
                 html += `
-                    <div class="volume-section">
-                        <div class="volume-header">
+                    <div class="volume-section ${volumeClass}" data-volume="${volume}">
+                        <div class="volume-header" onclick="toggleVolume(this)">
                             <span class="chapter-label">Chapter</span>
-                            <h2 class="wes-heading">Volume ${volume}</h2>
+                            <h2 class="wes-heading">
+                                Volume ${volume}
+                                <span class="volume-toggle-indicator"></span>
+                            </h2>
                             ${dateStr ? `<div class="volume-date">${dateStr}</div>` : ''}
+                            <div class="volume-pick-count">${visibleItems.length} pick${visibleItems.length !== 1 ? 's' : ''}</div>
                         </div>
-                        <div class="picks">
-                            ${items.map(item => renderPick(item)).join('')}
+                        <div class="volume-picks-container">
+                            <div class="picks">
+                                ${visibleItems.map(item => renderPick(item)).join('')}
+                            </div>
                         </div>
                     </div>
                 `;
             });
 
             document.getElementById('feed-content').innerHTML = html;
+
+            // Update filter count
+            updateFilterCount(totalVisiblePicks, visibleVolumes);
         }
 
         function renderPick(item) {
@@ -1057,7 +1347,7 @@ feed.json, and push to GitHub."</div>
             };
 
             return `
-                <article class="pick">
+                <article class="pick" data-category="${category}">
                     <div class="pick-header-bar">
                         <div class="pick-number">${position}</div>
                         <div class="pick-title-wrapper">
@@ -1091,6 +1381,43 @@ feed.json, and push to GitHub."</div>
                     </div>
                 </article>
             `;
+        }
+
+        function toggleVolume(header) {
+            const volumeSection = header.closest('.volume-section');
+            const isCollapsed = volumeSection.classList.contains('collapsed');
+            
+            if (isCollapsed) {
+                volumeSection.classList.remove('collapsed');
+                volumeSection.classList.add('expanded');
+            } else {
+                volumeSection.classList.remove('expanded');
+                volumeSection.classList.add('collapsed');
+            }
+        }
+
+        function setupFilterListeners() {
+            const filterButtons = document.querySelectorAll('.category-filter-btn');
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active state
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    
+                    // Update filter and re-render
+                    currentFilter = btn.dataset.category;
+                    renderFeed();
+                });
+            });
+        }
+
+        function updateFilterCount(visiblePicks, visibleVolumes) {
+            const countEl = document.getElementById('filter-count');
+            if (currentFilter === 'all') {
+                countEl.textContent = `Showing all ${visiblePicks} picks across ${visibleVolumes} volume${visibleVolumes !== 1 ? 's' : ''}`;
+            } else {
+                countEl.textContent = `Showing ${visiblePicks} pick${visiblePicks !== 1 ? 's' : ''} in ${visibleVolumes} volume${visibleVolumes !== 1 ? 's' : ''}`;
+            }
         }
 
         // Drawer toggle

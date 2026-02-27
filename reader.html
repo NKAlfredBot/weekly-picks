@@ -271,11 +271,12 @@
             background: white;
             color: var(--ink);
             font-size: 0.75rem;
-            text-transform: uppercase;
+            text-transform: lowercase;
+            font-variant: small-caps;
             letter-spacing: 0.1em;
             cursor: pointer;
             font-family: 'Century Gothic', sans-serif;
-            transition: all 0.2s;
+            transition: all 0.25s ease;
         }
 
         .filter-btn:hover {
@@ -420,6 +421,14 @@
         .badge.cultural { 
             color: hsl(30, 60%, 45%);
             border-color: hsl(30, 60%, 45%);
+        }
+        .badge.philosophical { 
+            color: hsl(270, 50%, 45%);
+            border-color: hsl(270, 50%, 45%);
+        }
+        .badge.practical { 
+            color: hsl(90, 40%, 40%);
+            border-color: hsl(90, 40%, 40%);
         }
 
         .effort {
@@ -645,11 +654,13 @@
                 <label class="filter-label">Filter by Category</label>
                 <div class="filter-buttons" id="category-filters">
                     <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="reframe">Reframe</button>
-                    <button class="filter-btn" data-filter="cautionary">Cautionary</button>
-                    <button class="filter-btn" data-filter="trend">Trend</button>
-                    <button class="filter-btn" data-filter="technical">Technical</button>
-                    <button class="filter-btn" data-filter="cultural">Cultural</button>
+                    <button class="filter-btn" data-filter="reframe">🔄 Reframe</button>
+                    <button class="filter-btn" data-filter="cautionary">⚠️ Cautionary</button>
+                    <button class="filter-btn" data-filter="trend">📈 Trend</button>
+                    <button class="filter-btn" data-filter="technical">⚙️ Technical</button>
+                    <button class="filter-btn" data-filter="cultural">🎭 Cultural</button>
+                    <button class="filter-btn" data-filter="philosophical">💭 Philosophical</button>
+                    <button class="filter-btn" data-filter="practical">🔧 Practical</button>
                 </div>
             </div>
 
