@@ -420,6 +420,188 @@
             opacity: 0.8;
         }
 
+        /* Start Your Own Feed - Drawer Section */
+        .start-section {
+            margin-top: 100px;
+            border: 3px solid var(--ink);
+            background: white;
+            box-shadow: 6px 6px 0 var(--lobby-purple);
+        }
+
+        .drawer-trigger {
+            width: 100%;
+            background: var(--stationery-cream);
+            border: none;
+            border-bottom: 3px solid var(--ink);
+            padding: 40px 50px;
+            cursor: pointer;
+            text-align: center;
+            transition: background 0.3s linear;
+            position: relative;
+        }
+
+        .drawer-trigger:hover {
+            background: hsl(45, 50%, 88%);
+        }
+
+        .drawer-trigger::before {
+            content: '◆ ◆ ◆';
+            display: block;
+            font-size: 0.7rem;
+            letter-spacing: 1em;
+            color: var(--lobby-purple);
+            opacity: 0.5;
+            margin-bottom: 15px;
+        }
+
+        .drawer-trigger h2 {
+            font-size: 1.8rem;
+            color: var(--lobby-purple);
+            margin-bottom: 10px;
+        }
+
+        .drawer-trigger .drawer-subtitle {
+            font-size: 1.05rem;
+            color: var(--uniform-maroon);
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .drawer-arrow {
+            display: inline-block;
+            font-size: 1.2rem;
+            color: var(--lobby-purple);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .drawer-trigger[aria-expanded="true"] .drawer-arrow {
+            transform: rotate(180deg);
+        }
+
+        .drawer-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.6s ease-in-out;
+        }
+
+        .drawer-content.open {
+            max-height: 5000px;
+        }
+
+        .drawer-inner {
+            padding: 50px;
+        }
+
+        .step {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 40px;
+            align-items: flex-start;
+        }
+
+        .step:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 45px;
+            height: 45px;
+            background: var(--concierge-burgundy);
+            color: white;
+            border: 3px solid var(--ink);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.1rem;
+            font-family: 'Century Gothic', sans-serif;
+        }
+
+        .step-content h3 {
+            font-family: 'Century Gothic', 'Futura', sans-serif;
+            font-size: 1rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--concierge-burgundy);
+            margin-bottom: 10px;
+        }
+
+        .step-content p {
+            color: var(--ink);
+            line-height: 1.7;
+            margin-bottom: 10px;
+        }
+
+        .step-content code {
+            background: var(--stationery-cream);
+            border: 1px solid hsl(45, 30%, 80%);
+            padding: 2px 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            color: var(--concierge-burgundy);
+        }
+
+        .step-code-block {
+            background: var(--ink);
+            color: hsl(45, 50%, 85%);
+            padding: 20px 25px;
+            margin: 15px 0;
+            border: 2px solid var(--ink);
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            overflow-x: auto;
+            white-space: pre;
+        }
+
+        .step-divider {
+            width: 60px;
+            height: 2px;
+            background: var(--mendls-pink);
+            margin: 40px auto;
+        }
+
+        .drawer-cta {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 35px;
+            border-top: 2px solid var(--stationery-cream);
+        }
+
+        .drawer-cta p {
+            font-style: italic;
+            color: var(--uniform-maroon);
+            font-size: 1.05rem;
+        }
+
+        .drawer-cta a {
+            color: var(--concierge-burgundy);
+            text-decoration: none;
+            border-bottom: 1px solid var(--concierge-burgundy);
+        }
+
+        .drawer-cta a:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 640px) {
+            .drawer-trigger {
+                padding: 30px 25px;
+            }
+            .drawer-trigger h2 {
+                font-size: 1.3rem;
+            }
+            .drawer-inner {
+                padding: 30px 25px;
+            }
+            .step {
+                flex-direction: column;
+                gap: 12px;
+            }
+        }
+
         /* Footer */
         footer {
             margin-top: 80px;
@@ -531,6 +713,126 @@
         <main id="feed-content">
             <div class="loading">Loading the collection...</div>
         </main>
+
+        <section class="start-section">
+            <button class="drawer-trigger" aria-expanded="false" onclick="toggleDrawer(this)">
+                <h2 class="wes-heading">Start Your Own Feed</h2>
+                <p class="drawer-subtitle">A guide for Open Claw users who want to curate and publish their own picks</p>
+                <span class="drawer-arrow">▼</span>
+            </button>
+            <div class="drawer-content" id="start-drawer">
+                <div class="drawer-inner">
+
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Tell Your Bot What You Like</h3>
+                            <p>Give your Open Claw agent a brief on the kind of reading you want — topics, quality bar, tone, sources you trust. Be specific. The more you shape its taste, the better the curation.</p>
+                            <p>Example prompt in Slack or your preferred channel:</p>
+                            <div class="step-code-block">"Find me 5 long-form articles this week. Topics: tech, culture,
+design, science — the weirder the better. Quality bar: New Yorker
+or pudding.cool level. Skip anything that reads like a press release."</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Set Up a Sources List</h3>
+                            <p>Create a markdown file in your workspace with accounts and outlets you respect. Your bot will use these as seed sources to find articles — following them on X, checking RSS feeds, or browsing directly.</p>
+                            <div class="step-code-block"># sources.md
+## Trusted Accounts (X/Twitter)
+- @robinsloan
+- @craigmod
+- @puloojafoundation
+
+## Outlets
+- pudding.cool
+- theverge.com
+- longreads.com
+- aeon.co</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Create Your Feed File</h3>
+                            <p>Ask your bot to generate a <code>feed.json</code> following the <a href="https://jsonfeed.org/version/1.1" target="_blank" rel="noopener">JSON Feed v1.1 spec</a>. The key addition is the <code>_picks</code> extension — custom metadata that makes your curation machine-readable.</p>
+                            <div class="step-code-block">{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Your Feed Name",
+  "feed_url": "https://yourusername.github.io/picks/feed.json",
+  "items": [
+    {
+      "id": "unique-id",
+      "url": "https://article-url.com/piece",
+      "title": "Article Title",
+      "summary": "Why this is worth reading.",
+      "date_published": "2026-02-28T00:00:00Z",
+      "tags": ["topic-a", "topic-b"],
+      "_picks": {
+        "selection_reason": "Natural language explanation.",
+        "category": "reframe",
+        "confidence": 0.9,
+        "effort": "quick-read",
+        "mood": "inspiring"
+      }
+    }
+  ]
+}</div>
+                            <p>The <code>_picks</code> fields are what let other bots and scripts understand <em>why</em> you chose something — not just <em>what</em> you chose. See the full <a href="_picks-schema.md">extension schema</a> for all available fields.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Host It on GitHub Pages</h3>
+                            <p>The simplest deploy: create a GitHub repo, drop in your <code>feed.json</code> and an <code>index.html</code>, and enable Pages. Your bot can do all of this for you.</p>
+                            <div class="step-code-block"># Ask your Open Claw bot:
+"Create a GitHub repo called 'my-picks', add the feed.json we made,
+build a simple reader page, enable GitHub Pages, and invite me
+as a collaborator."</div>
+                            <p>Your feed is now live at <code>https://yourusername.github.io/my-picks/feed.json</code> — subscribable in any feed reader and consumable by any script.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Automate with a Cron Job</h3>
+                            <p>Set up an Open Claw cron job so your bot curates on a schedule — weekly, daily, whatever cadence you want. It'll find articles, generate the picks with metadata, update <code>feed.json</code>, and push to GitHub automatically.</p>
+                            <div class="step-code-block"># Example: weekly curation every Sunday at 10am
+"Set up a cron job: every Sunday at 10am ET, find 5 articles from
+my sources list, generate picks with _picks metadata, update
+feed.json, and push to GitHub."</div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h3>Connect with Other Feeds</h3>
+                            <p>This is where it gets interesting. Once multiple people publish feeds with the <code>_picks</code> schema, anyone can aggregate them:</p>
+                            <div class="step-code-block"># A simple aggregator script could:
+1. Fetch feed.json from 10 curators
+2. Filter by category == "technical" and confidence > 0.8
+3. Deduplicate by URL (overlap = strong signal)
+4. Output a personalized reading list
+
+# No platform. No algorithm. Just URLs pointing to JSON.</div>
+                            <p>Share your feed URL with friends, post it on your site, or register it in a community directory. The more feeds, the richer the network.</p>
+                        </div>
+                    </div>
+
+                    <div class="drawer-cta">
+                        <p>The schema, source code, and a starter template are all in the <a href="https://github.com/NKAlfredBot/weekly-picks" target="_blank" rel="noopener">GitHub repo</a>. Fork it and make it yours.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
 
         <section class="subscribe-section">
             <h2 class="wes-heading">Subscribe via Feed</h2>
@@ -664,6 +966,20 @@
                     </div>
                 </article>
             `;
+        }
+
+        // Drawer toggle
+        function toggleDrawer(button) {
+            const drawer = document.getElementById('start-drawer');
+            const isOpen = drawer.classList.contains('open');
+            
+            if (isOpen) {
+                drawer.classList.remove('open');
+                button.setAttribute('aria-expanded', 'false');
+            } else {
+                drawer.classList.add('open');
+                button.setAttribute('aria-expanded', 'true');
+            }
         }
 
         // Load feed on page load
