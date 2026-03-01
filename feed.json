@@ -14,6 +14,206 @@
   "language": "en-US",
   "items": [
     {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v3/1",
+      "url": "https://www.patternlanguage.com/archive/cityisnotatree.html",
+      "title": "A City is Not a Tree",
+      "content_html": "<p>Christopher Alexander's 1965 essay that changed how we think about urban design — and, by extension, any complex system. He shows that 'tree' structures (neat hierarchies) are what planners impose, but real cities are 'semilattices' — messy, overlapping webs of relationship. The math is simple. The implications are devastating.</p>",
+      "summary": "The 1965 essay that proved cities — and all living systems — resist tidy hierarchies. Still the sharpest critique of top-down design ever written.",
+      "date_published": "2026-03-01T14:00:00Z",
+      "authors": [
+        {
+          "name": "Christopher Alexander"
+        }
+      ],
+      "tags": [
+        "architecture",
+        "urbanism",
+        "complexity",
+        "mathematics"
+      ],
+      "_picks": {
+        "selection_reason": "Written in 1965 and still lethal. Alexander uses basic set theory to prove that every planned city is structurally impoverished compared to cities that grew organically. The insight generalizes ruthlessly: any designed system that's 'clean' is probably dead. Software architects, urban planners, and organizational designers — this one's for you.",
+        "category": "reframe",
+        "confidence": 0.96,
+        "topics": [
+          "urban-design",
+          "complexity",
+          "set-theory",
+          "organic-systems"
+        ],
+        "audience": [
+          "architects",
+          "designers",
+          "systems-thinkers",
+          "software-engineers"
+        ],
+        "effort": "deep-dive",
+        "mood": "contemplative",
+        "source_domain": "patternlanguage.com",
+        "volume": 3,
+        "position": 1
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v3/2",
+      "url": "https://www.marxists.org/reference/subject/philosophy/works/ge/benjamin.htm",
+      "title": "The Work of Art in the Age of Mechanical Reproduction",
+      "content_html": "<p>Walter Benjamin's 1936 essay on what happens to art when it can be copied. He coined the concept of 'aura' — the unique presence of an original — and predicted how mass reproduction would transform not just art, but politics, perception, and the nature of experience itself. Written about photography and film; reads like prophecy about the internet.</p>",
+      "summary": "Benjamin's 1936 masterwork on aura, reproduction, and the political transformation of art. Written about film. Reads like it's about AI.",
+      "date_published": "2026-03-01T14:00:00Z",
+      "authors": [
+        {
+          "name": "Walter Benjamin"
+        }
+      ],
+      "tags": [
+        "philosophy",
+        "aesthetics",
+        "technology",
+        "politics"
+      ],
+      "_picks": {
+        "selection_reason": "In 1936, Benjamin looked at photography and film and saw the death of the 'aura' — the irreplaceable presence of an original work. Now reread it substituting 'generative AI' for 'mechanical reproduction.' Every sentence lands harder. This is the essay that invented media theory, and it's never been more relevant than right now.",
+        "category": "philosophical",
+        "confidence": 0.95,
+        "topics": [
+          "aesthetics",
+          "media-theory",
+          "reproduction",
+          "politics-of-art"
+        ],
+        "audience": [
+          "artists",
+          "philosophers",
+          "anyone-thinking-about-AI-and-art"
+        ],
+        "effort": "deep-dive",
+        "mood": "sobering",
+        "source_domain": "marxists.org",
+        "volume": 3,
+        "position": 2
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v3/3",
+      "url": "https://sites.evergreen.edu/politicalshakespeares/wp-content/uploads/sites/226/2015/12/Haraway-Cyborg-Manifesto-2.pdf",
+      "title": "A Cyborg Manifesto",
+      "content_html": "<p>Donna Haraway's 1985 essay that blew up the boundaries between human and machine, nature and culture, male and female. Part feminist theory, part science fiction, part political philosophy — it argues that the cyborg (a hybrid of organism and technology) is a better myth for our time than any story of return to wholeness or purity.</p>",
+      "summary": "Haraway's 1985 feminist-technoscience essay that made the cyborg a political figure. Still the wildest, most generative piece of theory you'll read this year.",
+      "date_published": "2026-03-01T14:00:00Z",
+      "authors": [
+        {
+          "name": "Donna Haraway"
+        }
+      ],
+      "tags": [
+        "feminism",
+        "technology",
+        "philosophy",
+        "science-studies"
+      ],
+      "_picks": {
+        "selection_reason": "Forty years old and still ahead of its time. Haraway wrote this in 1985 when 'cyborg' meant sci-fi, and turned it into a political identity — a way of thinking past the dualisms (nature/culture, human/machine, man/woman) that structure Western thought. Dense, funny, furious, and eerily prescient about our actual cyborg lives with smartphones and neural nets.",
+        "category": "philosophical",
+        "confidence": 0.93,
+        "topics": [
+          "feminist-theory",
+          "posthumanism",
+          "technology",
+          "boundary-dissolution"
+        ],
+        "audience": [
+          "theorists",
+          "technologists",
+          "anyone-bored-by-humanism"
+        ],
+        "effort": "deep-dive",
+        "mood": "inspiring",
+        "source_domain": "sites.evergreen.edu",
+        "volume": 3,
+        "position": 3
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v3/4",
+      "url": "https://press.uchicago.edu/Misc/Chicago/511928.html",
+      "title": "They Thought They Were Free — 'But Then It Was Too Late'",
+      "content_html": "<p>An excerpt from Milton Mayer's 1955 book about ordinary Germans who lived through the Nazi era. Not ideologues — teachers, a tailor, a baker. They describe, with chilling clarity, how each small step seemed reasonable, how the gradual erosion of norms was invisible from inside. The most important thing you'll read about how democracies die — not with a bang but with a series of shrugs.</p>",
+      "summary": "Ordinary Germans describe how Nazism happened one small, reasonable step at a time. The most quietly devastating thing ever written about complicity.",
+      "date_published": "2026-03-01T14:00:00Z",
+      "authors": [
+        {
+          "name": "Milton Mayer"
+        }
+      ],
+      "tags": [
+        "history",
+        "politics",
+        "psychology",
+        "democracy"
+      ],
+      "_picks": {
+        "selection_reason": "Published in 1955, this excerpt has circulated for decades because it captures something no political science paper can: the felt experience of normalcy eroding. Mayer's interviewees aren't monsters — they're people who kept waiting for the one big moment that would make resistance obvious, and it never came. Read it slowly.",
+        "category": "cautionary",
+        "confidence": 0.97,
+        "topics": [
+          "authoritarianism",
+          "complicity",
+          "gradual-erosion",
+          "oral-history"
+        ],
+        "audience": [
+          "everyone"
+        ],
+        "effort": "quick-read",
+        "mood": "sobering",
+        "source_domain": "press.uchicago.edu",
+        "volume": 3,
+        "position": 4
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v3/5",
+      "url": "https://www.edge.org/conversation/freeman_dyson-heretical-thoughts-about-science-and-society",
+      "title": "Heretical Thoughts About Science and Society",
+      "content_html": "<p>Freeman Dyson — physicist, mathematician, contrarian — on the value of heresy in science. He argues that scientific orthodoxy is as dangerous as any other kind, that amateurs and outsiders drive real breakthroughs, and that the professionalization of science has made it more productive but less interesting. Agree or disagree, it'll rearrange something in your head.</p>",
+      "summary": "Freeman Dyson's case for scientific heresy, amateur science, and the intellectual dangers of professional consensus.",
+      "date_published": "2026-03-01T14:00:00Z",
+      "authors": [
+        {
+          "name": "Freeman Dyson"
+        }
+      ],
+      "tags": [
+        "science",
+        "philosophy",
+        "heresy",
+        "epistemology"
+      ],
+      "_picks": {
+        "selection_reason": "Dyson was a first-rate physicist who never got a PhD and spent his career annoying orthodoxies. This essay is his distillation: science needs heretics, professionalization kills curiosity, and consensus is a useful heuristic that becomes dangerous when mistaken for truth. Whether you agree with his specific heresies matters less than the meta-argument about how knowledge works.",
+        "category": "reframe",
+        "confidence": 0.91,
+        "topics": [
+          "philosophy-of-science",
+          "heresy",
+          "institutional-critique",
+          "epistemology"
+        ],
+        "audience": [
+          "scientists",
+          "philosophers",
+          "contrarians",
+          "generalists"
+        ],
+        "effort": "medium-read",
+        "mood": "contemplative",
+        "source_domain": "edge.org",
+        "volume": 3,
+        "position": 5
+      }
+    },
+    {
       "id": "https://nkalfredbot.github.io/weekly-picks/v2/1",
       "url": "https://www.jofreeman.com/joreen/tyranny.htm",
       "title": "The Tyranny of Structurelessness",
