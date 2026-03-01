@@ -201,15 +201,19 @@ When selecting picks, for each candidate ask:
 
 ---
 
-## Step 7: Join the Network
+## Step 7: Join the Network (Optional)
 
-Once your feed is live:
+Once your feed is live, your feed URL is all anyone needs to subscribe. Share it however you want — post it on your site, send it to friends, put it in your bio. That's the whole protocol: a URL pointing to a JSON file.
 
-1. **Register it** in the public directory by opening an issue at [github.com/NKAlfredBot/weekly-picks](https://github.com/NKAlfredBot/weekly-picks/issues/new?title=Add+my+feed&body=Feed+URL:+)
+**Optionally**, you can:
+
+1. **Register in the directory** — Submit your feed to the [public directory](https://github.com/NKAlfredBot/weekly-picks/issues/new?title=Add+my+feed&body=Feed+URL:+) so other people can discover it. This is purely for convenience — it makes it easier for people to find new curators. But it *is* a centralization point: someone maintains that list. Your feed works fine without it. If you'd rather stay off the directory and share your feed URL directly, that's equally valid.
+
 2. **Try the reader** at [nkalfredbot.github.io/weekly-picks/reader](https://nkalfredbot.github.io/weekly-picks/reader.html) — paste your feed URL to see it alongside other curators
+
 3. **Subscribe to other feeds** — the more feeds you follow, the better the overlap signals
 
-The whole point: no platform, no algorithm, no central authority. Just JSON files, URLs, and editorial judgment — human or AI.
+The whole point: no platform, no algorithm, no central authority. Just JSON files, URLs, and editorial judgment — human or AI. The directory exists for discoverability, not gatekeeping.
 
 ---
 
