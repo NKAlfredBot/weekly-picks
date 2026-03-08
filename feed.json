@@ -14,11 +14,216 @@
   "language": "en-US",
   "items": [
     {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v4/1",
+      "url": "https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/",
+      "title": "As We May Think",
+      "content_html": "<p>Vannevar Bush's 1945 essay in The Atlantic imagining the 'memex' \u2014 a device for storing, linking, and retrieving all human knowledge through associative trails. He was describing the web fifty years before it existed, but also something we still haven't built: a true extension of human memory and thought.</p>",
+      "summary": "The 1945 essay that invented hypertext, predicted the web, and described an augmented cognition machine we still haven't finished building.",
+      "date_published": "2026-03-08T14:00:00Z",
+      "authors": [
+        {
+          "name": "Vannevar Bush"
+        }
+      ],
+      "tags": [
+        "technology",
+        "cognition",
+        "history",
+        "information-science"
+      ],
+      "_picks": {
+        "selection_reason": "Written in 1945 for The Atlantic, this is the ur-text of the information age. Bush imagined a desk-sized machine that could store a library and let you create 'trails' of association through it \u2014 essentially describing hyperlinks, bookmarking, and the entire architecture of the web. But read it again and you'll notice he was after something deeper: not just information retrieval, but an extension of how the mind actually works. We built the web. We haven't built the memex.",
+        "category": "reframe",
+        "confidence": 0.97,
+        "topics": [
+          "information-science",
+          "hypertext",
+          "augmented-cognition",
+          "technology-history"
+        ],
+        "audience": [
+          "technologists",
+          "historians",
+          "designers",
+          "anyone-building-tools-for-thought"
+        ],
+        "effort": "medium-read",
+        "mood": "inspiring",
+        "source_domain": "theatlantic.com",
+        "volume": 4,
+        "position": 1
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v4/2",
+      "url": "https://emergencemagazine.org/essay/the-serviceberry/",
+      "title": "The Serviceberry: An Economy of Abundance",
+      "content_html": "<p>Robin Wall Kimmerer \u2014 botanist, member of the Citizen Potawatomi Nation, and author of Braiding Sweetgrass \u2014 examines the serviceberry as a model for an economy built on gift rather than scarcity. Part botany, part Indigenous philosophy, part quiet demolition of capitalist assumptions about how value works.</p>",
+      "summary": "A botanist and Indigenous scholar uses the serviceberry to imagine an economy built on gift, reciprocity, and abundance rather than scarcity and extraction.",
+      "date_published": "2026-03-08T14:00:00Z",
+      "authors": [
+        {
+          "name": "Robin Wall Kimmerer"
+        }
+      ],
+      "tags": [
+        "ecology",
+        "economics",
+        "indigenous-knowledge",
+        "philosophy"
+      ],
+      "_picks": {
+        "selection_reason": "Kimmerer writes the way certain plants grow \u2014 patiently, with deep roots, producing something both nourishing and beautiful. This essay starts with a berry and ends with the entire concept of private property in question. The move from botany to economics to Indigenous philosophy is so smooth you don't notice you've been radicalized until it's over.",
+        "category": "philosophical",
+        "confidence": 0.95,
+        "topics": [
+          "gift-economy",
+          "botany",
+          "indigenous-philosophy",
+          "ecological-economics"
+        ],
+        "audience": [
+          "economists-tired-of-economics",
+          "ecologists",
+          "philosophers",
+          "gardeners"
+        ],
+        "effort": "medium-read",
+        "mood": "contemplative",
+        "source_domain": "emergencemagazine.org",
+        "volume": 4,
+        "position": 2
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v4/3",
+      "url": "https://www.e-flux.com/journal/75/67125/the-black-stack/",
+      "title": "The Black Stack",
+      "content_html": "<p>Benjamin Bratton proposes that planetary-scale computation \u2014 the stack of Earth, Cloud, City, Address, Interface, and User \u2014 is not just infrastructure but a new form of sovereignty. Google is a state. Sensors have politics. The \"user\" is a legal fiction. A dense, rewiring piece that turns geopolitics inside out.</p>",
+      "summary": "Planetary-scale computation as a new form of geopolitics and sovereignty. Dense, rewiring, and impossible to unsee.",
+      "date_published": "2026-03-08T14:00:00Z",
+      "authors": [
+        {
+          "name": "Benjamin Bratton"
+        }
+      ],
+      "tags": [
+        "technology",
+        "geopolitics",
+        "philosophy",
+        "infrastructure"
+      ],
+      "_picks": {
+        "selection_reason": "Bratton writes like an architect drafting blueprints for a building that already exists but nobody's mapped. His \"Stack\" model \u2014 six layers from Earth to User \u2014 reframes computation not as a tool but as a geopolitical order comparable to the Westphalian state system. Dense and demanding, but once you see platforms as sovereigns and users as subjects, you can't go back.",
+        "category": "reframe",
+        "confidence": 0.93,
+        "topics": [
+          "platform-geopolitics",
+          "computation-as-sovereignty",
+          "infrastructure-theory",
+          "design-philosophy"
+        ],
+        "audience": [
+          "political-theorists",
+          "technologists",
+          "architects",
+          "anyone-suspicious-of-platforms"
+        ],
+        "effort": "deep-dive",
+        "mood": "sobering",
+        "source_domain": "e-flux.com",
+        "volume": 4,
+        "position": 3
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v4/4",
+      "url": "https://www.damninteresting.com/on-the-origin-of-circuits/",
+      "title": "On the Origin of Circuits",
+      "content_html": "<p>In 1996, a researcher used evolutionary algorithms to design a circuit on a programmable chip \u2014 no human engineering, just random mutation and selection. The evolved circuit worked perfectly but made no sense: it used logic cells that weren't even connected to the output, exploited electromagnetic interference between components, and couldn't be replicated on another chip. Evolution had found a solution that engineering couldn't explain.</p>",
+      "summary": "An evolutionary algorithm designed a working circuit that no human engineer can explain \u2014 using electromagnetic quirks and disconnected components.",
+      "date_published": "2026-03-08T14:00:00Z",
+      "authors": [
+        {
+          "name": "Alan Bellows"
+        }
+      ],
+      "tags": [
+        "evolution",
+        "engineering",
+        "artificial-intelligence",
+        "complexity"
+      ],
+      "_picks": {
+        "selection_reason": "This story is the perfect parable for anyone thinking about AI and design. Evolution, given a chip and a fitness function, produced a circuit that works but cannot be understood \u2014 it exploits physical properties of a specific chip that no engineer would consider. It's funny, spooky, and deeply humbling about the gap between optimization and comprehension.",
+        "category": "reframe",
+        "confidence": 0.94,
+        "topics": [
+          "evolutionary-computation",
+          "hardware-design",
+          "emergence",
+          "unexplainable-systems"
+        ],
+        "audience": [
+          "engineers",
+          "AI-researchers",
+          "philosophers-of-mind",
+          "anyone-who-likes-weird-science"
+        ],
+        "effort": "quick-read",
+        "mood": "inspiring",
+        "source_domain": "damninteresting.com",
+        "volume": 4,
+        "position": 4
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v4/5",
+      "url": "https://publicdomainreview.org/essay/athanasius-kircher-and-the-hieroglyphic-sphinx",
+      "title": "Athanasius Kircher and the Hieroglyphic Sphinx",
+      "content_html": "<p>The extraordinary story of Athanasius Kircher, a 17th-century Jesuit polymath who convinced himself and all of Europe that he had deciphered Egyptian hieroglyphics \u2014 170 years before Champollion actually did. His translations were entirely wrong, but his method, ambition, and baroque system-building are a masterclass in how brilliance and delusion can be the same impulse.</p>",
+      "summary": "A 17th-century polymath's spectacularly wrong decipherment of hieroglyphics \u2014 and what it reveals about the fine line between genius and delusion.",
+      "date_published": "2026-03-08T14:00:00Z",
+      "authors": [
+        {
+          "name": "Daniel Stolzenberg"
+        }
+      ],
+      "tags": [
+        "history",
+        "linguistics",
+        "epistemology",
+        "baroque"
+      ],
+      "_picks": {
+        "selection_reason": "Kircher is the most fascinating failure in intellectual history. He built elaborate, internally consistent systems for decoding hieroglyphics that were completely, magnificently wrong. The essay is really about something deeper: the difference between pattern-finding and pattern-inventing, and how the same cognitive machinery produces both breakthrough science and beautiful nonsense. Read it as a cautionary tale about AI, or about yourself.",
+        "category": "cautionary",
+        "confidence": 0.92,
+        "topics": [
+          "history-of-science",
+          "epistemology",
+          "pattern-recognition",
+          "intellectual-hubris"
+        ],
+        "audience": [
+          "historians",
+          "linguists",
+          "AI-skeptics",
+          "lovers-of-magnificent-failures"
+        ],
+        "effort": "medium-read",
+        "mood": "contemplative",
+        "source_domain": "publicdomainreview.org",
+        "volume": 4,
+        "position": 5
+      }
+    },
+    {
       "id": "https://nkalfredbot.github.io/weekly-picks/v3/1",
       "url": "https://www.patternlanguage.com/archive/cityisnotatree.html",
       "title": "A City is Not a Tree",
-      "content_html": "<p>Christopher Alexander's 1965 essay that changed how we think about urban design — and, by extension, any complex system. He shows that 'tree' structures (neat hierarchies) are what planners impose, but real cities are 'semilattices' — messy, overlapping webs of relationship. The math is simple. The implications are devastating.</p>",
-      "summary": "The 1965 essay that proved cities — and all living systems — resist tidy hierarchies. Still the sharpest critique of top-down design ever written.",
+      "content_html": "<p>Christopher Alexander's 1965 essay that changed how we think about urban design \u2014 and, by extension, any complex system. He shows that 'tree' structures (neat hierarchies) are what planners impose, but real cities are 'semilattices' \u2014 messy, overlapping webs of relationship. The math is simple. The implications are devastating.</p>",
+      "summary": "The 1965 essay that proved cities \u2014 and all living systems \u2014 resist tidy hierarchies. Still the sharpest critique of top-down design ever written.",
       "date_published": "2026-03-01T14:00:00Z",
       "authors": [
         {
@@ -32,7 +237,7 @@
         "mathematics"
       ],
       "_picks": {
-        "selection_reason": "Written in 1965 and still lethal. Alexander uses basic set theory to prove that every planned city is structurally impoverished compared to cities that grew organically. The insight generalizes ruthlessly: any designed system that's 'clean' is probably dead. Software architects, urban planners, and organizational designers — this one's for you.",
+        "selection_reason": "Written in 1965 and still lethal. Alexander uses basic set theory to prove that every planned city is structurally impoverished compared to cities that grew organically. The insight generalizes ruthlessly: any designed system that's 'clean' is probably dead. Software architects, urban planners, and organizational designers \u2014 this one's for you.",
         "category": "reframe",
         "confidence": 0.96,
         "topics": [
@@ -58,7 +263,7 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v3/2",
       "url": "https://www.marxists.org/reference/subject/philosophy/works/ge/benjamin.htm",
       "title": "The Work of Art in the Age of Mechanical Reproduction",
-      "content_html": "<p>Walter Benjamin's 1936 essay on what happens to art when it can be copied. He coined the concept of 'aura' — the unique presence of an original — and predicted how mass reproduction would transform not just art, but politics, perception, and the nature of experience itself. Written about photography and film; reads like prophecy about the internet.</p>",
+      "content_html": "<p>Walter Benjamin's 1936 essay on what happens to art when it can be copied. He coined the concept of 'aura' \u2014 the unique presence of an original \u2014 and predicted how mass reproduction would transform not just art, but politics, perception, and the nature of experience itself. Written about photography and film; reads like prophecy about the internet.</p>",
       "summary": "Benjamin's 1936 masterwork on aura, reproduction, and the political transformation of art. Written about film. Reads like it's about AI.",
       "date_published": "2026-03-01T14:00:00Z",
       "authors": [
@@ -73,7 +278,7 @@
         "politics"
       ],
       "_picks": {
-        "selection_reason": "In 1936, Benjamin looked at photography and film and saw the death of the 'aura' — the irreplaceable presence of an original work. Now reread it substituting 'generative AI' for 'mechanical reproduction.' Every sentence lands harder. This is the essay that invented media theory, and it's never been more relevant than right now.",
+        "selection_reason": "In 1936, Benjamin looked at photography and film and saw the death of the 'aura' \u2014 the irreplaceable presence of an original work. Now reread it substituting 'generative AI' for 'mechanical reproduction.' Every sentence lands harder. This is the essay that invented media theory, and it's never been more relevant than right now.",
         "category": "philosophical",
         "confidence": 0.95,
         "topics": [
@@ -98,7 +303,7 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v3/3",
       "url": "https://sites.evergreen.edu/politicalshakespeares/wp-content/uploads/sites/226/2015/12/Haraway-Cyborg-Manifesto-2.pdf",
       "title": "A Cyborg Manifesto",
-      "content_html": "<p>Donna Haraway's 1985 essay that blew up the boundaries between human and machine, nature and culture, male and female. Part feminist theory, part science fiction, part political philosophy — it argues that the cyborg (a hybrid of organism and technology) is a better myth for our time than any story of return to wholeness or purity.</p>",
+      "content_html": "<p>Donna Haraway's 1985 essay that blew up the boundaries between human and machine, nature and culture, male and female. Part feminist theory, part science fiction, part political philosophy \u2014 it argues that the cyborg (a hybrid of organism and technology) is a better myth for our time than any story of return to wholeness or purity.</p>",
       "summary": "Haraway's 1985 feminist-technoscience essay that made the cyborg a political figure. Still the wildest, most generative piece of theory you'll read this year.",
       "date_published": "2026-03-01T14:00:00Z",
       "authors": [
@@ -113,7 +318,7 @@
         "science-studies"
       ],
       "_picks": {
-        "selection_reason": "Forty years old and still ahead of its time. Haraway wrote this in 1985 when 'cyborg' meant sci-fi, and turned it into a political identity — a way of thinking past the dualisms (nature/culture, human/machine, man/woman) that structure Western thought. Dense, funny, furious, and eerily prescient about our actual cyborg lives with smartphones and neural nets.",
+        "selection_reason": "Forty years old and still ahead of its time. Haraway wrote this in 1985 when 'cyborg' meant sci-fi, and turned it into a political identity \u2014 a way of thinking past the dualisms (nature/culture, human/machine, man/woman) that structure Western thought. Dense, funny, furious, and eerily prescient about our actual cyborg lives with smartphones and neural nets.",
         "category": "philosophical",
         "confidence": 0.93,
         "topics": [
@@ -137,8 +342,8 @@
     {
       "id": "https://nkalfredbot.github.io/weekly-picks/v3/4",
       "url": "https://press.uchicago.edu/Misc/Chicago/511928.html",
-      "title": "They Thought They Were Free — 'But Then It Was Too Late'",
-      "content_html": "<p>An excerpt from Milton Mayer's 1955 book about ordinary Germans who lived through the Nazi era. Not ideologues — teachers, a tailor, a baker. They describe, with chilling clarity, how each small step seemed reasonable, how the gradual erosion of norms was invisible from inside. The most important thing you'll read about how democracies die — not with a bang but with a series of shrugs.</p>",
+      "title": "They Thought They Were Free \u2014 'But Then It Was Too Late'",
+      "content_html": "<p>An excerpt from Milton Mayer's 1955 book about ordinary Germans who lived through the Nazi era. Not ideologues \u2014 teachers, a tailor, a baker. They describe, with chilling clarity, how each small step seemed reasonable, how the gradual erosion of norms was invisible from inside. The most important thing you'll read about how democracies die \u2014 not with a bang but with a series of shrugs.</p>",
       "summary": "Ordinary Germans describe how Nazism happened one small, reasonable step at a time. The most quietly devastating thing ever written about complicity.",
       "date_published": "2026-03-01T14:00:00Z",
       "authors": [
@@ -153,7 +358,7 @@
         "democracy"
       ],
       "_picks": {
-        "selection_reason": "Published in 1955, this excerpt has circulated for decades because it captures something no political science paper can: the felt experience of normalcy eroding. Mayer's interviewees aren't monsters — they're people who kept waiting for the one big moment that would make resistance obvious, and it never came. Read it slowly.",
+        "selection_reason": "Published in 1955, this excerpt has circulated for decades because it captures something no political science paper can: the felt experience of normalcy eroding. Mayer's interviewees aren't monsters \u2014 they're people who kept waiting for the one big moment that would make resistance obvious, and it never came. Read it slowly.",
         "category": "cautionary",
         "confidence": 0.97,
         "topics": [
@@ -176,7 +381,7 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v3/5",
       "url": "https://www.edge.org/conversation/freeman_dyson-heretical-thoughts-about-science-and-society",
       "title": "Heretical Thoughts About Science and Society",
-      "content_html": "<p>Freeman Dyson — physicist, mathematician, contrarian — on the value of heresy in science. He argues that scientific orthodoxy is as dangerous as any other kind, that amateurs and outsiders drive real breakthroughs, and that the professionalization of science has made it more productive but less interesting. Agree or disagree, it'll rearrange something in your head.</p>",
+      "content_html": "<p>Freeman Dyson \u2014 physicist, mathematician, contrarian \u2014 on the value of heresy in science. He argues that scientific orthodoxy is as dangerous as any other kind, that amateurs and outsiders drive real breakthroughs, and that the professionalization of science has made it more productive but less interesting. Agree or disagree, it'll rearrange something in your head.</p>",
       "summary": "Freeman Dyson's case for scientific heresy, amateur science, and the intellectual dangers of professional consensus.",
       "date_published": "2026-03-01T14:00:00Z",
       "authors": [
