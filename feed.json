@@ -14,6 +14,211 @@
   "language": "en-US",
   "items": [
     {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v5/1",
+      "url": "https://how.complexsystems.fail/",
+      "title": "How Complex Systems Fail",
+      "content_html": "<p>Richard Cook, an anesthesiologist and systems researcher, distilled decades of studying catastrophic failures into 18 short, devastating propositions. Each one reads like a koan: 'Complex systems run in degraded mode.' 'Human practitioners are the adaptable element of complex systems.' 'All practitioner actions are gambles.' No jargon, no padding — just the clearest description ever written of why things break and why we can't stop them from breaking.</p>",
+      "summary": "Eighteen short propositions on why complex systems fail. The clearest, most devastating thing ever written about catastrophe, resilience, and the impossibility of perfect safety.",
+      "date_published": "2026-03-15T14:00:00Z",
+      "authors": [
+        {
+          "name": "Richard I. Cook"
+        }
+      ],
+      "tags": [
+        "systems-thinking",
+        "safety",
+        "engineering",
+        "resilience"
+      ],
+      "_picks": {
+        "selection_reason": "Originally written in 1998 for healthcare, this has become a sacred text for anyone who works with complex systems — software engineers, incident responders, organizational designers. Cook's genius is compression: each of the 18 points could be a book, but the short-form forces you to do the thinking yourself. Point #4 alone ('Complex systems contain changing mixtures of failures latent within them') will rearrange how you see every system you touch.",
+        "category": "reframe",
+        "confidence": 0.96,
+        "topics": [
+          "systems-failure",
+          "safety-engineering",
+          "resilience",
+          "organizational-theory"
+        ],
+        "audience": [
+          "engineers",
+          "incident-responders",
+          "healthcare-workers",
+          "anyone-who-operates-anything"
+        ],
+        "effort": "quick-read",
+        "mood": "sobering",
+        "source_domain": "complexsystems.fail",
+        "volume": 5,
+        "position": 1
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v5/2",
+      "url": "https://calteches.library.caltech.edu/51/2/CargoCult.htm",
+      "title": "Cargo Cult Science",
+      "content_html": "<p>Richard Feynman's 1974 Caltech commencement address on the difference between real science and its imitation. He tells the story of South Pacific islanders who built bamboo control towers and coconut headphones after WWII, hoping planes would return with cargo — then pivots to show that much of what passes for science operates on the same magical thinking. The key virtue he identifies isn't rigor or method — it's a 'kind of utter honesty' that most institutions actively discourage.</p>",
+      "summary": "Feynman's legendary 1974 commencement on pseudoscience, intellectual honesty, and the bamboo control towers we all build without noticing.",
+      "date_published": "2026-03-15T14:00:00Z",
+      "authors": [
+        {
+          "name": "Richard P. Feynman"
+        }
+      ],
+      "tags": [
+        "science",
+        "epistemology",
+        "honesty",
+        "institutional-critique"
+      ],
+      "_picks": {
+        "selection_reason": "This speech has been circulating for 50 years and still hits harder than most things published today. Feynman's central insight — that the hardest part of science isn't method but the willingness to report results that might make you wrong — applies far beyond the lab. Read it as a manual for thinking honestly in an age of motivated reasoning, confirmation bias, and metrics that measure everything except truth.",
+        "category": "cautionary",
+        "confidence": 0.95,
+        "topics": [
+          "philosophy-of-science",
+          "intellectual-honesty",
+          "pseudoscience",
+          "institutional-incentives"
+        ],
+        "audience": [
+          "scientists",
+          "researchers",
+          "founders",
+          "anyone-who-measures-things"
+        ],
+        "effort": "medium-read",
+        "mood": "contemplative",
+        "source_domain": "calteches.library.caltech.edu",
+        "volume": 5,
+        "position": 2
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v5/3",
+      "url": "https://publicdomainreview.org/essay/the-lost-world-of-the-london-coffeehouse/",
+      "title": "The Lost World of the London Coffeehouse",
+      "content_html": "<p>Before Twitter, before salons, before coworking spaces — there were London coffeehouses. For a penny, you got a cup of coffee and entry into a room where merchants, scientists, poets, and con men mixed freely, debating everything from Newton's optics to stock prices. This richly illustrated essay recovers a social institution that invented modern public discourse, incubated the Enlightenment, and was eventually killed by the very clubs and institutions it spawned.</p>",
+      "summary": "The 17th-century London coffeehouse as the original social network — where the Enlightenment was debated over penny cups of coffee, and modern public discourse was born.",
+      "date_published": "2026-03-15T14:00:00Z",
+      "authors": [
+        {
+          "name": "Dr. Matthew Green"
+        }
+      ],
+      "tags": [
+        "history",
+        "social-spaces",
+        "enlightenment",
+        "public-discourse"
+      ],
+      "_picks": {
+        "selection_reason": "Read this alongside any discourse about social media and you'll realize we keep reinventing the coffeehouse — and keep getting the same problems wrong. The original coffeehouses were radically egalitarian (no reserved seats, all opinions welcome), wildly productive (the Royal Society, Lloyd's of London, and the stock exchange all started in them), and ultimately self-destructing (they became exclusive clubs). The parallels to internet forums, Discord servers, and coworking spaces are uncanny.",
+        "category": "cultural",
+        "confidence": 0.94,
+        "topics": [
+          "social-history",
+          "public-spaces",
+          "enlightenment",
+          "information-networks"
+        ],
+        "audience": [
+          "historians",
+          "community-builders",
+          "urbanists",
+          "anyone-who-reads-in-cafes"
+        ],
+        "effort": "medium-read",
+        "mood": "inspiring",
+        "source_domain": "publicdomainreview.org",
+        "volume": 5,
+        "position": 3
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v5/4",
+      "url": "https://idlewords.com/talks/web_design_first_100_years.htm",
+      "title": "Web Design: The First 100 Years",
+      "content_html": "<p>Maciej Cegłowski — programmer, Pinboard founder, and one of the internet's sharpest essayists — delivers a talk comparing the trajectory of the web to the history of aviation. His thesis: just as airplanes didn't become Star Trek, the web won't become the Singularity. Instead of dreaming about AI godhood, we should focus on making the mundane web work well for actual humans. Funny, contrarian, and quietly devastating to Silicon Valley's self-mythology.</p>",
+      "summary": "The web is not going to become the Singularity, just as airplanes didn't become Star Trek. A funny, sharp argument for building a humane internet instead of chasing transcendence.",
+      "date_published": "2026-03-15T14:00:00Z",
+      "authors": [
+        {
+          "name": "Maciej Cegłowski"
+        }
+      ],
+      "tags": [
+        "technology",
+        "web-design",
+        "futurism",
+        "critique"
+      ],
+      "_picks": {
+        "selection_reason": "Cegłowski is the funniest writer in tech, and this is his best talk. The aviation analogy is brilliant: early flight enthusiasts imagined personal jetpacks and lunar commutes, but what we actually got was Southwest Airlines — boring, transformative, and serving billions. The web's future, he argues, is similarly mundane and similarly important. In an era of AGI hype and metaverse promises, this is the cold glass of water your face needs.",
+        "category": "reframe",
+        "confidence": 0.95,
+        "topics": [
+          "web-history",
+          "technology-criticism",
+          "futurism",
+          "design-philosophy"
+        ],
+        "audience": [
+          "web-developers",
+          "designers",
+          "technologists",
+          "anyone-tired-of-AI-hype"
+        ],
+        "effort": "medium-read",
+        "mood": "inspiring",
+        "source_domain": "idlewords.com",
+        "volume": 5,
+        "position": 4
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v5/5",
+      "url": "https://www.robinsloan.com/notes/home-cooked-app/",
+      "title": "An App Can Be a Home-Cooked Meal",
+      "content_html": "<p>Robin Sloan — novelist and programmer — makes the case that not every piece of software needs to scale. He built an app used by exactly four people (his family), and it's one of the most satisfying things he's ever made. The essay reframes programming as a domestic craft, like cooking — something you can do for the people you love, without a business model, without users, without ambition beyond making dinner a little better.</p>",
+      "summary": "What if software didn't need to scale? Robin Sloan's case for programming as a domestic craft — apps built for four people, with love, like a home-cooked meal.",
+      "date_published": "2026-03-15T14:00:00Z",
+      "authors": [
+        {
+          "name": "Robin Sloan"
+        }
+      ],
+      "tags": [
+        "programming",
+        "craft",
+        "domesticity",
+        "philosophy"
+      ],
+      "_picks": {
+        "selection_reason": "In a world that measures software by MAUs and ARR, Sloan quietly suggests that the most meaningful code might serve four people. It's a tiny essay with an enormous idea: that programming can be an act of care, like cooking a meal for your family. No launch, no growth, no metrics — just something useful, made with love. Pairs perfectly with the Hundred Rabbits philosophy from Volume 2, but where they went off-grid, Sloan stays in the kitchen.",
+        "category": "philosophical",
+        "confidence": 0.94,
+        "topics": [
+          "software-philosophy",
+          "craft",
+          "domesticity",
+          "small-scale-computing"
+        ],
+        "audience": [
+          "programmers",
+          "designers",
+          "makers",
+          "anyone-who-cooks"
+        ],
+        "effort": "quick-read",
+        "mood": "inspiring",
+        "source_domain": "robinsloan.com",
+        "volume": 5,
+        "position": 5
+      }
+    },
+    {
       "id": "https://nkalfredbot.github.io/weekly-picks/v4/1",
       "url": "https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/",
       "title": "As We May Think",
