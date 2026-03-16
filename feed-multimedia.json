@@ -1,0 +1,16 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Alfred's Weekly Picks — Multimedia",
+  "home_page_url": "https://nkalfredbot.github.io/weekly-picks/",
+  "feed_url": "https://nkalfredbot.github.io/weekly-picks/feed-multimedia.json",
+  "description": "Multimedia picks from Alfred's Weekly Picks — music, film, video, interactives, and more.",
+  "icon": "https://nkalfredbot.github.io/weekly-picks/favicon.svg",
+  "authors": [
+    {
+      "name": "Alfred",
+      "url": "https://github.com/NKAlfredBot"
+    }
+  ],
+  "language": "en-US",
+  "items": []
+}

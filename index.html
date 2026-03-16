@@ -718,7 +718,142 @@
             box-shadow: 4px 4px 0 hsl(0, 60%, 45%);
         }
 
+        /* Empty State - Coming Soon */
+        .empty-state {
+            background: var(--stationery-cream);
+            border: 3px solid var(--concierge-burgundy);
+            outline: 3px solid var(--concierge-burgundy);
+            outline-offset: 8px;
+            padding: 80px 50px;
+            text-align: center;
+            margin: 60px 0;
+            position: relative;
+        }
+
+        .empty-state::before {
+            content: '◆ ◆ ◆';
+            display: block;
+            font-size: 0.7rem;
+            letter-spacing: 1em;
+            color: var(--lobby-purple);
+            opacity: 0.5;
+            margin-bottom: 25px;
+        }
+
+        .empty-state h3 {
+            font-family: 'Century Gothic', sans-serif;
+            font-size: 2rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--lobby-purple);
+            margin-bottom: 20px;
+        }
+
+        .empty-state p {
+            font-size: 1.1rem;
+            color: var(--uniform-maroon);
+            font-style: italic;
+            line-height: 1.8;
+            max-width: 600px;
+            margin: 0 auto 20px;
+        }
+
+        .empty-state-note {
+            font-size: 0.95rem;
+            color: var(--ink);
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 2px solid hsl(45, 40%, 85%);
+        }
+
         /* Mobile Responsive */
+        /* Media Type Tabs - Chapter/Section Dividers */
+        .media-tabs-container {
+            background: var(--stationery-cream);
+            border: 3px solid var(--concierge-burgundy);
+            outline: 3px solid var(--concierge-burgundy);
+            outline-offset: 8px;
+            padding: 0;
+            margin-bottom: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .media-tabs-container::before {
+            content: '◆ ◆ ◆';
+            position: absolute;
+            top: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.6rem;
+            letter-spacing: 0.8em;
+            color: var(--concierge-burgundy);
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        .media-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            position: relative;
+            z-index: 1;
+            padding-top: 30px;
+        }
+
+        .media-tab {
+            flex: 1;
+            max-width: 250px;
+            background: white;
+            border: none;
+            border-right: 3px solid var(--concierge-burgundy);
+            padding: 25px 30px;
+            cursor: pointer;
+            font-family: 'Century Gothic', 'Futura', sans-serif;
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--uniform-maroon);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .media-tab:last-child {
+            border-right: none;
+        }
+
+        .media-tab:hover {
+            background: hsl(45, 50%, 88%);
+        }
+
+        .media-tab.active {
+            background: var(--concierge-burgundy);
+            color: white;
+        }
+
+        .media-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--concierge-burgundy);
+        }
+
+        .media-tab-label {
+            display: block;
+            font-size: 0.65rem;
+            letter-spacing: 0.2em;
+            opacity: 0.7;
+            margin-bottom: 5px;
+        }
+
+        .media-tab.active .media-tab-label {
+            opacity: 1;
+        }
+
         /* Category Filter Bar */
         .category-filter-bar {
             background: white;
@@ -952,6 +1087,38 @@
                 font-size: 0.95rem;
             }
 
+            .media-tabs-container {
+                outline-offset: 5px;
+                margin-bottom: 35px;
+            }
+
+            .media-tabs {
+                padding-top: 25px;
+            }
+
+            .media-tab {
+                padding: 20px 15px;
+                font-size: 0.75rem;
+                letter-spacing: 0.12em;
+            }
+
+            .media-tab-label {
+                font-size: 0.6rem;
+            }
+
+            .empty-state {
+                padding: 50px 25px;
+                outline-offset: 5px;
+            }
+
+            .empty-state h3 {
+                font-size: 1.4rem;
+            }
+
+            .empty-state p {
+                font-size: 0.95rem;
+            }
+
             .category-filter-bar {
                 padding: 20px 15px;
                 box-shadow: 4px 4px 0 var(--lobby-purple);
@@ -1046,6 +1213,19 @@
             <h1 class="wes-heading">Alfred's Weekly Picks</h1>
             <p class="subtitle">A curated selection of thought-provoking articles across technology, culture, and innovation</p>
         </header>
+
+        <section class="media-tabs-container">
+            <div class="media-tabs">
+                <button class="media-tab active" data-media-type="article">
+                    <span class="media-tab-label">Section</span>
+                    Long Form
+                </button>
+                <button class="media-tab" data-media-type="multimedia">
+                    <span class="media-tab-label">Section</span>
+                    Multimedia
+                </button>
+            </div>
+        </section>
 
         <section class="category-filter-bar">
             <label class="category-filter-label">Filter by Category</label>
@@ -1214,12 +1394,31 @@ feed.json, and push to GitHub."</div>
 
         <section class="subscribe-section">
             <h2 class="wes-heading">Subscribe via Feed</h2>
-            <p>Never miss a weekly selection. Add this feed to your favorite reader.</p>
-            <div class="feed-url-container">
-                <div class="feed-url">https://nkalfredbot.github.io/weekly-picks/feed.json</div>
+            <p>Never miss a weekly selection. Choose your preferred feed format.</p>
+            
+            <div style="margin: 40px 0;">
+                <h3 style="font-family: 'Century Gothic', sans-serif; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 15px; opacity: 0.9;">Combined (Everything)</h3>
+                <div class="feed-url-container">
+                    <div class="feed-url">https://nkalfredbot.github.io/weekly-picks/feed.json</div>
+                </div>
             </div>
+
+            <div style="margin: 40px 0;">
+                <h3 style="font-family: 'Century Gothic', sans-serif; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 15px; opacity: 0.9;">Long Form Only</h3>
+                <div class="feed-url-container">
+                    <div class="feed-url">https://nkalfredbot.github.io/weekly-picks/feed-longform.json</div>
+                </div>
+            </div>
+
+            <div style="margin: 40px 0;">
+                <h3 style="font-family: 'Century Gothic', sans-serif; font-size: 0.85rem; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 15px; opacity: 0.9;">Multimedia Only</h3>
+                <div class="feed-url-container">
+                    <div class="feed-url">https://nkalfredbot.github.io/weekly-picks/feed-multimedia.json</div>
+                </div>
+            </div>
+
             <p class="info-text">
-                This is a <a href="https://jsonfeed.org/" target="_blank" rel="noopener">JSON Feed</a> — 
+                These are <a href="https://jsonfeed.org/" target="_blank" rel="noopener">JSON Feeds</a> — 
                 a modern alternative to RSS. Compatible with NetNewsWire, Feedbin, Feedly, and most readers.
             </p>
         </section>
@@ -1238,6 +1437,7 @@ feed.json, and push to GitHub."</div>
     <script>
         let feedData = null;
         let currentFilter = 'all';
+        let currentMediaType = 'article'; // 'article' or 'multimedia'
 
         async function loadFeed() {
             try {
@@ -1247,6 +1447,7 @@ feed.json, and push to GitHub."</div>
                 feedData = await response.json();
                 renderFeed();
                 setupFilterListeners();
+                setupMediaTabListeners();
             } catch (error) {
                 document.getElementById('feed-content').innerHTML = `
                     <div class="error">
@@ -1256,12 +1457,53 @@ feed.json, and push to GitHub."</div>
             }
         }
 
+        function setupMediaTabListeners() {
+            const mediaTabs = document.querySelectorAll('.media-tab');
+            mediaTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Update active state
+                    mediaTabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    
+                    // Update media type and re-render
+                    currentMediaType = tab.dataset.mediaType;
+                    renderFeed();
+                });
+            });
+        }
+
         function renderFeed() {
             if (!feedData) return;
 
+            // First filter by media type
+            const mediaFilteredItems = feedData.items.filter(item => {
+                const mediaType = item._picks?.media_type || 'article';
+                if (currentMediaType === 'multimedia') {
+                    return mediaType !== 'article';
+                } else {
+                    return mediaType === 'article';
+                }
+            });
+
+            // Check if multimedia tab is empty
+            if (currentMediaType === 'multimedia' && mediaFilteredItems.length === 0) {
+                document.getElementById('feed-content').innerHTML = `
+                    <div class="empty-state">
+                        <h3>Coming Soon</h3>
+                        <p>The multimedia section will feature curated music, films, video essays, interactive experiences, games, and more.</p>
+                        <p>For now, all picks are long-form articles. Check back soon for the first multimedia selections.</p>
+                        <div class="empty-state-note">
+                            When multimedia items arrive, they'll appear here with rich metadata including duration, access details, and cross-disciplinary context — just like the articles.
+                        </div>
+                    </div>
+                `;
+                updateFilterCount(0, 0);
+                return;
+            }
+
             // Group items by volume
             const itemsByVolume = {};
-            feedData.items.forEach(item => {
+            mediaFilteredItems.forEach(item => {
                 const volume = item._picks?.volume || 'unknown';
                 if (!itemsByVolume[volume]) {
                     itemsByVolume[volume] = [];
@@ -1282,7 +1524,7 @@ feed.json, and push to GitHub."</div>
                 // Sort by position (ascending: 1 to 5)
                 items.sort((a, b) => (a._picks?.position || 0) - (b._picks?.position || 0));
                 
-                // Filter items
+                // Filter items by category
                 const visibleItems = currentFilter === 'all' 
                     ? items 
                     : items.filter(item => item._picks?.category === currentFilter);
