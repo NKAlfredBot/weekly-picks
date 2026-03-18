@@ -1512,6 +1512,16 @@ feed.json, and push to GitHub."</div>
 
             // Sort volumes descending
             const volumes = Object.keys(itemsByVolume).sort((a, b) => b - a);
+            
+            // For multimedia tab, renumber volumes starting from 1
+            let volumeDisplayMap = {};
+            if (currentMediaType === 'multimedia') {
+                const sortedAsc = [...volumes].sort((a, b) => a - b);
+                sortedAsc.forEach((vol, idx) => {
+                    volumeDisplayMap[vol] = idx + 1;
+                });
+            }
+            
             const latestVolume = volumes[0];
 
             let html = '';
@@ -1552,7 +1562,7 @@ feed.json, and push to GitHub."</div>
                         <div class="volume-header" onclick="toggleVolume(this)">
                             <span class="chapter-label">Chapter</span>
                             <h2 class="wes-heading">
-                                Volume ${volume}
+                                Volume ${volumeDisplayMap[volume] || volume}
                                 <span class="volume-toggle-indicator"></span>
                             </h2>
                             ${dateStr ? `<div class="volume-date">${dateStr}</div>` : ''}
