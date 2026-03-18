@@ -1474,11 +1474,13 @@ feed.json, and push to GitHub."</div>
 
             // First filter by media type
             const mediaFilteredItems = feedData.items.filter(item => {
-                const mediaType = item._picks?.media_type || 'article';
+                const mediaType = item._picks?.media_type;
                 if (currentMediaType === 'multimedia') {
-                    return mediaType !== 'article';
+                    // Multimedia tab: show items where media_type is set (not null/undefined)
+                    return mediaType != null && mediaType !== '';
                 } else {
-                    return mediaType === 'article';
+                    // Long Form tab: show items where media_type is null/undefined/not set
+                    return mediaType == null || mediaType === '';
                 }
             });
 

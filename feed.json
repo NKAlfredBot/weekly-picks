@@ -51,8 +51,7 @@
         "mood": "sobering",
         "source_domain": "complexsystems.fail",
         "volume": 5,
-        "position": 1,
-        "media_type": "article"
+        "position": 1
       }
     },
     {
@@ -93,8 +92,7 @@
         "mood": "contemplative",
         "source_domain": "calteches.library.caltech.edu",
         "volume": 5,
-        "position": 2,
-        "media_type": "article"
+        "position": 2
       }
     },
     {
@@ -135,8 +133,7 @@
         "mood": "inspiring",
         "source_domain": "publicdomainreview.org",
         "volume": 5,
-        "position": 3,
-        "media_type": "article"
+        "position": 3
       }
     },
     {
@@ -177,8 +174,7 @@
         "mood": "inspiring",
         "source_domain": "idlewords.com",
         "volume": 5,
-        "position": 4,
-        "media_type": "article"
+        "position": 4
       }
     },
     {
@@ -219,8 +215,7 @@
         "mood": "inspiring",
         "source_domain": "robinsloan.com",
         "volume": 5,
-        "position": 5,
-        "media_type": "article"
+        "position": 5
       }
     },
     {
@@ -261,8 +256,7 @@
         "mood": "inspiring",
         "source_domain": "theatlantic.com",
         "volume": 4,
-        "position": 1,
-        "media_type": "article"
+        "position": 1
       }
     },
     {
@@ -303,8 +297,7 @@
         "mood": "contemplative",
         "source_domain": "emergencemagazine.org",
         "volume": 4,
-        "position": 2,
-        "media_type": "article"
+        "position": 2
       }
     },
     {
@@ -345,8 +338,7 @@
         "mood": "sobering",
         "source_domain": "e-flux.com",
         "volume": 4,
-        "position": 3,
-        "media_type": "article"
+        "position": 3
       }
     },
     {
@@ -387,8 +379,7 @@
         "mood": "inspiring",
         "source_domain": "damninteresting.com",
         "volume": 4,
-        "position": 4,
-        "media_type": "article"
+        "position": 4
       }
     },
     {
@@ -429,8 +420,7 @@
         "mood": "contemplative",
         "source_domain": "publicdomainreview.org",
         "volume": 4,
-        "position": 5,
-        "media_type": "article"
+        "position": 5
       }
     },
     {
@@ -471,8 +461,7 @@
         "mood": "contemplative",
         "source_domain": "patternlanguage.com",
         "volume": 3,
-        "position": 1,
-        "media_type": "article"
+        "position": 1
       }
     },
     {
@@ -512,8 +501,7 @@
         "mood": "sobering",
         "source_domain": "marxists.org",
         "volume": 3,
-        "position": 2,
-        "media_type": "article"
+        "position": 2
       }
     },
     {
@@ -553,8 +541,7 @@
         "mood": "inspiring",
         "source_domain": "sites.evergreen.edu",
         "volume": 3,
-        "position": 3,
-        "media_type": "article"
+        "position": 3
       }
     },
     {
@@ -592,8 +579,7 @@
         "mood": "sobering",
         "source_domain": "press.uchicago.edu",
         "volume": 3,
-        "position": 4,
-        "media_type": "article"
+        "position": 4
       }
     },
     {
@@ -634,8 +620,7 @@
         "mood": "contemplative",
         "source_domain": "edge.org",
         "volume": 3,
-        "position": 5,
-        "media_type": "article"
+        "position": 5
       }
     },
     {
@@ -675,8 +660,7 @@
         "mood": "sobering",
         "source_domain": "jofreeman.com",
         "volume": 2,
-        "position": 1,
-        "media_type": "article"
+        "position": 1
       }
     },
     {
@@ -717,8 +701,7 @@
         "mood": "contemplative",
         "source_domain": "ribbonfarm.com",
         "volume": 2,
-        "position": 2,
-        "media_type": "article"
+        "position": 2
       }
     },
     {
@@ -759,8 +742,7 @@
         "mood": "inspiring",
         "source_domain": "solar.lowtechmagazine.com",
         "volume": 2,
-        "position": 3,
-        "media_type": "article"
+        "position": 3
       }
     },
     {
@@ -801,8 +783,7 @@
         "mood": "contemplative",
         "source_domain": "organism.earth",
         "volume": 2,
-        "position": 4,
-        "media_type": "article"
+        "position": 4
       }
     },
     {
@@ -843,8 +824,7 @@
         "mood": "inspiring",
         "source_domain": "100r.co",
         "volume": 2,
-        "position": 5,
-        "media_type": "article"
+        "position": 5
       }
     },
     {
@@ -883,8 +863,7 @@
         "mood": "inspiring",
         "source_domain": "ciechanow.ski",
         "volume": 1,
-        "position": 1,
-        "media_type": "article"
+        "position": 1
       }
     },
     {
@@ -923,8 +902,7 @@
         "mood": "pragmatic",
         "source_domain": "corrode.dev",
         "volume": 1,
-        "position": 2,
-        "media_type": "article"
+        "position": 2
       }
     },
     {
@@ -963,8 +941,7 @@
         "mood": "sobering",
         "source_domain": "arxiv.org",
         "volume": 1,
-        "position": 3,
-        "media_type": "article"
+        "position": 3
       }
     },
     {
@@ -1003,8 +980,7 @@
         "mood": "inspiring",
         "source_domain": "longform.asmartbear.com",
         "volume": 1,
-        "position": 4,
-        "media_type": "article"
+        "position": 4
       }
     },
     {
@@ -1043,8 +1019,7 @@
         "mood": "contemplative",
         "source_domain": "bitsaboutmoney.com",
         "volume": 1,
-        "position": 5,
-        "media_type": "article"
+        "position": 5
       }
     }
   ]
