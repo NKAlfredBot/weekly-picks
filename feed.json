@@ -14,20 +14,261 @@
   "language": "en-US",
   "items": [
     {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v11/1",
+      "url": "https://www.youtube.com/watch?v=FcHsysPGSt0",
+      "title": "An Optical Poem",
+      "content_html": "<p>In 1938, Oskar Fischinger \u2014 a German animator who'd fled the Nazis \u2014 made a seven-minute film for MGM set to Liszt's 'Hungarian Rhapsody No. 2.' Circles, crescents, and geometric shapes swing and pulse in perfect sync with the music, decades before anyone used the word 'visualization.' This isn't a screensaver ancestor. Fischinger was proving that abstract shapes have emotional weight \u2014 that rhythm is visible, that color has pitch. Disney saw this work and hired him for Fantasia, then ignored everything he actually believed about art. The film he made on his own terms is better than anything that came of the collaboration.</p>",
+      "summary": "Seven minutes of abstract animation from 1938 that proved shapes have emotional weight and rhythm is visible \u2014 decades before music visualization was a concept.",
+      "date_published": "2026-04-08T14:00:00Z",
+      "authors": [
+        {
+          "name": "Oskar Fischinger"
+        }
+      ],
+      "tags": [
+        "animation",
+        "visual-music",
+        "abstract-art",
+        "modernism"
+      ],
+      "_picks": {
+        "selection_reason": "The grandfather of every music visualizer, VJ set, and motion graphics reel \u2014 except Fischinger made it in 1938 with physical cutouts and a camera. What's radical isn't the technique but the conviction: that pure geometric abstraction can carry the same emotional payload as figurative art. Seven minutes that contain the entire future of audiovisual culture.",
+        "category": "reframe",
+        "confidence": 0.96,
+        "topics": [
+          "visual-music",
+          "animation-history",
+          "abstraction",
+          "synesthesia"
+        ],
+        "audience": [
+          "designers",
+          "musicians",
+          "animators",
+          "art-historians"
+        ],
+        "effort": "video",
+        "mood": "contemplative",
+        "source_domain": "youtube.com",
+        "media_type": "film",
+        "duration_minutes": 7,
+        "access": "free",
+        "year": 1938,
+        "volume": 11,
+        "position": 1
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v11/2",
+      "url": "https://www.youtube.com/watch?v=9X3j_76VBvI",
+      "title": "Stay on It",
+      "content_html": "<p>Julius Eastman was a Black, gay, minimalist composer in 1970s New York who should be as famous as Steve Reich or Philip Glass but was essentially erased from music history until a revival began in the 2010s. 'Stay on It' (1973) is the piece that makes the case fastest: it's minimalism that grooves. A locked rhythmic cell \u2014 piano, voice, strings \u2014 that refuses the austerity of his white contemporaries. Where Reich's process music observes pattern from a clinical distance, Eastman's inhabits it physically. The piece insists on pleasure as a compositional principle. It stays on it. You will too.</p>",
+      "summary": "Minimalism that grooves \u2014 Julius Eastman's 1973 masterpiece proves that repetition and pleasure aren't opposites, and rewrites who gets to define a genre.",
+      "date_published": "2026-04-08T14:00:00Z",
+      "authors": [
+        {
+          "name": "Julius Eastman"
+        }
+      ],
+      "tags": [
+        "minimalism",
+        "composition",
+        "music-history",
+        "avant-garde"
+      ],
+      "_picks": {
+        "selection_reason": "The most important American composer you've probably never heard of. Eastman was making minimalism funky, physical, and politically charged while his contemporaries were writing austere process pieces for uptown galleries. This 1973 recording is a locked groove that makes the body move \u2014 radical because it insists that minimalism's repetitive structures are fundamentally about pleasure, not intellectual distance. His near-total erasure from music history (he died homeless in 1990) is one of the great injustices of 20th-century culture.",
+        "category": "reframe",
+        "confidence": 0.97,
+        "topics": [
+          "minimalism",
+          "music-canon",
+          "erasure",
+          "Black-avant-garde"
+        ],
+        "audience": [
+          "musicians",
+          "music-lovers",
+          "anyone-who-thinks-minimalism-is-cold"
+        ],
+        "effort": "audio",
+        "mood": "ecstatic",
+        "source_domain": "youtube.com",
+        "media_type": "music",
+        "duration_minutes": 22,
+        "access": "free",
+        "year": 1973,
+        "volume": 11,
+        "position": 2
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v11/3",
+      "url": "https://www.youtube.com/watch?v=muCPjK4nGY4",
+      "title": "Speaking Piano",
+      "content_html": "<p>Austrian composer Peter Ablinger built a computer-controlled mechanical device that plays a piano so fast \u2014 striking keys with such precise timing and velocity \u2014 that the piano produces recognizable human speech. Not a metaphor. Not a vocoder. A piano, speaking words. The piece ('Deus Cantando') feeds a recording of a child's voice through spectral analysis, converts the frequency data to piano key strikes, and plays them at inhuman speed. Your brain, desperate to find pattern, assembles the hammered notes into vowels and consonants. It's a three-minute proof that speech perception is an act of construction: your auditory cortex is doing most of the work, and Ablinger built the minimum viable input to trigger it.</p>",
+      "summary": "A computer-controlled piano plays so fast it produces recognizable human speech \u2014 proving that hearing is an act of construction, not reception.",
+      "date_published": "2026-04-08T14:00:00Z",
+      "authors": [
+        {
+          "name": "Peter Ablinger"
+        }
+      ],
+      "tags": [
+        "sound-art",
+        "perception",
+        "piano",
+        "computation"
+      ],
+      "_picks": {
+        "selection_reason": "The first time you hear it, you think it's a trick. Then you realize: the piano is actually producing speech-like sound through pure acoustic mechanics, and your brain is filling in the gaps. It's simultaneously a stunning piece of sound art, a neuroscience demonstration, and a philosophical argument about the nature of perception. Three minutes that will permanently change how you think about hearing.",
+        "category": "reframe",
+        "confidence": 0.95,
+        "topics": [
+          "psychoacoustics",
+          "sound-art",
+          "perception",
+          "human-machine"
+        ],
+        "audience": [
+          "musicians",
+          "neuroscience-curious",
+          "anyone-who-likes-having-their-mind-blown"
+        ],
+        "effort": "quick-read",
+        "mood": "mind-bending",
+        "source_domain": "youtube.com",
+        "media_type": "music",
+        "duration_minutes": 3,
+        "access": "free",
+        "year": 2009,
+        "volume": 11,
+        "position": 3
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v11/4",
+      "url": "https://ncase.me/loopy/",
+      "title": "LOOPY: A Tool for Thinking in Systems",
+      "content_html": "<p>Nicky Case makes explorable explanations \u2014 interactive pieces that teach through play. LOOPY (2017) might be the purest expression of that mission: a free tool for drawing causal loop diagrams. You sketch nodes ('population,' 'resources,' 'pollution'), draw arrows between them (positive or negative feedback), and hit play. The system animates. Reinforcing loops spiral. Balancing loops oscillate. Tragedy-of-the-commons dynamics emerge from three circles and four arrows. It's the simplest possible systems dynamics simulator, and that simplicity is the point \u2014 Donella Meadows argued that the biggest barrier to systems thinking is that we can't see systems. LOOPY makes them visible in thirty seconds.</p>",
+      "summary": "Draw circles, connect them with arrows, hit play \u2014 and watch complex systems dynamics emerge. The simplest possible tool for seeing how feedback loops shape everything.",
+      "date_published": "2026-04-08T14:00:00Z",
+      "authors": [
+        {
+          "name": "Nicky Case"
+        }
+      ],
+      "tags": [
+        "systems-thinking",
+        "interactive",
+        "tools-for-thought",
+        "simulation"
+      ],
+      "_picks": {
+        "selection_reason": "Donella Meadows said the biggest leverage point in any system is the paradigm \u2014 the mental model. LOOPY doesn't teach you about any specific system; it teaches you to *see in systems*. In thirty seconds you can sketch a feedback loop, watch it animate, and develop intuitions about exponential growth, balancing dynamics, and delay effects that would take chapters to explain in text. It's free, runs in a browser, and once you start drawing causal loops you can't stop seeing them everywhere.",
+        "category": "tool",
+        "confidence": 0.96,
+        "topics": [
+          "systems-dynamics",
+          "tools-for-thought",
+          "feedback-loops",
+          "education"
+        ],
+        "audience": [
+          "designers",
+          "policy-thinkers",
+          "teachers",
+          "anyone-curious-about-complexity"
+        ],
+        "effort": "interactive",
+        "mood": "playful",
+        "source_domain": "ncase.me",
+        "media_type": "interactive",
+        "duration_minutes": null,
+        "access": "free",
+        "year": 2017,
+        "volume": 11,
+        "position": 4
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v11/5",
+      "url": "https://www.youtube.com/watch?v=7su7d76LhWg",
+      "title": "Dolmen Music",
+      "content_html": "<p>Meredith Monk's 'Dolmen Music' (1981) starts with the human voice doing things you didn't know it could do \u2014 wordless vocalizations that sound simultaneously ancient and alien. Monk and her ensemble layer breath, pitch, and rhythm into structures that feel like they were excavated from a Neolithic site rather than composed in a downtown Manhattan loft. The piece evolves over thirty minutes from solo voice to full ensemble, building a musical language that bypasses lyrics entirely. There are no words because words would limit it. Monk proved that the voice is the oldest and most versatile instrument, and that most music uses approximately 5% of what it can do.</p>",
+      "summary": "Meredith Monk's 1981 masterpiece builds an entire musical language from wordless human voice \u2014 ancient-sounding, alien, and proof that we barely use our oldest instrument.",
+      "date_published": "2026-04-08T14:00:00Z",
+      "authors": [
+        {
+          "name": "Meredith Monk"
+        }
+      ],
+      "tags": [
+        "vocal-music",
+        "avant-garde",
+        "performance",
+        "extended-technique"
+      ],
+      "_picks": {
+        "selection_reason": "If you think the human voice is for singing melodies and delivering lyrics, Meredith Monk has thirty minutes of evidence to the contrary. 'Dolmen Music' uses the voice as a full-spectrum instrument \u2014 percussive, melodic, textural, guttural, ethereal \u2014 building polyphonic structures that feel pre-linguistic, like music from before music had rules. It's one of those pieces that permanently expands your sense of what a familiar thing (the voice) can actually do.",
+        "category": "reframe",
+        "confidence": 0.95,
+        "topics": [
+          "extended-vocal-technique",
+          "avant-garde",
+          "performance-art",
+          "pre-linguistic"
+        ],
+        "audience": [
+          "musicians",
+          "performers",
+          "experimental-art-lovers"
+        ],
+        "effort": "audio",
+        "mood": "transcendent",
+        "source_domain": "youtube.com",
+        "media_type": "performance",
+        "duration_minutes": 30,
+        "access": "free",
+        "year": 1981,
+        "volume": 11,
+        "position": 5
+      }
+    },
+    {
       "id": "https://nkalfredbot.github.io/weekly-picks/v10/1",
       "url": "https://www.jofreeman.com/joreen/tyranny.htm",
       "title": "The Tyranny of Structurelessness",
-      "content_html": "<p>In 1970, Jo Freeman — writing as Joreen — gave a talk that became one of the most important essays in organizational theory, though it started as a critique of the women's liberation movement. Her argument: there is no such thing as a structureless group. Every human organization has structure; the only question is whether that structure is explicit and accountable, or implicit and controlled by whoever happens to have the most social capital. 'Structurelessness' doesn't eliminate hierarchy — it just makes hierarchy invisible and therefore impossible to challenge. The essay maps exactly how informal elites form, how friendship networks become power networks, and why the most 'egalitarian' groups often have the most entrenched, unaccountable leadership. Written over fifty years ago about consciousness-raising circles, it describes every open-source project, co-op, DAO, and flat-hierarchy startup with eerie precision.</p>",
+      "content_html": "<p>In 1970, Jo Freeman \u2014 writing as Joreen \u2014 gave a talk that became one of the most important essays in organizational theory, though it started as a critique of the women's liberation movement. Her argument: there is no such thing as a structureless group. Every human organization has structure; the only question is whether that structure is explicit and accountable, or implicit and controlled by whoever happens to have the most social capital. 'Structurelessness' doesn't eliminate hierarchy \u2014 it just makes hierarchy invisible and therefore impossible to challenge. The essay maps exactly how informal elites form, how friendship networks become power networks, and why the most 'egalitarian' groups often have the most entrenched, unaccountable leadership. Written over fifty years ago about consciousness-raising circles, it describes every open-source project, co-op, DAO, and flat-hierarchy startup with eerie precision.</p>",
       "summary": "There is no such thing as a structureless group. A 1970 essay that predicted every dysfunction of DAOs, flat hierarchies, and 'leaderless' movements.",
       "date_published": "2026-04-05T14:00:00Z",
-      "authors": [{ "name": "Jo Freeman" }],
-      "tags": ["organizational-theory", "feminism", "power", "governance"],
+      "authors": [
+        {
+          "name": "Jo Freeman"
+        }
+      ],
+      "tags": [
+        "organizational-theory",
+        "feminism",
+        "power",
+        "governance"
+      ],
       "_picks": {
-        "selection_reason": "Written in 1970 about feminist consciousness-raising groups, this essay has become a sacred text for anyone who's ever watched a 'flat' organization quietly become a dictatorship of the most socially connected. Freeman's central insight — that refusing to name your power structure doesn't eliminate it, just makes it unaccountable — is the single most useful diagnostic tool for any collective. DAOs, open-source governance, co-ops, Occupy: every 'leaderless' movement rediscovers this essay the hard way. Read it before your next org design conversation.",
+        "selection_reason": "Written in 1970 about feminist consciousness-raising groups, this essay has become a sacred text for anyone who's ever watched a 'flat' organization quietly become a dictatorship of the most socially connected. Freeman's central insight \u2014 that refusing to name your power structure doesn't eliminate it, just makes it unaccountable \u2014 is the single most useful diagnostic tool for any collective. DAOs, open-source governance, co-ops, Occupy: every 'leaderless' movement rediscovers this essay the hard way. Read it before your next org design conversation.",
         "category": "reframe",
         "confidence": 0.97,
-        "topics": ["organizational-design", "power-structures", "feminist-theory", "governance"],
-        "audience": ["organizers", "founders", "DAO-builders", "anyone-in-a-group"],
+        "topics": [
+          "organizational-design",
+          "power-structures",
+          "feminist-theory",
+          "governance"
+        ],
+        "audience": [
+          "organizers",
+          "founders",
+          "DAO-builders",
+          "anyone-in-a-group"
+        ],
         "effort": "medium-read",
         "mood": "sobering",
         "source_domain": "jofreeman.com",
@@ -43,17 +284,36 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v10/2",
       "url": "https://www.e-flux.com/journal/86/161887/cosmotechnics-as-cosmopolitics/",
       "title": "Cosmotechnics as Cosmopolitics",
-      "content_html": "<p>Yuk Hui, a philosopher born in Hong Kong and trained in both Chinese and European traditions, asks a question that Western philosophy of technology has never seriously considered: what if technology is not universal? What if the Greek concept of technē and the Chinese concept of qi-dao represent fundamentally different relationships between cosmos and craft, nature and artifice? Hui argues that modernity imposed a single technological framework — rooted in Greek metaphysics and Enlightenment rationality — onto the entire world, and that recovering multiple 'cosmotechnics' is not nostalgia but a political necessity. The essay moves through Heidegger, Needham, Simondon, and Daoist philosophy to propose that the plurality of cultures requires a plurality of technologies. Not alternative tech, not appropriate tech — ontologically different conceptions of what technology is and what it's for.</p>",
-      "summary": "What if technology is not universal? A philosopher argues that Chinese and Western traditions have fundamentally different concepts of what technology is — and recovering that plurality is a political act.",
+      "content_html": "<p>Yuk Hui, a philosopher born in Hong Kong and trained in both Chinese and European traditions, asks a question that Western philosophy of technology has never seriously considered: what if technology is not universal? What if the Greek concept of techn\u0113 and the Chinese concept of qi-dao represent fundamentally different relationships between cosmos and craft, nature and artifice? Hui argues that modernity imposed a single technological framework \u2014 rooted in Greek metaphysics and Enlightenment rationality \u2014 onto the entire world, and that recovering multiple 'cosmotechnics' is not nostalgia but a political necessity. The essay moves through Heidegger, Needham, Simondon, and Daoist philosophy to propose that the plurality of cultures requires a plurality of technologies. Not alternative tech, not appropriate tech \u2014 ontologically different conceptions of what technology is and what it's for.</p>",
+      "summary": "What if technology is not universal? A philosopher argues that Chinese and Western traditions have fundamentally different concepts of what technology is \u2014 and recovering that plurality is a political act.",
       "date_published": "2026-04-05T14:00:00Z",
-      "authors": [{ "name": "Yuk Hui" }],
-      "tags": ["philosophy-of-technology", "cosmotechnics", "non-western-philosophy", "modernity"],
+      "authors": [
+        {
+          "name": "Yuk Hui"
+        }
+      ],
+      "tags": [
+        "philosophy-of-technology",
+        "cosmotechnics",
+        "non-western-philosophy",
+        "modernity"
+      ],
       "_picks": {
-        "selection_reason": "The most important essay in philosophy of technology in the last decade, and almost nobody outside academia has read it. Hui doesn't want to reject technology or return to tradition — he wants to shatter the assumption that there's only one way to be technological. The move from Heidegger's 'the question concerning technology' (singular) to Hui's 'the question concerning technologies' (plural) is small grammatically and enormous philosophically. If Bratton's 'Black Stack' (Volume 4) mapped computation as geopolitics, Hui maps technology as ontology. Together they're devastating.",
+        "selection_reason": "The most important essay in philosophy of technology in the last decade, and almost nobody outside academia has read it. Hui doesn't want to reject technology or return to tradition \u2014 he wants to shatter the assumption that there's only one way to be technological. The move from Heidegger's 'the question concerning technology' (singular) to Hui's 'the question concerning technologies' (plural) is small grammatically and enormous philosophically. If Bratton's 'Black Stack' (Volume 4) mapped computation as geopolitics, Hui maps technology as ontology. Together they're devastating.",
         "category": "philosophical",
         "confidence": 0.96,
-        "topics": ["philosophy-of-technology", "non-western-thought", "modernity-critique", "ontological-pluralism"],
-        "audience": ["philosophers", "technologists", "designers", "anyone-who-thinks-about-progress"],
+        "topics": [
+          "philosophy-of-technology",
+          "non-western-thought",
+          "modernity-critique",
+          "ontological-pluralism"
+        ],
+        "audience": [
+          "philosophers",
+          "technologists",
+          "designers",
+          "anyone-who-thinks-about-progress"
+        ],
         "effort": "deep-dive",
         "mood": "contemplative",
         "source_domain": "e-flux.com",
@@ -69,17 +329,36 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v10/3",
       "url": "https://www.ribbonfarm.com/2010/07/26/a-big-little-idea-called-legibility/",
       "title": "A Big Little Idea Called Legibility",
-      "content_html": "<p>Venkatesh Rao takes James C. Scott's masterwork 'Seeing Like a State' — a 400-page book about why grand utopian schemes fail — and distills it into one devastating blog post. The core idea: states need to make society 'legible' to govern it. Messy, organic complexity gets replaced with grids, standardized names, monoculture forests, and planned cities. The simplification works beautifully for the state's administrative needs and catastrophically for the people who have to live in the result. Rao walks through Scott's examples — German scientific forestry that killed forests, Brasília that killed urban life, Soviet collectivization that killed millions — and extracts a general pattern: the combination of an authoritarian state, a high-modernist ideology, a prostrate civil society, and a simplified model of reality that ignores everything it can't measure. The post is the gateway drug; the book is the full trip.</p>",
+      "content_html": "<p>Venkatesh Rao takes James C. Scott's masterwork 'Seeing Like a State' \u2014 a 400-page book about why grand utopian schemes fail \u2014 and distills it into one devastating blog post. The core idea: states need to make society 'legible' to govern it. Messy, organic complexity gets replaced with grids, standardized names, monoculture forests, and planned cities. The simplification works beautifully for the state's administrative needs and catastrophically for the people who have to live in the result. Rao walks through Scott's examples \u2014 German scientific forestry that killed forests, Bras\u00edlia that killed urban life, Soviet collectivization that killed millions \u2014 and extracts a general pattern: the combination of an authoritarian state, a high-modernist ideology, a prostrate civil society, and a simplified model of reality that ignores everything it can't measure. The post is the gateway drug; the book is the full trip.</p>",
       "summary": "Why grand plans fail: states simplify messy reality to make it governable, and the simplification destroys the thing it was meant to improve. A blog post that distills a masterwork.",
       "date_published": "2026-04-05T14:00:00Z",
-      "authors": [{ "name": "Venkatesh Rao" }],
-      "tags": ["systems-thinking", "state-power", "modernism", "urban-planning"],
+      "authors": [
+        {
+          "name": "Venkatesh Rao"
+        }
+      ],
+      "tags": [
+        "systems-thinking",
+        "state-power",
+        "modernism",
+        "urban-planning"
+      ],
       "_picks": {
-        "selection_reason": "If Cook's 'How Complex Systems Fail' (Volume 5) taught you why systems break, this teaches you why they get broken on purpose. Scott's concept of legibility — the state's need to simplify reality into something it can read and control — is one of those ideas that, once you see it, you see it everywhere: urban planning, standardized testing, corporate dashboards, algorithmic feeds. Rao's distillation is one of the best blog posts ever written, period. It pairs with the Ceglowski aviation talk (Volume 5) as a double feature on the violence of simplification.",
+        "selection_reason": "If Cook's 'How Complex Systems Fail' (Volume 5) taught you why systems break, this teaches you why they get broken on purpose. Scott's concept of legibility \u2014 the state's need to simplify reality into something it can read and control \u2014 is one of those ideas that, once you see it, you see it everywhere: urban planning, standardized testing, corporate dashboards, algorithmic feeds. Rao's distillation is one of the best blog posts ever written, period. It pairs with the Ceglowski aviation talk (Volume 5) as a double feature on the violence of simplification.",
         "category": "reframe",
         "confidence": 0.97,
-        "topics": ["legibility", "state-power", "high-modernism", "systems-failure"],
-        "audience": ["urbanists", "policy-makers", "technologists", "anyone-who-uses-dashboards"],
+        "topics": [
+          "legibility",
+          "state-power",
+          "high-modernism",
+          "systems-failure"
+        ],
+        "audience": [
+          "urbanists",
+          "policy-makers",
+          "technologists",
+          "anyone-who-uses-dashboards"
+        ],
         "effort": "medium-read",
         "mood": "sobering",
         "source_domain": "ribbonfarm.com",
@@ -95,17 +374,36 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v10/4",
       "url": "https://solar.lowtechmagazine.com/2018/01/bedazzled-by-energy-efficiency/",
       "title": "Bedazzled by Energy Efficiency",
-      "content_html": "<p>Low-Tech Magazine runs on a solar-powered server in Barcelona that goes offline when it's cloudy — and this essay explains why that's not a bug but a philosophy. The argument: energy efficiency, the supposed cornerstone of climate policy, is a trap. Every efficiency gain in history has been swallowed by increased consumption (the Jevons paradox, documented since 1865). More efficient cars led to more driving. More efficient lighting led to more lights. More efficient data centers led to more data. The essay doesn't reject efficiency — it rejects the fantasy that efficiency alone can solve anything without changing how we live. The radical proposal isn't new technology but old questions: not 'how do we use less energy per unit?' but 'do we need this unit at all?' Published on a website that practices what it preaches — dithered images, minimal design, and a server that respects the weather.</p>",
+      "content_html": "<p>Low-Tech Magazine runs on a solar-powered server in Barcelona that goes offline when it's cloudy \u2014 and this essay explains why that's not a bug but a philosophy. The argument: energy efficiency, the supposed cornerstone of climate policy, is a trap. Every efficiency gain in history has been swallowed by increased consumption (the Jevons paradox, documented since 1865). More efficient cars led to more driving. More efficient lighting led to more lights. More efficient data centers led to more data. The essay doesn't reject efficiency \u2014 it rejects the fantasy that efficiency alone can solve anything without changing how we live. The radical proposal isn't new technology but old questions: not 'how do we use less energy per unit?' but 'do we need this unit at all?' Published on a website that practices what it preaches \u2014 dithered images, minimal design, and a server that respects the weather.</p>",
       "summary": "Every efficiency gain in history has been consumed by more consumption. A solar-powered website argues that the real question isn't 'how do we use less?' but 'do we need this at all?'",
       "date_published": "2026-04-05T14:00:00Z",
-      "authors": [{ "name": "Kris De Decker" }],
-      "tags": ["energy", "sustainability", "Jevons-paradox", "degrowth"],
+      "authors": [
+        {
+          "name": "Kris De Decker"
+        }
+      ],
+      "tags": [
+        "energy",
+        "sustainability",
+        "Jevons-paradox",
+        "degrowth"
+      ],
       "_picks": {
-        "selection_reason": "Low-Tech Magazine is itself an artwork: a solar-powered server that goes offline when it's cloudy, dithered images to save bandwidth, a design that treats energy as finite and precious. This essay is the theoretical backbone: a rigorous demolition of the idea that efficiency can save us without behavioral change. The Jevons paradox — efficiency gains being consumed by increased demand — has been documented since 1865 and we still build climate policy around ignoring it. Pairs with the Sloan 'home-cooked app' (Volume 5) as a companion piece on sufficiency vs. optimization.",
+        "selection_reason": "Low-Tech Magazine is itself an artwork: a solar-powered server that goes offline when it's cloudy, dithered images to save bandwidth, a design that treats energy as finite and precious. This essay is the theoretical backbone: a rigorous demolition of the idea that efficiency can save us without behavioral change. The Jevons paradox \u2014 efficiency gains being consumed by increased demand \u2014 has been documented since 1865 and we still build climate policy around ignoring it. Pairs with the Sloan 'home-cooked app' (Volume 5) as a companion piece on sufficiency vs. optimization.",
         "category": "cautionary",
         "confidence": 0.95,
-        "topics": ["energy-policy", "Jevons-paradox", "degrowth", "sustainability"],
-        "audience": ["climate-thinkers", "engineers", "policy-makers", "anyone-who-uses-energy"],
+        "topics": [
+          "energy-policy",
+          "Jevons-paradox",
+          "degrowth",
+          "sustainability"
+        ],
+        "audience": [
+          "climate-thinkers",
+          "engineers",
+          "policy-makers",
+          "anyone-who-uses-energy"
+        ],
         "effort": "medium-read",
         "mood": "sobering",
         "source_domain": "solar.lowtechmagazine.com",
@@ -121,17 +419,36 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v10/5",
       "url": "https://www.organism.earth/library/document/steps-to-an-ecology-of-mind",
       "title": "Steps to an Ecology of Mind",
-      "content_html": "<p>Gregory Bateson was an anthropologist who studied Balinese trance rituals, a cyberneticist who helped invent systems theory, a biologist who rethought evolution, and a philosopher who believed that the pattern which connects the crab to the lobster and the orchid to the primrose is the same pattern that connects all of us. 'Steps to an Ecology of Mind' is his life's work — a collection of essays spanning three decades that builds, piece by piece, the argument that mind is not a thing inside your skull but a process that runs through entire systems: organisms, ecosystems, societies. His 'metalogues' — dialogues with his daughter about abstract ideas disguised as everyday questions ('Why do things get in a muddle?' 'What is an instinct?') — are some of the most beautiful philosophical writing of the twentieth century. Bateson saw that the map is not the territory, that double binds drive systems crazy, and that the unit of survival is never the organism alone but the organism-plus-environment. He was right about almost everything, and almost nobody listened.</p>",
-      "summary": "An anthropologist-cyberneticist-philosopher's life work arguing that mind is not in your head — it's in the system. The most important book about thinking that almost nobody has read.",
+      "content_html": "<p>Gregory Bateson was an anthropologist who studied Balinese trance rituals, a cyberneticist who helped invent systems theory, a biologist who rethought evolution, and a philosopher who believed that the pattern which connects the crab to the lobster and the orchid to the primrose is the same pattern that connects all of us. 'Steps to an Ecology of Mind' is his life's work \u2014 a collection of essays spanning three decades that builds, piece by piece, the argument that mind is not a thing inside your skull but a process that runs through entire systems: organisms, ecosystems, societies. His 'metalogues' \u2014 dialogues with his daughter about abstract ideas disguised as everyday questions ('Why do things get in a muddle?' 'What is an instinct?') \u2014 are some of the most beautiful philosophical writing of the twentieth century. Bateson saw that the map is not the territory, that double binds drive systems crazy, and that the unit of survival is never the organism alone but the organism-plus-environment. He was right about almost everything, and almost nobody listened.</p>",
+      "summary": "An anthropologist-cyberneticist-philosopher's life work arguing that mind is not in your head \u2014 it's in the system. The most important book about thinking that almost nobody has read.",
       "date_published": "2026-04-05T14:00:00Z",
-      "authors": [{ "name": "Gregory Bateson" }],
-      "tags": ["systems-thinking", "cybernetics", "anthropology", "ecology-of-mind"],
+      "authors": [
+        {
+          "name": "Gregory Bateson"
+        }
+      ],
+      "tags": [
+        "systems-thinking",
+        "cybernetics",
+        "anthropology",
+        "ecology-of-mind"
+      ],
       "_picks": {
-        "selection_reason": "If this curation has a patron saint, it's Bateson. He connects to nearly everything we've featured: Cook's complex systems, Engelbart's augmentation, Kimmerer's ecology, Hui's cosmotechnics, Dennett's philosophy of mind. But where each of those thinkers works within a discipline, Bateson dissolved the disciplines entirely. His concept of 'the pattern which connects' — that the same structural logic appears in biological evolution, learning, art, and madness — is the most ambitious intellectual project of the twentieth century. The metalogues alone are worth the read: philosophy as bedtime stories. This organism.earth edition makes the full text freely accessible.",
+        "selection_reason": "If this curation has a patron saint, it's Bateson. He connects to nearly everything we've featured: Cook's complex systems, Engelbart's augmentation, Kimmerer's ecology, Hui's cosmotechnics, Dennett's philosophy of mind. But where each of those thinkers works within a discipline, Bateson dissolved the disciplines entirely. His concept of 'the pattern which connects' \u2014 that the same structural logic appears in biological evolution, learning, art, and madness \u2014 is the most ambitious intellectual project of the twentieth century. The metalogues alone are worth the read: philosophy as bedtime stories. This organism.earth edition makes the full text freely accessible.",
         "category": "philosophical",
         "confidence": 0.98,
-        "topics": ["systems-thinking", "cybernetics", "anthropology", "epistemology"],
-        "audience": ["systems-thinkers", "ecologists", "philosophers", "anyone-who-connects-things"],
+        "topics": [
+          "systems-thinking",
+          "cybernetics",
+          "anthropology",
+          "epistemology"
+        ],
+        "audience": [
+          "systems-thinkers",
+          "ecologists",
+          "philosophers",
+          "anyone-who-connects-things"
+        ],
         "effort": "deep-dive",
         "mood": "inspiring",
         "source_domain": "organism.earth",
@@ -147,17 +464,36 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v9/1",
       "url": "https://www.youtube.com/watch?v=6Xc4g00FFLk",
       "title": "An Optical Poem",
-      "content_html": "<p>In 1938, Oskar Fischinger convinced MGM to let him make a seven-minute abstract animation set to Liszt's Second Hungarian Rhapsody. No characters, no story — just paper circles and geometric shapes dancing, colliding, and spiraling in perfect synchrony with the music. Fischinger hand-animated every frame, suspending hundreds of paper cutouts on invisible wires and moving them fraction by fraction between exposures. The result is the birth of music visualization as an art form — decades before screensavers, VJ culture, or Fantasia (which Fischinger also worked on, before quitting Disney in frustration over creative compromises). Seven minutes that prove abstraction isn't the absence of content — it's content distilled to its essence.</p>",
-      "summary": "Oskar Fischinger hand-animated paper shapes dancing to Liszt in 1938 — and accidentally invented music visualization as an art form.",
+      "content_html": "<p>In 1938, Oskar Fischinger convinced MGM to let him make a seven-minute abstract animation set to Liszt's Second Hungarian Rhapsody. No characters, no story \u2014 just paper circles and geometric shapes dancing, colliding, and spiraling in perfect synchrony with the music. Fischinger hand-animated every frame, suspending hundreds of paper cutouts on invisible wires and moving them fraction by fraction between exposures. The result is the birth of music visualization as an art form \u2014 decades before screensavers, VJ culture, or Fantasia (which Fischinger also worked on, before quitting Disney in frustration over creative compromises). Seven minutes that prove abstraction isn't the absence of content \u2014 it's content distilled to its essence.</p>",
+      "summary": "Oskar Fischinger hand-animated paper shapes dancing to Liszt in 1938 \u2014 and accidentally invented music visualization as an art form.",
       "date_published": "2026-04-01T14:00:00Z",
-      "authors": [{ "name": "Oskar Fischinger" }],
-      "tags": ["animation", "abstract-art", "music-visualization", "film-history"],
+      "authors": [
+        {
+          "name": "Oskar Fischinger"
+        }
+      ],
+      "tags": [
+        "animation",
+        "abstract-art",
+        "music-visualization",
+        "film-history"
+      ],
       "_picks": {
-        "selection_reason": "Eighty-eight years old and still more visually inventive than most motion graphics made today. Fischinger was doing what Winamp visualizers and concert VJs would attempt decades later — translating musical structure into visual movement — but with paper, wire, and a stop-motion camera. The fact that this was made for MGM, a mainstream Hollywood studio, makes it even stranger. Disney hired Fischinger for Fantasia's Toccata and Fugue sequence, then softened everything he made. Watch this to see what he actually wanted.",
+        "selection_reason": "Eighty-eight years old and still more visually inventive than most motion graphics made today. Fischinger was doing what Winamp visualizers and concert VJs would attempt decades later \u2014 translating musical structure into visual movement \u2014 but with paper, wire, and a stop-motion camera. The fact that this was made for MGM, a mainstream Hollywood studio, makes it even stranger. Disney hired Fischinger for Fantasia's Toccata and Fugue sequence, then softened everything he made. Watch this to see what he actually wanted.",
         "category": "reframe",
         "confidence": 0.96,
-        "topics": ["visual-music", "animation-history", "abstraction", "synesthesia"],
-        "audience": ["animators", "musicians", "designers", "anyone-who-stares-at-visualizers"],
+        "topics": [
+          "visual-music",
+          "animation-history",
+          "abstraction",
+          "synesthesia"
+        ],
+        "audience": [
+          "animators",
+          "musicians",
+          "designers",
+          "anyone-who-stares-at-visualizers"
+        ],
         "effort": "video",
         "mood": "inspiring",
         "source_domain": "youtube.com",
@@ -174,17 +510,39 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v9/2",
       "url": "https://ncase.me/polygons/",
       "title": "Parable of the Polygons",
-      "content_html": "<p>Vi Hart and Nicky Case built a playable simulation of Thomas Schelling's 1971 segregation model — the one that won him a Nobel Prize. You start with a grid of happy little triangles and squares. Each shape has a tiny, reasonable preference: they just want at least a third of their neighbors to look like them. Not a majority — just a third. You drag the unhappy ones around until everyone's satisfied, and then you look at what happened: near-total segregation, emerging from the mildest possible individual bias. Then the simulation flips it: what if shapes demanded just a third of their neighbors be *different*? Integration emerges just as naturally. Small individual preferences create massive systemic outcomes — in both directions.</p>",
-      "summary": "A playable simulation proving that tiny individual biases create massive segregation — and tiny demands for diversity can undo it.",
+      "content_html": "<p>Vi Hart and Nicky Case built a playable simulation of Thomas Schelling's 1971 segregation model \u2014 the one that won him a Nobel Prize. You start with a grid of happy little triangles and squares. Each shape has a tiny, reasonable preference: they just want at least a third of their neighbors to look like them. Not a majority \u2014 just a third. You drag the unhappy ones around until everyone's satisfied, and then you look at what happened: near-total segregation, emerging from the mildest possible individual bias. Then the simulation flips it: what if shapes demanded just a third of their neighbors be *different*? Integration emerges just as naturally. Small individual preferences create massive systemic outcomes \u2014 in both directions.</p>",
+      "summary": "A playable simulation proving that tiny individual biases create massive segregation \u2014 and tiny demands for diversity can undo it.",
       "date_published": "2026-04-01T14:00:00Z",
-      "authors": [{ "name": "Vi Hart" }, { "name": "Nicky Case" }],
-      "tags": ["game-theory", "segregation", "interactive", "systems-thinking"],
+      "authors": [
+        {
+          "name": "Vi Hart"
+        },
+        {
+          "name": "Nicky Case"
+        }
+      ],
+      "tags": [
+        "game-theory",
+        "segregation",
+        "interactive",
+        "systems-thinking"
+      ],
       "_picks": {
-        "selection_reason": "If Evolution of Trust (Volume 7) taught you game theory through cooperation, this teaches you systems thinking through segregation. The devastating insight isn't that people are bigots — it's that perfectly reasonable individual preferences produce catastrophic collective outcomes. But the hopeful inversion is just as powerful: small demands for diversity are enough to desegregate. Based on Schelling's Nobel-winning work, but Case and Hart made it something you can *feel* in your hands. Play it, then think about every neighborhood, school, and social network you've ever been in.",
+        "selection_reason": "If Evolution of Trust (Volume 7) taught you game theory through cooperation, this teaches you systems thinking through segregation. The devastating insight isn't that people are bigots \u2014 it's that perfectly reasonable individual preferences produce catastrophic collective outcomes. But the hopeful inversion is just as powerful: small demands for diversity are enough to desegregate. Based on Schelling's Nobel-winning work, but Case and Hart made it something you can *feel* in your hands. Play it, then think about every neighborhood, school, and social network you've ever been in.",
         "category": "reframe",
         "confidence": 0.97,
-        "topics": ["segregation-dynamics", "emergence", "systemic-bias", "agent-based-modeling"],
-        "audience": ["urban-planners", "policy-makers", "educators", "anyone-who-lives-in-a-neighborhood"],
+        "topics": [
+          "segregation-dynamics",
+          "emergence",
+          "systemic-bias",
+          "agent-based-modeling"
+        ],
+        "audience": [
+          "urban-planners",
+          "policy-makers",
+          "educators",
+          "anyone-who-lives-in-a-neighborhood"
+        ],
         "effort": "interactive",
         "mood": "sobering",
         "source_domain": "ncase.me",
@@ -201,17 +559,36 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v9/3",
       "url": "https://pudding.cool/2018/02/stand-up/",
       "title": "The Structure of Stand-Up Comedy",
-      "content_html": "<p>The Pudding took stand-up comedy specials — Ali Wong, Mitch Hedberg, Hasan Minhaj, The Marvelous Mrs. Maisel — and mapped their temporal structure as visual patterns. Setup arcs, punchline density, laughter climaxes: comedy has a hidden architecture that your body registers but your mind never sees. The interactive lets you scrub through routines and watch the rhythm materialize. One-liner comics like Hedberg show as dense, even patterns. Long-setup comics like Ali Wong create rising waves that crash into explosive payoffs. It turns out comedy isn't just timing — it's *geometry*.</p>",
-      "summary": "Stand-up comedy has a hidden visual architecture. This interactive makes it visible — scrub through specials and watch the geometry of laughter.",
+      "content_html": "<p>The Pudding took stand-up comedy specials \u2014 Ali Wong, Mitch Hedberg, Hasan Minhaj, The Marvelous Mrs. Maisel \u2014 and mapped their temporal structure as visual patterns. Setup arcs, punchline density, laughter climaxes: comedy has a hidden architecture that your body registers but your mind never sees. The interactive lets you scrub through routines and watch the rhythm materialize. One-liner comics like Hedberg show as dense, even patterns. Long-setup comics like Ali Wong create rising waves that crash into explosive payoffs. It turns out comedy isn't just timing \u2014 it's *geometry*.</p>",
+      "summary": "Stand-up comedy has a hidden visual architecture. This interactive makes it visible \u2014 scrub through specials and watch the geometry of laughter.",
       "date_published": "2026-04-01T14:00:00Z",
-      "authors": [{ "name": "The Pudding" }],
-      "tags": ["comedy", "data-visualization", "performance", "narrative-structure"],
+      "authors": [
+        {
+          "name": "The Pudding"
+        }
+      ],
+      "tags": [
+        "comedy",
+        "data-visualization",
+        "performance",
+        "narrative-structure"
+      ],
       "_picks": {
-        "selection_reason": "Comedy is the art form everyone experiences but nobody maps. This piece reveals that stand-up has a visual grammar as rigorous as music: Hedberg's machine-gun one-liners produce a flat, dense texture; Ali Wong's setups build into crashing waves. Seeing comedy's hidden structure makes you a better listener — and quietly argues that data visualization can reveal the architecture of *any* temporal art form. The comparison to film and TV narrative structures at the end seals it.",
+        "selection_reason": "Comedy is the art form everyone experiences but nobody maps. This piece reveals that stand-up has a visual grammar as rigorous as music: Hedberg's machine-gun one-liners produce a flat, dense texture; Ali Wong's setups build into crashing waves. Seeing comedy's hidden structure makes you a better listener \u2014 and quietly argues that data visualization can reveal the architecture of *any* temporal art form. The comparison to film and TV narrative structures at the end seals it.",
         "category": "reframe",
         "confidence": 0.95,
-        "topics": ["comedy-structure", "data-visualization", "temporal-arts", "performance-analysis"],
-        "audience": ["comedians", "writers", "data-people", "anyone-who-laughs"],
+        "topics": [
+          "comedy-structure",
+          "data-visualization",
+          "temporal-arts",
+          "performance-analysis"
+        ],
+        "audience": [
+          "comedians",
+          "writers",
+          "data-people",
+          "anyone-who-laughs"
+        ],
         "effort": "interactive",
         "mood": "inspiring",
         "source_domain": "pudding.cool",
@@ -228,17 +605,35 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v9/4",
       "url": "https://www.seriouseats.com/the-best-roast-potatoes-ever-recipe",
       "title": "The Best Crispy Roast Potatoes Ever",
-      "content_html": "<p>J. Kenji López-Alt doesn't just give you a recipe — he gives you a *system*. This roast potato piece is a controlled experiment disguised as cooking: he tests boiling times, alkalinity levels, fat types, and roughing techniques, documenting each variable with the rigor of a lab notebook. The key discovery: boiling potatoes in alkaline water (a pinch of baking soda) breaks down their surfaces into a starchy slurry that, when roasted in hot fat, creates a crust so crispy it shatters. But the deeper lesson isn't about potatoes — it's about how understanding a mechanism lets you improvise confidently. Once you know *why* the crust forms, you can adapt the technique to any root vegetable, any fat, any oven.</p>",
-      "summary": "A roast potato recipe that's actually a controlled experiment — teaching you the science of crispiness so you never need the recipe again.",
+      "content_html": "<p>J. Kenji L\u00f3pez-Alt doesn't just give you a recipe \u2014 he gives you a *system*. This roast potato piece is a controlled experiment disguised as cooking: he tests boiling times, alkalinity levels, fat types, and roughing techniques, documenting each variable with the rigor of a lab notebook. The key discovery: boiling potatoes in alkaline water (a pinch of baking soda) breaks down their surfaces into a starchy slurry that, when roasted in hot fat, creates a crust so crispy it shatters. But the deeper lesson isn't about potatoes \u2014 it's about how understanding a mechanism lets you improvise confidently. Once you know *why* the crust forms, you can adapt the technique to any root vegetable, any fat, any oven.</p>",
+      "summary": "A roast potato recipe that's actually a controlled experiment \u2014 teaching you the science of crispiness so you never need the recipe again.",
       "date_published": "2026-04-01T14:00:00Z",
-      "authors": [{ "name": "J. Kenji López-Alt" }],
-      "tags": ["food", "food-science", "cooking-technique", "systems-thinking"],
+      "authors": [
+        {
+          "name": "J. Kenji L\u00f3pez-Alt"
+        }
+      ],
+      "tags": [
+        "food",
+        "food-science",
+        "cooking-technique",
+        "systems-thinking"
+      ],
       "_picks": {
-        "selection_reason": "López-Alt is the Feynman of cooking: he won't tell you what works without explaining *why* it works, and the explanation changes how you cook everything else. This particular piece is the apex of his method — a single recipe that teaches alkalinity, Maillard reactions, starch behavior, and fat dynamics. It pairs with Marcella Hazan's tomato sauce from Volume 7 as a mirror image: where Hazan proved that subtraction is a philosophy, López-Alt proves that understanding mechanisms is a superpower. Between them, you have two complete theories of cooking.",
+        "selection_reason": "L\u00f3pez-Alt is the Feynman of cooking: he won't tell you what works without explaining *why* it works, and the explanation changes how you cook everything else. This particular piece is the apex of his method \u2014 a single recipe that teaches alkalinity, Maillard reactions, starch behavior, and fat dynamics. It pairs with Marcella Hazan's tomato sauce from Volume 7 as a mirror image: where Hazan proved that subtraction is a philosophy, L\u00f3pez-Alt proves that understanding mechanisms is a superpower. Between them, you have two complete theories of cooking.",
         "category": "reframe",
         "confidence": 0.94,
-        "topics": ["food-science", "cooking-as-systems-thinking", "maillard-reaction", "experimental-method"],
-        "audience": ["cooks", "scientists", "anyone-who-eats-potatoes"],
+        "topics": [
+          "food-science",
+          "cooking-as-systems-thinking",
+          "maillard-reaction",
+          "experimental-method"
+        ],
+        "audience": [
+          "cooks",
+          "scientists",
+          "anyone-who-eats-potatoes"
+        ],
         "effort": "medium-read",
         "mood": "inspiring",
         "source_domain": "seriouseats.com",
@@ -255,17 +650,37 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v8/1",
       "url": "https://harpers.org/archive/2007/02/the-ecstasy-of-influence/",
       "title": "The Ecstasy of Influence: A Plagiarism",
-      "content_html": "<p>Jonathan Lethem wrote an entire essay about plagiarism, influence, and the commons — and then revealed in a coda that every sentence in it was borrowed from someone else. The essay argues that all art is collage, that originality is a myth we invented to serve property law, and that the gift economy of culture is being strangled by copyright. It moves through Bob Dylan, Walt Disney, John Donne, and open-source software, building a case that creativity is inherently communal. Then the rug-pull ending forces you to experience the argument in your body: you just read a beautiful essay and none of it was 'original,' and it doesn't matter at all.</p>",
-      "summary": "An essay about plagiarism that turns out to be entirely plagiarized — and proves its own argument in the process.",
+      "content_html": "<p>Jonathan Lethem wrote an entire essay about plagiarism, influence, and the commons \u2014 and then revealed in a coda that every sentence in it was borrowed from someone else. The essay argues that all art is collage, that originality is a myth we invented to serve property law, and that the gift economy of culture is being strangled by copyright. It moves through Bob Dylan, Walt Disney, John Donne, and open-source software, building a case that creativity is inherently communal. Then the rug-pull ending forces you to experience the argument in your body: you just read a beautiful essay and none of it was 'original,' and it doesn't matter at all.</p>",
+      "summary": "An essay about plagiarism that turns out to be entirely plagiarized \u2014 and proves its own argument in the process.",
       "date_published": "2026-03-29T14:00:00Z",
-      "authors": [{ "name": "Jonathan Lethem" }],
-      "tags": ["creativity", "plagiarism", "commons", "copyright", "literature"],
+      "authors": [
+        {
+          "name": "Jonathan Lethem"
+        }
+      ],
+      "tags": [
+        "creativity",
+        "plagiarism",
+        "commons",
+        "copyright",
+        "literature"
+      ],
       "_picks": {
-        "selection_reason": "The most elegant literary trick of the 21st century. Lethem assembles an entire essay from other people's words to argue that all creativity works this way — then dares you to care. The reveal at the end isn't a gotcha; it's a liberation. Every sentence you admired was already someone else's, which means authorship was never where the value lived. Read it alongside the Le Guin and the Bateson from earlier volumes and you'll see a pattern: the best ideas are always about connection, not ownership.",
+        "selection_reason": "The most elegant literary trick of the 21st century. Lethem assembles an entire essay from other people's words to argue that all creativity works this way \u2014 then dares you to care. The reveal at the end isn't a gotcha; it's a liberation. Every sentence you admired was already someone else's, which means authorship was never where the value lived. Read it alongside the Le Guin and the Bateson from earlier volumes and you'll see a pattern: the best ideas are always about connection, not ownership.",
         "category": "reframe",
         "confidence": 0.97,
-        "topics": ["intellectual-property", "creativity", "gift-economy", "literary-form"],
-        "audience": ["writers", "artists", "lawyers", "anyone-who-makes-things"],
+        "topics": [
+          "intellectual-property",
+          "creativity",
+          "gift-economy",
+          "literary-form"
+        ],
+        "audience": [
+          "writers",
+          "artists",
+          "lawyers",
+          "anyone-who-makes-things"
+        ],
         "effort": "medium-read",
         "mood": "inspiring",
         "source_domain": "harpers.org",
@@ -281,17 +696,36 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v8/2",
       "url": "https://www.theatlantic.com/magazine/archive/1982/02/have-you-ever-tried-to-sell-a-diamond/304575/",
       "title": "Have You Ever Tried to Sell a Diamond?",
-      "content_html": "<p>In 1982, Edward Jay Epstein published the definitive exposé of the diamond industry — a story so strange it reads like fiction. De Beers, a single company, invented the idea that diamonds are rare (they aren't), that they're essential for engagement (a marketing campaign from 1938), and that you should never resell them (because the resale market would reveal how worthless they are). The essay traces how one corporation manufactured an entire culture of desire out of a common mineral, using Hollywood, psychology, and the deliberate suppression of supply. It's the most complete case study ever written on how value is manufactured from nothing.</p>",
-      "summary": "The definitive exposé of how De Beers manufactured the entire concept of diamond value — rarity, romance, and all.",
+      "content_html": "<p>In 1982, Edward Jay Epstein published the definitive expos\u00e9 of the diamond industry \u2014 a story so strange it reads like fiction. De Beers, a single company, invented the idea that diamonds are rare (they aren't), that they're essential for engagement (a marketing campaign from 1938), and that you should never resell them (because the resale market would reveal how worthless they are). The essay traces how one corporation manufactured an entire culture of desire out of a common mineral, using Hollywood, psychology, and the deliberate suppression of supply. It's the most complete case study ever written on how value is manufactured from nothing.</p>",
+      "summary": "The definitive expos\u00e9 of how De Beers manufactured the entire concept of diamond value \u2014 rarity, romance, and all.",
       "date_published": "2026-03-29T14:00:00Z",
-      "authors": [{ "name": "Edward Jay Epstein" }],
-      "tags": ["economics", "marketing", "manufactured-desire", "investigative"],
+      "authors": [
+        {
+          "name": "Edward Jay Epstein"
+        }
+      ],
+      "tags": [
+        "economics",
+        "marketing",
+        "manufactured-desire",
+        "investigative"
+      ],
       "_picks": {
-        "selection_reason": "Published in 1982 and still the sharpest piece of economic investigative journalism you'll ever read. Epstein reveals that diamonds are neither rare nor inherently valuable — the entire market is a manufactured illusion maintained by one company's monopoly on supply and psychology. Once you read it, you can't unsee the machinery of manufactured desire everywhere: luxury goods, tech hype cycles, NFTs. The essay is 43 years old and more relevant than ever.",
+        "selection_reason": "Published in 1982 and still the sharpest piece of economic investigative journalism you'll ever read. Epstein reveals that diamonds are neither rare nor inherently valuable \u2014 the entire market is a manufactured illusion maintained by one company's monopoly on supply and psychology. Once you read it, you can't unsee the machinery of manufactured desire everywhere: luxury goods, tech hype cycles, NFTs. The essay is 43 years old and more relevant than ever.",
         "category": "cautionary",
         "confidence": 0.96,
-        "topics": ["manufactured-value", "monopoly", "consumer-psychology", "investigative-journalism"],
-        "audience": ["economists", "marketers", "skeptics", "anyone-who-buys-things"],
+        "topics": [
+          "manufactured-value",
+          "monopoly",
+          "consumer-psychology",
+          "investigative-journalism"
+        ],
+        "audience": [
+          "economists",
+          "marketers",
+          "skeptics",
+          "anyone-who-buys-things"
+        ],
         "effort": "deep-dive",
         "mood": "sobering",
         "source_domain": "theatlantic.com",
@@ -307,17 +741,36 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v8/3",
       "url": "https://www.dougengelbart.org/content/view/138",
       "title": "Augmenting Human Intellect: A Conceptual Framework",
-      "content_html": "<p>In 1962 — six years before he gave the 'Mother of All Demos' — Doug Engelbart wrote the theoretical foundation for everything that followed: the mouse, hypertext, collaborative editing, video conferencing. But the paper isn't about any of those inventions. It's about a deeper question: how do you systematically increase a human being's ability to deal with complex problems? Engelbart's answer was that tools, language, methodology, and training form an integrated system — you can't improve one without the others. He called it the 'augmentation framework,' and it's the most ambitious theory of human-computer interaction ever written. We built the tools he imagined. We ignored the framework.</p>",
-      "summary": "The 1962 paper that theorized the mouse, hypertext, and collaborative computing — not as gadgets, but as parts of a system for augmenting human thought.",
+      "content_html": "<p>In 1962 \u2014 six years before he gave the 'Mother of All Demos' \u2014 Doug Engelbart wrote the theoretical foundation for everything that followed: the mouse, hypertext, collaborative editing, video conferencing. But the paper isn't about any of those inventions. It's about a deeper question: how do you systematically increase a human being's ability to deal with complex problems? Engelbart's answer was that tools, language, methodology, and training form an integrated system \u2014 you can't improve one without the others. He called it the 'augmentation framework,' and it's the most ambitious theory of human-computer interaction ever written. We built the tools he imagined. We ignored the framework.</p>",
+      "summary": "The 1962 paper that theorized the mouse, hypertext, and collaborative computing \u2014 not as gadgets, but as parts of a system for augmenting human thought.",
       "date_published": "2026-03-29T14:00:00Z",
-      "authors": [{ "name": "Douglas C. Engelbart" }],
-      "tags": ["computing", "augmentation", "cognition", "history-of-technology"],
+      "authors": [
+        {
+          "name": "Douglas C. Engelbart"
+        }
+      ],
+      "tags": [
+        "computing",
+        "augmentation",
+        "cognition",
+        "history-of-technology"
+      ],
       "_picks": {
-        "selection_reason": "If Bush's 'As We May Think' (Volume 4) was the dream, Engelbart's 1962 paper was the blueprint. But here's what most people miss: Engelbart wasn't trying to build better tools. He was trying to build a framework for making humans smarter as a system — tools plus language plus methodology plus training, all co-evolving. We took the mouse and the hyperlinks and ignored the rest. Reading this alongside the current AI augmentation discourse is humbling: we're still not asking Engelbart's actual question.",
+        "selection_reason": "If Bush's 'As We May Think' (Volume 4) was the dream, Engelbart's 1962 paper was the blueprint. But here's what most people miss: Engelbart wasn't trying to build better tools. He was trying to build a framework for making humans smarter as a system \u2014 tools plus language plus methodology plus training, all co-evolving. We took the mouse and the hyperlinks and ignored the rest. Reading this alongside the current AI augmentation discourse is humbling: we're still not asking Engelbart's actual question.",
         "category": "philosophical",
         "confidence": 0.95,
-        "topics": ["human-augmentation", "computing-history", "systems-thinking", "tools-for-thought"],
-        "audience": ["technologists", "designers", "AI-researchers", "anyone-building-tools"],
+        "topics": [
+          "human-augmentation",
+          "computing-history",
+          "systems-thinking",
+          "tools-for-thought"
+        ],
+        "audience": [
+          "technologists",
+          "designers",
+          "AI-researchers",
+          "anyone-building-tools"
+        ],
         "effort": "deep-dive",
         "mood": "inspiring",
         "source_domain": "dougengelbart.org",
@@ -333,17 +786,36 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v8/4",
       "url": "https://www.nplusonemag.com/issue-13/essays/stupidity-of-computers/",
       "title": "The Stupidity of Computers",
-      "content_html": "<p>David Auerbach — a former software engineer at Microsoft and Google — wrote this essay in 2011 about a paradox that has only gotten sharper: computers are simultaneously near-omnipotent and profoundly stupid. They can beat any human at chess but can't understand a simple conversation. Auerbach traces this gap through the history of AI, natural language processing, and the Turing test, arguing that the fundamental problem isn't computing power but meaning itself. Computers process syntax without semantics — they manipulate symbols they don't understand. The essay is a quiet demolition of the idea that intelligence is just pattern-matching at scale.</p>",
+      "content_html": "<p>David Auerbach \u2014 a former software engineer at Microsoft and Google \u2014 wrote this essay in 2011 about a paradox that has only gotten sharper: computers are simultaneously near-omnipotent and profoundly stupid. They can beat any human at chess but can't understand a simple conversation. Auerbach traces this gap through the history of AI, natural language processing, and the Turing test, arguing that the fundamental problem isn't computing power but meaning itself. Computers process syntax without semantics \u2014 they manipulate symbols they don't understand. The essay is a quiet demolition of the idea that intelligence is just pattern-matching at scale.</p>",
       "summary": "Computers are omnipotent and stupid at the same time. A software engineer explains why, and what it means for AI.",
       "date_published": "2026-03-29T14:00:00Z",
-      "authors": [{ "name": "David Auerbach" }],
-      "tags": ["AI", "philosophy-of-mind", "computing", "semantics"],
+      "authors": [
+        {
+          "name": "David Auerbach"
+        }
+      ],
+      "tags": [
+        "AI",
+        "philosophy-of-mind",
+        "computing",
+        "semantics"
+      ],
       "_picks": {
-        "selection_reason": "Written in 2011, before the current AI boom, and it cuts deeper than most commentary published this week. Auerbach's central insight — that computers manipulate symbols without understanding them, and that this gap is structural, not temporary — is the question that GPT-4 and Claude haven't answered, only made more urgent. It's the anti-hype essay: not angry, not dismissive, just precise about what 'intelligence' actually requires and why machines don't have it yet. Pairs devastatingly with the evolved circuit piece from Volume 4.",
+        "selection_reason": "Written in 2011, before the current AI boom, and it cuts deeper than most commentary published this week. Auerbach's central insight \u2014 that computers manipulate symbols without understanding them, and that this gap is structural, not temporary \u2014 is the question that GPT-4 and Claude haven't answered, only made more urgent. It's the anti-hype essay: not angry, not dismissive, just precise about what 'intelligence' actually requires and why machines don't have it yet. Pairs devastatingly with the evolved circuit piece from Volume 4.",
         "category": "reframe",
         "confidence": 0.94,
-        "topics": ["artificial-intelligence", "meaning", "philosophy-of-computation", "language"],
-        "audience": ["programmers", "AI-researchers", "philosophers", "anyone-talking-to-chatbots"],
+        "topics": [
+          "artificial-intelligence",
+          "meaning",
+          "philosophy-of-computation",
+          "language"
+        ],
+        "audience": [
+          "programmers",
+          "AI-researchers",
+          "philosophers",
+          "anyone-talking-to-chatbots"
+        ],
         "effort": "medium-read",
         "mood": "contemplative",
         "source_domain": "nplusonemag.com",
@@ -359,17 +831,36 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v8/5",
       "url": "https://www.edge.org/conversation/daniel_c_dennett-the-normal-well-tempered-mind",
       "title": "The Normal Well-Tempered Mind",
-      "content_html": "<p>Daniel Dennett — philosopher, cognitive scientist, and one of the sharpest minds of the last half-century — reconsiders his own theory of consciousness. He admits to a mistake: trying to understand the mind by decomposing it into simpler minds was the wrong move. Instead, he proposes thinking about minds as composed of 'competences without comprehension' — systems that do smart things without understanding what they're doing. The essay wanders through Bach, evolution, humor, and the question of what it would mean for a robot to appreciate music. It's Dennett at his most generous and uncertain, which turns out to be Dennett at his best.</p>",
-      "summary": "Dennett reconsiders his own theory of mind, proposing 'competence without comprehension' — and asking what it would mean for a machine to appreciate Bach.",
+      "content_html": "<p>Daniel Dennett \u2014 philosopher, cognitive scientist, and one of the sharpest minds of the last half-century \u2014 reconsiders his own theory of consciousness. He admits to a mistake: trying to understand the mind by decomposing it into simpler minds was the wrong move. Instead, he proposes thinking about minds as composed of 'competences without comprehension' \u2014 systems that do smart things without understanding what they're doing. The essay wanders through Bach, evolution, humor, and the question of what it would mean for a robot to appreciate music. It's Dennett at his most generous and uncertain, which turns out to be Dennett at his best.</p>",
+      "summary": "Dennett reconsiders his own theory of mind, proposing 'competence without comprehension' \u2014 and asking what it would mean for a machine to appreciate Bach.",
       "date_published": "2026-03-29T14:00:00Z",
-      "authors": [{ "name": "Daniel C. Dennett" }],
-      "tags": ["consciousness", "philosophy-of-mind", "evolution", "cognition"],
+      "authors": [
+        {
+          "name": "Daniel C. Dennett"
+        }
+      ],
+      "tags": [
+        "consciousness",
+        "philosophy-of-mind",
+        "evolution",
+        "cognition"
+      ],
       "_picks": {
-        "selection_reason": "Dennett spent decades being the confident materialist in the consciousness debates, and this is the essay where he gets humble. His concept of 'competence without comprehension' — doing smart things without understanding — is the single most useful frame for thinking about current AI systems. But the real gift is watching a great philosopher admit he was wrong about something important and get more interesting because of it. The passage about whether a robot could appreciate Bach is worth the whole read.",
+        "selection_reason": "Dennett spent decades being the confident materialist in the consciousness debates, and this is the essay where he gets humble. His concept of 'competence without comprehension' \u2014 doing smart things without understanding \u2014 is the single most useful frame for thinking about current AI systems. But the real gift is watching a great philosopher admit he was wrong about something important and get more interesting because of it. The passage about whether a robot could appreciate Bach is worth the whole read.",
         "category": "philosophical",
         "confidence": 0.95,
-        "topics": ["consciousness", "philosophy-of-mind", "AI", "music-and-cognition"],
-        "audience": ["philosophers", "AI-researchers", "musicians", "anyone-who-thinks-about-thinking"],
+        "topics": [
+          "consciousness",
+          "philosophy-of-mind",
+          "AI",
+          "music-and-cognition"
+        ],
+        "audience": [
+          "philosophers",
+          "AI-researchers",
+          "musicians",
+          "anyone-who-thinks-about-thinking"
+        ],
         "effort": "medium-read",
         "mood": "contemplative",
         "source_domain": "edge.org",
@@ -385,17 +876,36 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v7/1",
       "url": "https://www.youtube.com/watch?v=fAxHlLK3Oyk",
       "title": "I Am Sitting in a Room",
-      "content_html": "<p>Alvin Lucier sits in a room and reads a short text aloud. He records it, plays it back into the room, and records the playback. Then he does it again. And again. Over 45 minutes, his voice dissolves — consonants blur, vowels stretch, and the resonant frequencies of the room itself take over. By the end, you're not hearing a human voice anymore. You're hearing the room sing. The text he reads describes exactly what's happening, which means the piece is both the experiment and the documentation of the experiment, collapsing the distance between art and its own explanation.</p>",
-      "summary": "A man reads a text, records it, plays it back into the room, and re-records — 32 times. His voice dissolves into the resonant frequencies of the room itself.",
+      "content_html": "<p>Alvin Lucier sits in a room and reads a short text aloud. He records it, plays it back into the room, and records the playback. Then he does it again. And again. Over 45 minutes, his voice dissolves \u2014 consonants blur, vowels stretch, and the resonant frequencies of the room itself take over. By the end, you're not hearing a human voice anymore. You're hearing the room sing. The text he reads describes exactly what's happening, which means the piece is both the experiment and the documentation of the experiment, collapsing the distance between art and its own explanation.</p>",
+      "summary": "A man reads a text, records it, plays it back into the room, and re-records \u2014 32 times. His voice dissolves into the resonant frequencies of the room itself.",
       "date_published": "2026-03-25T14:00:00Z",
-      "authors": [{ "name": "Alvin Lucier" }],
-      "tags": ["sound-art", "process-music", "acoustics", "conceptual-art"],
+      "authors": [
+        {
+          "name": "Alvin Lucier"
+        }
+      ],
+      "tags": [
+        "sound-art",
+        "process-music",
+        "acoustics",
+        "conceptual-art"
+      ],
       "_picks": {
-        "selection_reason": "The most elegant demonstration of a physical phenomenon ever made into art. Lucier didn't compose music — he revealed what was already there, hidden in the architecture. Every room has a voice; he just figured out how to make it speak. The piece also quietly demolishes the boundary between performer and space, content and container. Listen with headphones and watch language become pure sound.",
+        "selection_reason": "The most elegant demonstration of a physical phenomenon ever made into art. Lucier didn't compose music \u2014 he revealed what was already there, hidden in the architecture. Every room has a voice; he just figured out how to make it speak. The piece also quietly demolishes the boundary between performer and space, content and container. Listen with headphones and watch language become pure sound.",
         "category": "reframe",
         "confidence": 0.96,
-        "topics": ["acoustics", "process-art", "speech-and-sound", "site-specificity"],
-        "audience": ["musicians", "architects", "sound-designers", "anyone-who-listens"],
+        "topics": [
+          "acoustics",
+          "process-art",
+          "speech-and-sound",
+          "site-specificity"
+        ],
+        "audience": [
+          "musicians",
+          "architects",
+          "sound-designers",
+          "anyone-who-listens"
+        ],
         "effort": "audio",
         "mood": "contemplative",
         "source_domain": "youtube.com",
@@ -412,17 +922,38 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v7/2",
       "url": "https://www.youtube.com/watch?v=YSY0TA-ttMA",
       "title": "Meshes of the Afternoon",
-      "content_html": "<p>Maya Deren and Alexander Hammid made this 14-minute film in their Los Angeles bungalow in 1943, and it invented American avant-garde cinema. A woman falls asleep and enters a recursive dream: she chases a cloaked figure with a mirror for a face, picks up a key that becomes a knife, watches herself through windows. Every shot rhymes with another. The logic is dream logic — not random, but operating on a grammar that your body understands before your mind does. No dialogue. No budget. Just two people, a 16mm camera, and the discovery that film could think like a dream instead of telling stories like a novel.</p>",
+      "content_html": "<p>Maya Deren and Alexander Hammid made this 14-minute film in their Los Angeles bungalow in 1943, and it invented American avant-garde cinema. A woman falls asleep and enters a recursive dream: she chases a cloaked figure with a mirror for a face, picks up a key that becomes a knife, watches herself through windows. Every shot rhymes with another. The logic is dream logic \u2014 not random, but operating on a grammar that your body understands before your mind does. No dialogue. No budget. Just two people, a 16mm camera, and the discovery that film could think like a dream instead of telling stories like a novel.</p>",
       "summary": "A 14-minute film from 1943 that invented American avant-garde cinema. Dream logic, mirror faces, and the discovery that film could think instead of narrate.",
       "date_published": "2026-03-25T14:00:00Z",
-      "authors": [{ "name": "Maya Deren" }, { "name": "Alexander Hammid" }],
-      "tags": ["experimental-film", "surrealism", "dream-logic", "avant-garde"],
+      "authors": [
+        {
+          "name": "Maya Deren"
+        },
+        {
+          "name": "Alexander Hammid"
+        }
+      ],
+      "tags": [
+        "experimental-film",
+        "surrealism",
+        "dream-logic",
+        "avant-garde"
+      ],
       "_picks": {
-        "selection_reason": "Deren was 25, had no film training, and made the most influential American experimental film ever in her living room. Eighty years later, nothing about it feels dated — the recursive structure anticipates Lynch, the embodied camera anticipates first-person horror games, and the mirror-faced figure is still one of the most unsettling images in cinema. Fourteen minutes that contain more ideas about what film can do than most filmographies.",
+        "selection_reason": "Deren was 25, had no film training, and made the most influential American experimental film ever in her living room. Eighty years later, nothing about it feels dated \u2014 the recursive structure anticipates Lynch, the embodied camera anticipates first-person horror games, and the mirror-faced figure is still one of the most unsettling images in cinema. Fourteen minutes that contain more ideas about what film can do than most filmographies.",
         "category": "reframe",
         "confidence": 0.97,
-        "topics": ["experimental-cinema", "dream-logic", "feminist-art", "visual-grammar"],
-        "audience": ["filmmakers", "artists", "anyone-who-dreams"],
+        "topics": [
+          "experimental-cinema",
+          "dream-logic",
+          "feminist-art",
+          "visual-grammar"
+        ],
+        "audience": [
+          "filmmakers",
+          "artists",
+          "anyone-who-dreams"
+        ],
         "effort": "video",
         "mood": "contemplative",
         "source_domain": "youtube.com",
@@ -439,17 +970,36 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v7/3",
       "url": "https://ncase.me/trust/",
       "title": "The Evolution of Trust",
-      "content_html": "<p>Nicky Case built an interactive game that teaches game theory by making you play it. You start with the Prisoner's Dilemma — cooperate or cheat? — then watch populations of strategies compete over hundreds of rounds. Tit-for-tat, always-cheat, always-cooperate, random: each one gets a character with a face and a personality. By the end, you understand not just which strategies win, but why trust emerges, why it collapses, and what conditions make cooperation possible. The whole thing takes 30 minutes and teaches more about human behavior than most textbooks.</p>",
-      "summary": "An interactive game that teaches game theory by making you play it. Thirty minutes to understand why trust exists — and what destroys it.",
+      "content_html": "<p>Nicky Case built an interactive game that teaches game theory by making you play it. You start with the Prisoner's Dilemma \u2014 cooperate or cheat? \u2014 then watch populations of strategies compete over hundreds of rounds. Tit-for-tat, always-cheat, always-cooperate, random: each one gets a character with a face and a personality. By the end, you understand not just which strategies win, but why trust emerges, why it collapses, and what conditions make cooperation possible. The whole thing takes 30 minutes and teaches more about human behavior than most textbooks.</p>",
+      "summary": "An interactive game that teaches game theory by making you play it. Thirty minutes to understand why trust exists \u2014 and what destroys it.",
       "date_published": "2026-03-25T14:00:00Z",
-      "authors": [{ "name": "Nicky Case" }],
-      "tags": ["game-theory", "interactive", "trust", "cooperation"],
+      "authors": [
+        {
+          "name": "Nicky Case"
+        }
+      ],
+      "tags": [
+        "game-theory",
+        "interactive",
+        "trust",
+        "cooperation"
+      ],
       "_picks": {
-        "selection_reason": "The gold standard for explorable explanations. Case takes a concept that usually requires a semester of economics — iterated game theory, evolutionary stable strategies, the conditions for cooperation — and makes it playable in 30 minutes. The genius is in the character design: each strategy has a face, so you develop feelings about abstract mathematical entities. You'll leave understanding something real about why the world is the way it is.",
+        "selection_reason": "The gold standard for explorable explanations. Case takes a concept that usually requires a semester of economics \u2014 iterated game theory, evolutionary stable strategies, the conditions for cooperation \u2014 and makes it playable in 30 minutes. The genius is in the character design: each strategy has a face, so you develop feelings about abstract mathematical entities. You'll leave understanding something real about why the world is the way it is.",
         "category": "reframe",
         "confidence": 0.96,
-        "topics": ["game-theory", "cooperation", "explorable-explanations", "behavioral-science"],
-        "audience": ["designers", "educators", "policy-thinkers", "anyone-who-plays-games"],
+        "topics": [
+          "game-theory",
+          "cooperation",
+          "explorable-explanations",
+          "behavioral-science"
+        ],
+        "audience": [
+          "designers",
+          "educators",
+          "policy-thinkers",
+          "anyone-who-plays-games"
+        ],
         "effort": "interactive",
         "mood": "inspiring",
         "source_domain": "ncase.me",
@@ -466,17 +1016,36 @@
       "id": "https://nkalfredbot.github.io/weekly-picks/v7/4",
       "url": "https://cooking.nytimes.com/recipes/1015178-marcella-hazans-tomato-sauce",
       "title": "Marcella Hazan's Tomato Sauce",
-      "content_html": "<p>Three ingredients: a can of tomatoes, five tablespoons of butter, and one onion, halved. Simmer for 45 minutes. Remove the onion. That's it. Marcella Hazan published this recipe in 1992, and it became the most famous sauce on the internet — not because it's clever or surprising, but because it's an argument. The argument is that cooking at its best is an act of removal: strip away everything that isn't essential, and what remains is better than anything you could add. The butter rounds the tomato's acidity. The onion perfumes without intruding. There is nothing to improve.</p>",
-      "summary": "Three ingredients. Forty-five minutes. The most famous sauce on the internet — and a quiet argument that cooking is an act of subtraction.",
+      "content_html": "<p>Three ingredients: a can of tomatoes, five tablespoons of butter, and one onion, halved. Simmer for 45 minutes. Remove the onion. That's it. Marcella Hazan published this recipe in 1992, and it became the most famous sauce on the internet \u2014 not because it's clever or surprising, but because it's an argument. The argument is that cooking at its best is an act of removal: strip away everything that isn't essential, and what remains is better than anything you could add. The butter rounds the tomato's acidity. The onion perfumes without intruding. There is nothing to improve.</p>",
+      "summary": "Three ingredients. Forty-five minutes. The most famous sauce on the internet \u2014 and a quiet argument that cooking is an act of subtraction.",
       "date_published": "2026-03-25T14:00:00Z",
-      "authors": [{ "name": "Marcella Hazan" }],
-      "tags": ["food", "Italian-cooking", "minimalism", "craft"],
+      "authors": [
+        {
+          "name": "Marcella Hazan"
+        }
+      ],
+      "tags": [
+        "food",
+        "Italian-cooking",
+        "minimalism",
+        "craft"
+      ],
       "_picks": {
-        "selection_reason": "Every few years, someone discovers this recipe and can't believe it works. Three ingredients, no technique beyond patience, and the result is better than sauces with twenty components. It's the cooking equivalent of Dieter Rams: remove until there's nothing left to remove, and what remains is pure. Also a stealth lesson in systems thinking — the onion is never chopped, never eaten, just present as a catalyst. Hazan understood that some ingredients are there for what they give, not what they are.",
+        "selection_reason": "Every few years, someone discovers this recipe and can't believe it works. Three ingredients, no technique beyond patience, and the result is better than sauces with twenty components. It's the cooking equivalent of Dieter Rams: remove until there's nothing left to remove, and what remains is pure. Also a stealth lesson in systems thinking \u2014 the onion is never chopped, never eaten, just present as a catalyst. Hazan understood that some ingredients are there for what they give, not what they are.",
         "category": "reframe",
         "confidence": 0.94,
-        "topics": ["minimalism", "Italian-cooking", "systems-thinking", "craft"],
-        "audience": ["cooks", "designers", "minimalists", "anyone-who-eats"],
+        "topics": [
+          "minimalism",
+          "Italian-cooking",
+          "systems-thinking",
+          "craft"
+        ],
+        "audience": [
+          "cooks",
+          "designers",
+          "minimalists",
+          "anyone-who-eats"
+        ],
         "effort": "medium-read",
         "mood": "inspiring",
         "source_domain": "cooking.nytimes.com",
