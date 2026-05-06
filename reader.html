@@ -431,6 +431,31 @@
             border-color: hsl(90, 40%, 40%);
         }
 
+        .media-type-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 4px 12px;
+            border: 2px solid var(--uniform-maroon);
+            background: white;
+            color: var(--uniform-maroon);
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            font-family: 'Century Gothic', sans-serif;
+        }
+
+        .media-type-badge.type-music { border-color: hsl(280, 40%, 50%); color: hsl(280, 40%, 50%); }
+        .media-type-badge.type-film { border-color: hsl(210, 50%, 45%); color: hsl(210, 50%, 45%); }
+        .media-type-badge.type-video { border-color: hsl(210, 50%, 45%); color: hsl(210, 50%, 45%); }
+        .media-type-badge.type-interactive { border-color: hsl(160, 50%, 38%); color: hsl(160, 50%, 38%); }
+        .media-type-badge.type-game { border-color: hsl(160, 50%, 38%); color: hsl(160, 50%, 38%); }
+        .media-type-badge.type-food { border-color: hsl(25, 60%, 45%); color: hsl(25, 60%, 45%); }
+        .media-type-badge.type-performance { border-color: hsl(340, 50%, 45%); color: hsl(340, 50%, 45%); }
+        .media-type-badge.type-visual-art { border-color: hsl(45, 60%, 45%); color: hsl(45, 60%, 45%); }
+        .media-type-badge.type-audio { border-color: hsl(280, 40%, 50%); color: hsl(280, 40%, 50%); }
+
         .effort {
             color: var(--uniform-maroon);
             font-size: 0.85rem;
@@ -901,14 +926,31 @@
             const picks = item._picks || {};
             const category = picks.category || 'general';
             const effort = picks.effort || '';
+            const mediaType = picks.media_type || '';
             const sourceDomain = picks.source_domain || new URL(item.url).hostname;
             const hasOverlap = item._overlaps.length > 1;
+            const duration = picks.duration_minutes;
 
             const effortIcons = {
-                'quick-read': '⚡ Quick read',
-                'medium-read': '📖 Medium read',
-                'deep-dive': '🔬 Deep dive'
+                'quick-read': 'Quick read',
+                'medium-read': 'Medium read',
+                'deep-dive': 'Deep dive',
+                'interactive': 'Interactive',
+                'video': 'Video',
+                'audio': 'Audio'
             };
+
+            const mediaTypeLabels = {
+                'essay': 'Essay', 'paper': 'Paper', 'book': 'Book',
+                'talk': 'Talk', 'interview': 'Interview', 'conversation': 'Conversation',
+                'music': 'Music', 'film': 'Film', 'video': 'Video',
+                'interactive': 'Interactive', 'game': 'Game', 'food': 'Food',
+                'visual-art': 'Visual Art', 'audio': 'Audio', 'performance': 'Performance'
+            };
+
+            const mediaLabel = mediaTypeLabels[mediaType] || mediaType;
+            const mediaClass = mediaType ? 'type-' + mediaType : '';
+            const durationStr = duration ? (duration >= 60 ? Math.round(duration / 60) + ' hr' : duration + ' min') : '';
 
             return `
                 <article class="pick">
@@ -925,11 +967,13 @@
                             </div>
                         ` : ''}
                     </div>
-                    
+
                     <div class="pick-body">
                         <div class="pick-meta">
+                            ${mediaType ? `<span class="media-type-badge ${mediaClass}">${mediaLabel}</span>` : ''}
                             <span class="badge ${category}">${category}</span>
                             ${effort ? `<span class="effort">${effortIcons[effort] || effort}</span>` : ''}
+                            ${durationStr ? `<span class="effort">${durationStr}</span>` : ''}
                             <span class="source">${sourceDomain}</span>
                         </div>
 
