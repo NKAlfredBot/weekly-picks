@@ -1083,8 +1083,12 @@
         <section class="category-filter-bar">
             <div class="filter-section">
                 <label class="category-filter-label">Format</label>
-                <div class="category-filters" id="media-type-filters">
-                    <button class="category-filter-btn active" data-media-type="all">All</button>
+                <div class="category-filters">
+                    <button class="category-filter-btn active" data-format="all">All</button>
+                    <button class="category-filter-btn" data-format="read">📖 Read</button>
+                    <button class="category-filter-btn" data-format="listen">🎵 Listen</button>
+                    <button class="category-filter-btn" data-format="watch">🎬 Watch</button>
+                    <button class="category-filter-btn" data-format="play">🕹 Play</button>
                 </div>
             </div>
 
@@ -1283,15 +1287,20 @@ feed.json, and push to GitHub."</div>
     <script>
         let feedData = null;
         let currentFilter = 'all';
-        let currentMediaTypeFilter = 'all';
+        let currentFormatFilter = 'all';
 
-        const mediaTypeLabelsMap = {
-            'essay': 'Essay', 'paper': 'Paper', 'book': 'Book',
-            'talk': 'Talk', 'interview': 'Interview', 'conversation': 'Conversation',
-            'music': 'Music', 'film': 'Film', 'video': 'Video',
-            'interactive': 'Interactive', 'game': 'Game', 'food': 'Food',
-            'visual-art': 'Visual Art', 'audio': 'Audio', 'performance': 'Performance'
+        const formatGroups = {
+            'read': ['essay', 'paper', 'book', 'interview', 'conversation', 'talk'],
+            'listen': ['music', 'audio'],
+            'watch': ['film', 'video', 'performance'],
+            'play': ['interactive', 'game', 'food', 'visual-art']
         };
+
+        function matchesFormat(mediaType, format) {
+            if (format === 'all') return true;
+            if (!mediaType) return format === 'read';
+            return (formatGroups[format] || []).includes(mediaType);
+        }
 
         async function loadFeed() {
             try {
@@ -1299,7 +1308,6 @@ feed.json, and push to GitHub."</div>
                 if (!response.ok) throw new Error('Failed to load feed');
 
                 feedData = await response.json();
-                buildMediaTypeFilters();
                 renderFeed();
                 setupFilterListeners();
             } catch (error) {
@@ -1310,27 +1318,6 @@ feed.json, and push to GitHub."</div>
                 msg.textContent = 'Error loading feed: ' + error.message;
                 errorDiv.appendChild(msg);
             }
-        }
-
-        function buildMediaTypeFilters() {
-            const types = new Set();
-            feedData.items.forEach(item => {
-                const mt = item._picks?.media_type;
-                if (mt) types.add(mt);
-            });
-
-            const sorted = [...types].sort((a, b) => {
-                return (mediaTypeLabelsMap[a] || a).localeCompare(mediaTypeLabelsMap[b] || b);
-            });
-
-            const container = document.getElementById('media-type-filters');
-            sorted.forEach(type => {
-                const btn = document.createElement('button');
-                btn.className = 'category-filter-btn';
-                btn.dataset.mediaType = type;
-                btn.textContent = mediaTypeLabelsMap[type] || type;
-                container.appendChild(btn);
-            });
         }
 
         function renderFeed() {
@@ -1359,13 +1346,13 @@ feed.json, and push to GitHub."</div>
                 // Sort by position (ascending: 1 to 5)
                 items.sort((a, b) => (a._picks?.position || 0) - (b._picks?.position || 0));
                 
-                // Filter items by category and media type
+                // Filter items by category and format
                 let visibleItems = items;
                 if (currentFilter !== 'all') {
                     visibleItems = visibleItems.filter(item => item._picks?.category === currentFilter);
                 }
-                if (currentMediaTypeFilter !== 'all') {
-                    visibleItems = visibleItems.filter(item => item._picks?.media_type === currentMediaTypeFilter);
+                if (currentFormatFilter !== 'all') {
+                    visibleItems = visibleItems.filter(item => matchesFormat(item._picks?.media_type, currentFormatFilter));
                 }
 
                 // If no visible items after filtering, hide the volume
@@ -1519,13 +1506,13 @@ feed.json, and push to GitHub."</div>
                 });
             });
 
-            // Media type filters
-            const mediaBtns = document.querySelectorAll('[data-media-type]');
-            mediaBtns.forEach(btn => {
+            // Format filters
+            const formatBtns = document.querySelectorAll('[data-format]');
+            formatBtns.forEach(btn => {
                 btn.addEventListener('click', () => {
-                    mediaBtns.forEach(b => b.classList.remove('active'));
+                    formatBtns.forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
-                    currentMediaTypeFilter = btn.dataset.mediaType;
+                    currentFormatFilter = btn.dataset.format;
                     renderFeed();
                 });
             });
@@ -1533,7 +1520,7 @@ feed.json, and push to GitHub."</div>
 
         function updateFilterCount(visiblePicks, visibleVolumes) {
             const countEl = document.getElementById('filter-count');
-            const isFiltered = currentFilter !== 'all' || currentMediaTypeFilter !== 'all';
+            const isFiltered = currentFilter !== 'all' || currentFormatFilter !== 'all';
             if (!isFiltered) {
                 countEl.textContent = `Showing all ${visiblePicks} picks across ${visibleVolumes} volume${visibleVolumes !== 1 ? 's' : ''}`;
             } else {
