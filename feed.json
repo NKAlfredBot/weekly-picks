@@ -3786,6 +3786,194 @@
         "volume": 6,
         "position": 5
       }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v19-media/1",
+      "url": "https://sandspiel.club",
+      "title": "Sandspiel",
+      "content_html": "<p>Max Bittker's browser-based falling sand simulation lets you paint with elements \u2014 water, sand, fire, plant, fungus, ice \u2014 and watch them interact according to simple physics rules. Within seconds you're building tiny ecosystems: water erodes sand, plants grow toward light, fire consumes everything organic. It's a toy that teaches emergent complexity better than any textbook. The magic is that there are no goals, no scores \u2014 just a canvas where simple rules produce endlessly surprising behavior. It's cellular automata you can finger-paint with.</p>",
+      "summary": "A browser toy where you paint with physics. Simple rules, emergent complexity, zero goals \u2014 just play.",
+      "date_published": "2026-05-06T14:00:00Z",
+      "authors": [
+        {
+          "name": "Max Bittker"
+        }
+      ],
+      "tags": [
+        "interactive",
+        "simulation",
+        "emergence",
+        "cellular-automata",
+        "play"
+      ],
+      "_picks": {
+        "selection_reason": "The fastest way to understand emergent complexity: paint some sand, add water, watch a landscape form. Sandspiel makes visible the same principles that govern ant colonies, weather systems, and cities \u2014 simple local rules producing global behavior no one designed. Five minutes of play teaches more about complex systems than most university courses. And it's beautiful.",
+        "category": "reframe",
+        "confidence": 0.94,
+        "topics": [
+          "emergence",
+          "cellular-automata",
+          "complex-systems",
+          "play-as-learning"
+        ],
+        "audience": [
+          "systems-thinkers",
+          "designers",
+          "kids",
+          "anyone-with-a-browser"
+        ],
+        "effort": "interactive",
+        "mood": "playful",
+        "source_domain": "sandspiel.club",
+        "media_type": "interactive",
+        "duration_minutes": null,
+        "access": "free",
+        "year": 2018,
+        "volume": 19,
+        "position": 1
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v19-media/2",
+      "url": "https://www.nfb.ca/film/pas_de_deux/",
+      "title": "Pas de Deux",
+      "content_html": "<p>Norman McLaren films two dancers \u2014 Margaret Mercier and Vincent Warren \u2014 in high-contrast black and white, then uses an optical printer to multiply their images across time. A single gesture becomes a cascade of ghostly echoes trailing behind the body. The effect turns dance into visible music: you can see rhythm, see the decay of a movement the way you hear the decay of a note. Made in 1968 with no computers, just light and celluloid and obsessive precision. It's one of the most stunning things the National Film Board of Canada ever produced, and it proves that the most powerful special effects come from understanding your medium, not your budget.</p>",
+      "summary": "Norman McLaren multiplies two dancers across time using an optical printer. Dance becomes visible music. No computers \u2014 just light and obsession.",
+      "date_published": "2026-05-06T14:00:00Z",
+      "authors": [
+        {
+          "name": "Norman McLaren"
+        }
+      ],
+      "tags": [
+        "film",
+        "dance",
+        "experimental",
+        "optical-printing",
+        "NFB"
+      ],
+      "_picks": {
+        "selection_reason": "McLaren understood something about motion that even most filmmakers miss: a gesture isn't a point in space, it's a line through time. By printing each frame on top of its successors, he makes that line visible. The result looks like it was made with AI in 2024, but it's celluloid from 1968. Thirteen minutes that redefine what a camera can see.",
+        "category": "reframe",
+        "confidence": 0.96,
+        "topics": [
+          "experimental-film",
+          "dance",
+          "time-as-material",
+          "analog-effects"
+        ],
+        "audience": [
+          "filmmakers",
+          "dancers",
+          "designers",
+          "motion-graphics-people"
+        ],
+        "effort": "video",
+        "mood": "contemplative",
+        "source_domain": "nfb.ca",
+        "media_type": "film",
+        "duration_minutes": 13,
+        "access": "free",
+        "year": 1968,
+        "volume": 19,
+        "position": 2
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v19-media/3",
+      "url": "https://www.secretlifeofmachines.com",
+      "title": "The Secret Life of Machines",
+      "content_html": "<p>Tim Hunkin and Rex Garrod's BBC series (1988\u20131993) takes apart everyday machines \u2014 the fax machine, the vacuum cleaner, the television, the sewing machine \u2014 and traces each one back to its origin story. But this isn't dry engineering explainer content. Hunkin is an artist and arcade-machine builder; Garrod is a roboticist and special effects designer. Together they turn each episode into a mix of hand-drawn animation, Rube Goldberg demonstrations, and genuinely hilarious physical comedy. The fax machine episode starts with semaphore towers in Napoleonic France. The television episode starts with spinning discs and selenium. Every machine turns out to be weirder and more human than you thought. All episodes are free on the official site.</p>",
+      "summary": "Two eccentric British engineers disassemble everyday machines and trace them back to their bizarre origins. Equal parts engineering, art history, and physical comedy.",
+      "date_published": "2026-05-06T14:00:00Z",
+      "authors": [
+        {
+          "name": "Tim Hunkin"
+        },
+        {
+          "name": "Rex Garrod"
+        }
+      ],
+      "tags": [
+        "video",
+        "engineering",
+        "design-history",
+        "machines",
+        "BBC"
+      ],
+      "_picks": {
+        "selection_reason": "The best technology education ever filmed, made by people who are artists first and engineers second. Each episode proves that every boring machine contains a fascinating history of human cleverness and accident. Hunkin's hand-drawn animations alone are worth the watch. Free on his site \u2014 start with the fax machine episode for peak weirdness.",
+        "category": "reframe",
+        "confidence": 0.93,
+        "topics": [
+          "design-history",
+          "engineering",
+          "technology-as-culture",
+          "public-education"
+        ],
+        "audience": [
+          "designers",
+          "engineers",
+          "curious-generalists",
+          "anyone-bored-of-tech-explainers"
+        ],
+        "effort": "medium-read",
+        "mood": "playful",
+        "source_domain": "secretlifeofmachines.com",
+        "media_type": "video",
+        "duration_minutes": 25,
+        "access": "free",
+        "year": 1988,
+        "volume": 19,
+        "position": 3
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v19-media/4",
+      "url": "https://www.youtube.com/watch?v=mXaHAYDMPMo",
+      "title": "Discreet Music",
+      "content_html": "<p>Brian Eno's 1975 album wasn't just the birth of ambient music \u2014 it was a systems design manifesto disguised as a record. The liner notes describe the exact setup: two melodic lines of different lengths fed through a tape delay system with graphic EQ, left to evolve on their own while Eno was hospitalized and couldn't reach the volume knob. The music is the output of a process, not a performance. Side B is three variations on Pachelbel's Canon run through the same oblique strategies that would later produce 'Music for Airports.' Fifty years later, it's still the clearest demonstration that constraints and systems can produce beauty that no individual could compose. The liner notes diagram alone changed how a generation of artists thought about authorship.</p>",
+      "summary": "Brian Eno couldn't reach the volume knob from his hospital bed. The system he built to cope invented ambient music \u2014 and a new theory of authorship.",
+      "date_published": "2026-05-06T14:00:00Z",
+      "authors": [
+        {
+          "name": "Brian Eno"
+        }
+      ],
+      "tags": [
+        "music",
+        "ambient",
+        "systems-thinking",
+        "generative",
+        "process-art"
+      ],
+      "_picks": {
+        "selection_reason": "Not just an album \u2014 a proof that an artist can design a system and step away. The liner notes are as important as the music: Eno diagrams his tape-loop setup like an engineer's schematic, then lets it run. Fifty years on, every generative music app, every algorithmic composition tool, every AI art project is downstream of this record. Start with the liner notes, then let the music play.",
+        "category": "reframe",
+        "confidence": 0.95,
+        "topics": [
+          "generative-art",
+          "systems-design",
+          "ambient-music",
+          "authorship",
+          "process"
+        ],
+        "audience": [
+          "musicians",
+          "designers",
+          "systems-thinkers",
+          "anyone-interested-in-AI-art"
+        ],
+        "effort": "audio",
+        "mood": "contemplative",
+        "source_domain": "youtube.com",
+        "media_type": "music",
+        "duration_minutes": 61,
+        "access": "free",
+        "year": 1975,
+        "volume": 19,
+        "position": 4
+      }
     }
   ]
 }
