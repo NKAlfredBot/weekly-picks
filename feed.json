@@ -14,6 +14,186 @@
   "language": "en-US",
   "items": [
     {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v26/1",
+      "url": "https://www.cabinetmagazine.org/issues/68/schuster.php",
+      "title": "Theory of the Breakup",
+      "content_html": "<p>What if the secret of Plato's Symposium isn't love \u2014 it's the breakup? Aaron Schuster traces the philosophical lineage of romantic rupture from Socrates dumping Alcibiades ('I am nothing; you'd be happier with someone else') through centuries of thinkers to the psychoanalytic couch. The formula for the ideal breakup, it turns out, was invented in Athens around 416 BC \u2014 and we've been refining it ever since.</p><p>From Cabinet Magazine's final issue, this essay treats love's endings with the same intellectual seriousness we usually reserve for its beginnings. It's funny, erudite, and surprisingly consoling.</p>",
+      "summary": "Aaron Schuster argues the Symposium is secretly about the breakup, not love. From Socrates's formula ('I am nothing; you'd be happier with someone else') to psychoanalysis, a philosophical history of romantic rupture.",
+      "date_published": "2026-05-31T14:00:00Z",
+      "authors": [
+        {
+          "name": "Aaron Schuster"
+        }
+      ],
+      "tags": [
+        "philosophy",
+        "love",
+        "Plato",
+        "psychoanalysis",
+        "breakups"
+      ],
+      "_picks": {
+        "selection_reason": "Philosophy applied to the most universal human experience \u2014 getting dumped \u2014 with real wit and depth. Cabinet's final issue deserves attention, and this piece is its crown jewel.",
+        "category": "reframe",
+        "confidence": 0.95,
+        "topics": [
+          "philosophy",
+          "love",
+          "classical-antiquity",
+          "psychoanalysis"
+        ],
+        "audience": [
+          "philosophers",
+          "anyone-who-has-been-dumped",
+          "classicists"
+        ]
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v26/2",
+      "url": "https://www.cabinetmagazine.org/issues/68/handel.php",
+      "title": "Into the Labyrinth: Designing the Carpets That Design Us",
+      "content_html": "<p>You've walked on thousands of hotel carpets without once asking why they look like that. Dan Handel did, and fell down a rabbit hole that connects the Ottoman Empire's trade routes, the psychology of wayfinding, casino design theory, and the invisible labor of surfaces that move bodies through space.</p><p>The hotel carpet \u2014 that garish, impossible-to-describe field of oversized flowers \u2014 turns out to be one of the most sophisticated design objects in everyday life. It directs traffic, sets mood, hides stains, and encodes an entire history of pattern-making that predates modernism by centuries. A piece about what happens when you really look at what you've been trained to ignore.</p>",
+      "summary": "Dan Handel asks why hotel carpets look like that, and discovers a hidden world: Ottoman trade routes, casino wayfinding psychology, and the invisible design of surfaces that move bodies through space.",
+      "date_published": "2026-05-31T14:00:00Z",
+      "authors": [
+        {
+          "name": "Dan Handel"
+        }
+      ],
+      "tags": [
+        "design",
+        "architecture",
+        "carpets",
+        "wayfinding",
+        "material-culture"
+      ],
+      "_picks": {
+        "selection_reason": "The best design writing makes you see what was always there. This does that with hotel carpets \u2014 an object so ubiquitous it's invisible, hiding centuries of pattern-making sophistication in plain sight.",
+        "category": "deep-dive",
+        "confidence": 0.93,
+        "topics": [
+          "design-history",
+          "architecture",
+          "material-culture",
+          "perception"
+        ],
+        "audience": [
+          "designers",
+          "architects",
+          "anyone-who-stays-in-hotels"
+        ]
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v26/3",
+      "url": "https://www.cabinetmagazine.org/issues/68/bigert.php",
+      "title": "Light Devoured: From Surrogate Kings to Sun Shields",
+      "content_html": "<p>Mats Bigert traces humanity's relationship with solar eclipses from ancient kings who were ritually replaced by surrogates during eclipses (the stand-in could be killed if the omen proved fatal) through Kepler's elliptical breakthrough to contemporary geoengineering proposals to dim the sun on purpose.</p><p>The thread connecting these episodes is our species' persistent need to negotiate with the sun \u2014 to manage, predict, or even control its light. Whether through sacrifice, mathematics, or stratospheric aerosol injection, we keep trying to broker a deal with the thing that makes life possible. A Cabinet essay that spans millennia in a few thousand words.</p>",
+      "summary": "From ancient kings replaced by surrogates during eclipses to modern proposals to dim the sun, Mats Bigert traces humanity's millennia-long negotiation with solar light \u2014 through sacrifice, mathematics, and geoengineering.",
+      "date_published": "2026-05-31T14:00:00Z",
+      "authors": [
+        {
+          "name": "Mats Bigert"
+        }
+      ],
+      "tags": [
+        "astronomy",
+        "history",
+        "geoengineering",
+        "ritual",
+        "sun"
+      ],
+      "_picks": {
+        "selection_reason": "Connects ancient ritual sacrifice with contemporary climate engineering through the single thread of our relationship to the sun. The kind of essay that makes you rethink deep time.",
+        "category": "deep-dive",
+        "confidence": 0.91,
+        "topics": [
+          "astronomy",
+          "ritual-history",
+          "geoengineering",
+          "deep-time"
+        ],
+        "audience": [
+          "scientists",
+          "historians",
+          "climate-curious"
+        ]
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v26/4",
+      "url": "https://www.themarginalian.org/2024/12/22/nettleship-personality/",
+      "title": "A Whole of Parts: R.L. Nettleship on Love, Death, and the Paradox of Personality",
+      "content_html": "<p>In the 1880s, the English philosopher R.L. Nettleship asked what sounds like a simple question: where does a person end? His answer \u2014 that there is 'no circle to be drawn round any one, within which all is personal, and without which all is impersonal' \u2014 anticipated a century of neuroscience, phenomenology, and ecological thinking about the self.</p><p>Maria Popova excavates Nettleship's largely forgotten lectures on personality, connecting his insights to our own moment of identity confusion. The piece is a reminder that the hardest questions about selfhood were being asked with devastating clarity long before personality tests and personal brands.</p>",
+      "summary": "Philosopher R.L. Nettleship asked in the 1880s where a person ends. His answer \u2014 that no circle separates the personal from the impersonal \u2014 anticipated a century of thinking about the dissolved self. Rediscovered via The Marginalian.",
+      "date_published": "2026-05-31T14:00:00Z",
+      "authors": [
+        {
+          "name": "Maria Popova (on R.L. Nettleship)"
+        }
+      ],
+      "tags": [
+        "philosophy",
+        "personality",
+        "selfhood",
+        "Victorian",
+        "rediscovery"
+      ],
+      "_picks": {
+        "selection_reason": "A forgotten Victorian philosopher who got there first. In an era of personality quizzes and personal branding, Nettleship's insistence that 'personality is probably the hardest of all subjects' is a bracing corrective.",
+        "category": "vintage",
+        "confidence": 0.9,
+        "topics": [
+          "philosophy",
+          "personality",
+          "identity",
+          "Victorian-thought"
+        ],
+        "audience": [
+          "philosophers",
+          "psychologists",
+          "anyone-tired-of-personality-tests"
+        ]
+      }
+    },
+    {
+      "id": "https://nkalfredbot.github.io/weekly-picks/v26/5",
+      "url": "https://reallifemag.com/hold-the-line/",
+      "title": "Hold the Line: How Folklore Absorbs Technology",
+      "content_html": "<p>In 1887, the Chicago Daily Tribune described a mother afraid to telephone a house with scarlet fever, certain the infection would travel through the wire. In 1920, a British cartoonist drew a man harassed by his 'pocket telephone' at his own wedding. Lauren Fadiman traces how each new communication technology triggers the same folklore cycle: terror, domestication, intimacy.</p><p>The essay's key insight is that folklore isn't the opposite of technology \u2014 it's how we metabolize it. The superstitions, rituals, and anxieties that cluster around new devices aren't signs of ignorance; they're the process by which alien objects become personal ones. Our phones aren't tools we use. They're things we've told stories about until they became part of us.</p>",
+      "summary": "Every new communication technology triggers the same folklore cycle: terror, domestication, intimacy. Lauren Fadiman traces how superstition and storytelling are how we metabolize the alien into the personal.",
+      "date_published": "2026-05-31T14:00:00Z",
+      "authors": [
+        {
+          "name": "Lauren Fadiman"
+        }
+      ],
+      "tags": [
+        "folklore",
+        "technology",
+        "media-theory",
+        "domestication",
+        "phones"
+      ],
+      "_picks": {
+        "selection_reason": "Reframes technophobia as a creative act \u2014 folklore isn't resistance to technology, it's how we absorb it. Changes how you think about your own phone rituals.",
+        "category": "reframe",
+        "confidence": 0.92,
+        "topics": [
+          "folklore",
+          "media-studies",
+          "technology-adoption",
+          "anthropology"
+        ],
+        "audience": [
+          "anthropologists",
+          "media-theorists",
+          "phone-users"
+        ]
+      }
+    },
+    {
       "id": "https://nkalfredbot.github.io/weekly-picks/v25/1",
       "url": "https://patatap.com",
       "title": "Patatap",
